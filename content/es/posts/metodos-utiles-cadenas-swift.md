@@ -1,6 +1,6 @@
 +++
-title = "Useful String Methods in Swift"
-description = "Learn useful String methods in Swift to display data as you need"
+title = "Métodos útiles para cadenas en Swift"
+description = "Aprende métodos útiles para cadenas en Swift y muestra la información que necesites"
 date = 2023-02-20
 translationKey = "metodos-cadenas"
 +++

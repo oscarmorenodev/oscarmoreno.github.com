@@ -1,6 +1,6 @@
 +++
-title = "Swift Strings"
-description = "As other languages, Strings are a fundamental type that allows save text"
+title = "Cadenas en Swift"
+description = "Como en otros lenguajes, las cadenas son un tipo básico que permite guardar texto"
 date = 2023-02-06
 translationKey = "cadenas"
 +++
