@@ -3,6 +3,13 @@ languageName = "Español"
 languageDirection = "ltr"
 weight = 1
 
+[languages]
+  [languages.es]
+    [languages.es.params]
+      # version 4
+      googleAnalytics = "G-348254160"
+
+
 title = "Oscar Moreno | Desarrollador iOS "
 copyright = "&copy; 2024 Óscar Moreno"
 
@@ -11,7 +18,7 @@ copyright = "&copy; 2024 Óscar Moreno"
   disqusShortname = "oscarmorenocom" 
 
   # mainSections = ["section1", "section2"]
-description = "iOS Developer"
+  description = "iOS Developer"
 
 [params.author]
 name = "Óscar Moreno"
