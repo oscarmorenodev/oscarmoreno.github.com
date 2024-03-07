@@ -5,9 +5,12 @@
 # theme
 theme = "congo"
 
+
+
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
 disqusShortname = "oscarmorenocom"
+
 [languages]
   [languages.es]
     contentDir = 'content/es'
@@ -16,7 +19,6 @@ disqusShortname = "oscarmorenocom"
     [languages.es.params]
       # version 4
       googleAnalytics = "G-348254160"
-      disqusShortname = "oscarmorenocom"
   [languages.en]
     contentDir = 'content/en'
     languageName = 'English'
@@ -24,7 +26,6 @@ disqusShortname = "oscarmorenocom"
       [languages.en.params]
       # version 4
       googleAnalytics = "G-348254160"
-      disqusShortname = "oscarmorenocom"
 
 enableRobotsTXT = true
 paginate = 10
