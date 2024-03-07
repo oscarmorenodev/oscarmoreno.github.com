@@ -17,6 +17,10 @@ defaultContentLanguage = 'es'
     languageName = 'English'
     weight = 2
 
+[services]
+  [services.disqus]
+    shortname = 'your-disqus-shortname'
+
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
