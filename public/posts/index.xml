@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Oscar Moreno | Desarrollador iOS </title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Oscar Moreno | Desarrollador iOS </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>&amp;copy; 2024 Óscar Moreno</copyright>
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendiendo los closures en Swift</title>
+      <link>//localhost:1313/posts/closures-en-swift/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/closures-en-swift/</guid>
+      <description>Los closures son un concepto fundamental en Swift. Son herramientas poderosas que te permiten definir y manipular bloques de código, por eso se les considera ciudadanos de primera clase. En este artículo, exploraremos los closures, los closures finales, la captura de valores y el hecho de que los closures son tipos por referencia&#xA;Closures #Un closure es un bloque de código autónomo que se puede pasar y utilizar en el código, como cualquier otra constante o variable.</description>
+    </item>
+    <item>
+      <title>Usando funciones en Swift</title>
+      <link>//localhost:1313/posts/uso-funciones-swift/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/uso-funciones-swift/</guid>
+      <description>Como desarrolladores, a menudo manejamos situaciones en las que necesitamos trabajar con funciones en nuestras aplicaciones iOS. Las funciones son una parte integral del lenguaje de programación Swift y nos proporcionan un conjunto de herramientas poderosas para construir código flexible y modular. En este artículo, exploraremos el concepto de usar tipos de funciones y cómo puede beneficiar nuestro proceso de desarrollo.&#xA;Determinar el tipo de función #En Swift, las funciones se consideran ciudadanos de primera clase, lo que significa que pueden asignarse a variables o constantes y también pueden usarse como tipos.</description>
+    </item>
+    <item>
+      <title>Etiquetas de argumentos de función y nombres de parámetros</title>
+      <link>//localhost:1313/posts/etiquetas-argumentos-funcion-parametros/</link>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/etiquetas-argumentos-funcion-parametros/</guid>
+      <description>Comprender las complejidades de las etiquetas de argumentos de funciones y los nombres de parámetros es esencial para aprovechar al máximo el lenguaje de programación Swift. En este artículo, exploraremos estos conceptos con un enfoque en la simplicidad, atendiendo a desarrolladores con experiencia limitada en la creación de funciones. ¡Así que, comencemos!&#xA;Etiquetas de argumentos de función #Las etiquetas de argumentos proporcionan un contexto descriptivo al llamar a una función, haciendo que el código sea más expresivo y legible.</description>
+    </item>
+    <item>
+      <title>Devolviendo múltiples valores desde una función: Tuplas vs. Colecciones</title>
+      <link>//localhost:1313/posts/devolviendo-multiples-valores-desde-funciones/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/devolviendo-multiples-valores-desde-funciones/</guid>
+      <description>Como desarrolladores de iOS, a menudo nos encontramos con escenarios donde necesitamos devolver múltiples valores de una función. Swift nos ofrece dos enfoques útiles para lograr esto: utilizando tuplas y colecciones. En este artículo, exploraremos ambos métodos y entenderemos cuándo usar cada uno.&#xA;Usando Tuplas #Las tuplas son estructuras de datos ligeras que nos permiten agrupar múltiples valores juntos. Proporcionan una forma sencilla de devolver múltiples valores de una función. Considera el siguiente ejemplo:</description>
+    </item>
+    <item>
+      <title>Entendiendo lo básico de las funciones en Swift</title>
+      <link>//localhost:1313/posts/entendiendo-basico-funciones/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/entendiendo-basico-funciones/</guid>
+      <description>Como desarrollador, es esencial entender los conceptos fundamentales de la programación. Uno de esos conceptos es las funciones, las cuales desempeñan un papel crucial en la organización y reutilización del código. En este artículo, exploraremos los conceptos básicos de las funciones en Swift. Ya seas un principiante o estés buscando una revisión, esta guía te ayudará a comprender los aspectos esenciales de las funciones de manera simple y directa.&#xA;¿Qué son las Funciones?</description>
+    </item>
+    <item>
+      <title>Descubriendo defer en Swift</title>
+      <link>//localhost:1313/posts/descubriendo-defer-swift/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/descubriendo-defer-swift/</guid>
+      <description>En Swift, hay varios constructores del lenguaje que hacen la programación más eficiente y robusta.&#xA;Uno de estos constructores es la declaración defer, que permite a los desarrolladores ejecutar un bloque de código más tarde en el flujo del programa. Este artículo tiene como objetivo explicar cómo funciona defer en Swift, proporcionar ejemplos de su uso y destacar los escenarios en los cuales puede ser beneficioso.&#xA;Se utiliza para definir un bloque de código que se ejecuta cuando se sale del ámbito actual, independientemente de cómo se salga del ámbito, ya sea mediante una declaración de retorno, un error o un break.</description>
+    </item>
+    <item>
+      <title>Entendiendo la sentencia guard para una salida anticipiada</title>
+      <link>//localhost:1313/posts/guard-salida-anticipada-swift/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/guard-salida-anticipada-swift/</guid>
+      <description>En la programación iOS, una construcción poderosa que ayuda a mejorar la legibilidad del código y a mejorar el flujo de control es la sentencia guard. Esta declaración actúa como un guardián, permitiéndonos manejar de manera elegante los escenarios excepcionales y salir temprano de un bloque de código.&#xA;En este artículo, descubrirás los beneficios de la sentencia guard, explorarás su uso y proporcionarás ejemplos para ilustrar su efectividad.&#xA;Entendiendo la sentencia guard #La sentencia guard sirve como un mecanismo de salida anticipada condicional en Swift, el lenguaje de programación para el desarrollo de iOS.</description>
+    </item>
+    <item>
+      <title>Explorando las sentencias de traspaso de control en Swift</title>
+      <link>//localhost:1313/posts/sentencias-transpaso-control-swift/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/sentencias-transpaso-control-swift/</guid>
+      <description>Las sentencias de traspaso de control son herramientas esenciales en programación que te permiten alterar el flujo de ejecución dentro de tu código.&#xA;En Swift, tres sentencias de traspaso de control de uso común son continue, break, y fallthrough.&#xA;En este artículo, examinaremos cada una de estas sentencias, dando ejemplos y explicando los escenarios en los que es más apropiado utilizarlas.&#xA;Continue #continue se usa principalmente dentro de bucles (como for-in o while) para omitir el código restante dentro de la iteración actual y pasar a la siguiente.</description>
+    </item>
+    <item>
+      <title>Condicionales como base de Swift</title>
+      <link>//localhost:1313/posts/sentencias-condicionales-swift/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/sentencias-condicionales-swift/</guid>
+      <description>Comprender las bases de la programación Swift es crucial para crear aplicaciones sólidas y eficientes.&#xA;Uno de los conceptos clave que debes comprender son las sentencias condicionales. En este artículo, navegaremos hacia el mundo de los condicionales en Swift, explorando su sintaxis, ejemplos y mejores prácticas para usarlas de manera efectiva. ¡A ello!&#xA;Sentencias condicionales: Tomando decisiones en Swift #En programación, a menudo hay situaciones en las que necesitas que tu aplicación tome decisiones basadas en ciertas condiciones.</description>
+    </item>
+    <item>
+      <title>Explorando los bucles en Swift</title>
+      <link>//localhost:1313/posts/bucles-swift/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/bucles-swift/</guid>
+      <description>En el desarrollo de iOS, las sentencias de control de flujo juegan un papel crucial en dirigir la ejecución del código.&#xA;Permiten a los desarrolladores iterar sobre colecciones, realizar tareas repetitivas y controlar el comportamiento del programa basado en ciertas condiciones. En esta publicación, nos sumergiremos en tres sentencias de control de flujo esenciales en Swift: for-in, while, y repeat-while.&#xA;Ya seas un desarrollador iOS junior o alguien que busca refrescar su conocimiento, entender estas sentencias es esencial para construir aplicaciones iOS robustas y eficientes.</description>
+    </item>
+    <item>
+      <title>Colecciones en Swift</title>
+      <link>//localhost:1313/posts/colecciones-swift/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/colecciones-swift/</guid>
+      <description>Las colecciones son una de las estructuras de datos más utilizadas cuando programas, por lo tanto, es extremadamente importante conocer los diferentes enfoques que dispones para trabajar con ellas.&#xA;Los tipos de colección son tipos de datos complejos, y Swift permite usar tres tipos de colección: Arrays, Sets y Diccionarios para gestionar valores relacionados.&#xA;La fiabilidad de estas colecciones se basa en los tipos de valores y claves que puedes almacenar.</description>
+    </item>
+    <item>
+      <title>Useful String Methods in Swift</title>
+      <link>//localhost:1313/posts/metodos-utiles-cadenas-swift/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/metodos-utiles-cadenas-swift/</guid>
+      <description>Esta publicación es un complemento para la anterior sobre Cadenas en Swift.&#xA;En proyectos del mundo real, puedes almacenar muchas cadenas, pero es importante que sepas cómo transformar esas cadenas para mostrarlas según tu vista.&#xA;Por esta razón, veamos los métodos habituales que puedes usar para esto.&#xA;Contar caracteres #Dado que una cadena es una colección de caracteres, puedes usar un método muy común en Arrays: count()&#xA;Puedes usarlo en una constante/variable o en una cadena.</description>
+    </item>
+    <item>
+      <title>Swift Strings</title>
+      <link>//localhost:1313/posts/cadenas-swift/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/cadenas-swift/</guid>
+      <description>Cuando guardas un texto en una constante o una variable, estás guardando una cadena en Swift. Además, puedes ver una cadena como una serie de caracteres. Por esa razón, puedes acceder al contenido de una cadena de varias maneras, como una Colección (Array, por ejemplo) de caracteres.&#xA;Inicializar una Cadena #Un literal de cadena es un texto escrito con comillas dobles al principio y al final. Entonces, si necesitas guardar un texto en una constante o una variable, solo debes asignar un literal de cadena a ella.</description>
+    </item>
+    <item>
+      <title>Números en Swift</title>
+      <link>//localhost:1313/posts/numeros-swift/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/numeros-swift/</guid>
+      <description>La programación ha sido utilizada a menudo para procesar números y obtener resultados difíciles de calcular para los humanos: distancias del universo, radios de planetas, pi&amp;hellip;&#xA;Así, es parte del aprendizaje fundamental, en Swift en particular y en programación en general.&#xA;Básicamente hay 2 tipos de números en Swift: Enteros y números de coma flotante. Cada uno representa un rango diferente y se utiliza para diferentes objetivos.&#xA;Enteros #Un número entero (también llamado int, abreviado) es posiblemente el número más utilizado.</description>
+    </item>
+    <item>
+      <title>Constantes y variables para guardar datos</title>
+      <link>//localhost:1313/posts/constantes-variables-swift/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/constantes-variables-swift/</guid>
+      <description>La programación es una forma de gestionar datos y, normalmente, es necesario guardar varios valores temporalmente: para hacer uso de ellos después de otras operaciones, para mostrarlos, transformarlos&amp;hellip;&#xA;Por este motivo, igual que otros lenguajes de programación, Swift es capaz de almacenar valores en constantes y variables.&#xA;Gracias a ellas, puedes asociar un nombre que elijas a un valor.&#xA;Constantes #Un valor constante se guarda en un espacio de memoria y no se puede modificar.</description>
+    </item>
+    <item>
+      <title>Mi (nuevo) primer post</title>
+      <link>//localhost:1313/posts/mi-nuevo-primer-post/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/mi-nuevo-primer-post/</guid>
+      <description>¡Hola! Hoy estoy muy contento porque, he refactorizado mi blog 😉&#xA;Esta no es mi primera experiencia escribiendo en mi blog pero, 2022 fue un año con cambios y nuevos desafíos en mi vida laboral, así que, decidí reiniciar mi blog para alinearlo con lo que estoy haciendo en mi día a día.&#xA;Por esta razón, este es mi primer post, pero solo en esta nueva versión de mi blog.</description>
+    </item>
+  </channel>
+</rss>

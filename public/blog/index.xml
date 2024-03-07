@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Oscar Moreno | Desarrollador iOS </title>
+    <link>//localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Oscar Moreno | Desarrollador iOS </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <copyright>&amp;copy; 2024 Óscar Moreno</copyright>
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendiendo los closures en Swift</title>
+      <link>//localhost:1313/blog/closures-en-swift/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/closures-en-swift/</guid>
+      <description>Los closures son un concepto fundamental en Swift. Son herramientas poderosas que te permiten definir y manipular bloques de código, por eso se les considera ciudadanos de primera clase. En este artículo, exploraremos los closures, los closures finales, la captura de valores y el hecho de que los closures son tipos por referencia&#xA;Closures #Un closure es un bloque de código autónomo que se puede pasar y utilizar en el código, como cualquier otra constante o variable.</description>
+    </item>
+    <item>
+      <title>Condicionales como base de Swift</title>
+      <link>//localhost:1313/blog/sentencias-condicionales-swift/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/sentencias-condicionales-swift/</guid>
+      <description>Comprender las bases de la programación Swift es crucial para crear aplicaciones sólidas y eficientes.&#xA;Uno de los conceptos clave que debes comprender son las sentencias condicionales. En este artículo, navegaremos hacia el mundo de los condicionales en Swift, explorando su sintaxis, ejemplos y mejores prácticas para usarlas de manera efectiva. ¡A ello!&#xA;Sentencias condicionales: Tomando decisiones en Swift #En programación, a menudo hay situaciones en las que necesitas que tu aplicación tome decisiones basadas en ciertas condiciones.</description>
+    </item>
+    <item>
+      <title>Constantes y variables para guardar datos</title>
+      <link>//localhost:1313/blog/constantes-variables-swift/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/constantes-variables-swift/</guid>
+      <description>La programación es una forma de gestionar datos y, normalmente, es necesario guardar varios valores temporalmente: para hacer uso de ellos después de otras operaciones, para mostrarlos, transformarlos&amp;hellip;&#xA;Por este motivo, igual que otros lenguajes de programación, Swift es capaz de almacenar valores en constantes y variables.&#xA;Gracias a ellas, puedes asociar un nombre que elijas a un valor.&#xA;Constantes #Un valor constante se guarda en un espacio de memoria y no se puede modificar.</description>
+    </item>
+    <item>
+      <title>Mi (nuevo) primer post</title>
+      <link>//localhost:1313/blog/mi-nuevo-primer-post/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/mi-nuevo-primer-post/</guid>
+      <description>¡Hola! Hoy estoy muy contento porque, he refactorizado mi blog 😉&#xA;Esta no es mi primera experiencia escribiendo en mi blog pero, 2022 fue un año con cambios y nuevos desafíos en mi vida laboral, así que, decidí reiniciar mi blog para alinearlo con lo que estoy haciendo en mi día a día.&#xA;Por esta razón, este es mi primer post, pero solo en esta nueva versión de mi blog.</description>
+    </item>
+  </channel>
+</rss>

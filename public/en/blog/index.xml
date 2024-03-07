@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Oscar Moreno | iOS Developer </title>
+    <link>//localhost:1313/en/blog/</link>
+    <description>Recent content in Blogs on Oscar Moreno | iOS Developer </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2024 Óscar Moreno</copyright>
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Closures in Swift</title>
+      <link>//localhost:1313/en/blog/closures-swift/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/closures-swift/</guid>
+      <description>Closures are a fundamental concept in Swift.</description>
+    </item>
+    <item>
+      <title>Using Function Types in Swift</title>
+      <link>//localhost:1313/en/blog/using-function-types-swift/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/using-function-types-swift/</guid>
+      <description>As developers, we often manage situations where we need to work with functions in our iOS applications.</description>
+    </item>
+    <item>
+      <title>Function Argument Labels and Parameter Names</title>
+      <link>//localhost:1313/en/blog/function-argument-labels-parameters/</link>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/function-argument-labels-parameters/</guid>
+      <description>Understanding the intricacies of function argument labels and parameter names is essential to harness the full power of the Swift programming language.</description>
+    </item>
+    <item>
+      <title>Returning Multiple Values from a Function: Tuples vs. Collections</title>
+      <link>//localhost:1313/en/blog/returning-multiple-values-from-functions/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/returning-multiple-values-from-functions/</guid>
+      <description>Working as iOS developers, we often come across scenarios where we need to return multiple values from a function.</description>
+    </item>
+    <item>
+      <title>Understanding the Basics of Swift Functions</title>
+      <link>//localhost:1313/en/blog/understanding-basics-functions/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/understanding-basics-functions/</guid>
+      <description>As a developer, it&amp;rsquo;s essential to understand the fundamental concepts of programming.</description>
+    </item>
+    <item>
+      <title>Discovering Defer in Swift</title>
+      <link>//localhost:1313/en/blog/discovering-defer-swift/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/discovering-defer-swift/</guid>
+      <description>In Swift, there are various language constructs that make programming more efficient and robust.</description>
+    </item>
+    <item>
+      <title>Understanding the Guard Statement for Early Exit</title>
+      <link>//localhost:1313/en/blog/guard-early-exit-swift/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/guard-early-exit-swift/</guid>
+      <description>In iOS programming, one powerful construct that helps streamline code readability and improve control flow is the guard statement.</description>
+    </item>
+    <item>
+      <title>Exploring Control Transfer Statements in Swift</title>
+      <link>//localhost:1313/en/blog/control-transfer-statements-swift/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/control-transfer-statements-swift/</guid>
+      <description>Control transfer statements are essential tools in programming that allow developers to alter the flow of execution within their code.</description>
+    </item>
+    <item>
+      <title>Swift Fundamentals about Conditionals</title>
+      <link>//localhost:1313/en/blog/conditional-statements-swift/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/conditional-statements-swift/</guid>
+      <description>Understanding the fundamentals of Swift programming is crucial to creating robust and efficient applications.</description>
+    </item>
+    <item>
+      <title>Exploring Loops in Swift</title>
+      <link>//localhost:1313/en/blog/loops-swift/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/loops-swift/</guid>
+      <description>In iOS development, flow control statements play a crucial role in directing the execution of code.</description>
+    </item>
+    <item>
+      <title>Swift Collection Types</title>
+      <link>//localhost:1313/en/blog/swift-collection-types/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/swift-collection-types/</guid>
+      <description>The collections are one of the most used data structure when you are programming so, it is extremely important know the different approach you dispose to work with them.</description>
+    </item>
+    <item>
+      <title>Useful String Methods in Swift</title>
+      <link>//localhost:1313/en/blog/useful-strings-methods-swift/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/useful-strings-methods-swift/</guid>
+      <description>This post is a complement for the previous one about Swift Strings.</description>
+    </item>
+    <item>
+      <title>Swift Strings</title>
+      <link>//localhost:1313/en/blog/swift-strings/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/swift-strings/</guid>
+      <description>When you save a text in a constant or a variable, your are saving a string in Swift.</description>
+    </item>
+    <item>
+      <title>Numbers in Swift</title>
+      <link>//localhost:1313/en/blog/numbers-in-swift/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/numbers-in-swift/</guid>
+      <description>Programming has been often for process numbers and obtain results so difficult to calculate for humans: universe distances, planet radius, pi…</description>
+    </item>
+    <item>
+      <title>Constants and Variables to Save Values in Swift</title>
+      <link>//localhost:1313/en/blog/constants-and-variables-swift/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/constants-and-variables-swift/</guid>
+      <description>Programming is a way to manage data, and usually, you need save multiple values temporally: to manage it after other operations, to display it…</description>
+    </item>
+    <item>
+      <title>My (New) First Post</title>
+      <link>//localhost:1313/en/blog/my-new-first-post/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/en/blog/my-new-first-post/</guid>
+      <description>Hi! I am very happy today, because I have refactored my blog 😉</description>
+    </item>
+  </channel>
+</rss>
