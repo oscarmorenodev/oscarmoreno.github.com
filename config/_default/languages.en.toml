@@ -12,6 +12,9 @@ copyright = "&copy; 2024 Óscar Moreno"
       # version 4
       googleAnalytics = "G-348254160"
 
+[services]
+  [services.disqus]
+    shortname = 'oscarmorenocom'
 
 [params]
   dateFormat = "2 January 2006" 
