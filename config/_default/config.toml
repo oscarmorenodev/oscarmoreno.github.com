@@ -10,6 +10,7 @@ theme = "congo"
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
 disqusShortname = "oscarmorenocom"
+googleAnalytics = "G-R502FEV9RG"
 
 [languages]
   [languages.es]
