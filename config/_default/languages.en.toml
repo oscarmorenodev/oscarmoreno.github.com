@@ -6,6 +6,12 @@ weight = 2
 title = "Oscar Moreno | iOS Developer "
 copyright = "&copy; 2024 Óscar Moreno"
 
+[languages]
+  [languages.en]
+    [languages.en.params]
+      # version 4
+      googleAnalytics = "G-348254160"
+
 [services]
   [services.disqus]
     shortname = 'oscarmorenocom'

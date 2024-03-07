@@ -7,8 +7,8 @@ title = "Oscar Moreno | Desarrollador iOS "
 copyright = "&copy; 2024 Óscar Moreno"
 
 [languages]
-  [languages.en]
-    [languages.en.params]
+  [languages.es]
+    [languages.es.params]
       # version 4
       googleAnalytics = "G-348254160"
 
