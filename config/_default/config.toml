@@ -5,8 +5,6 @@
 # theme
 theme = "congo"
 
-
-
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
 disqusShortname = "oscarmorenocom"
