@@ -1,6 +1,7 @@
 +++
 title = "Discovering Defer in Swift"
 description = "Execute a block of code later in the program's flow"
+summary = "Execute a block of code later in the program's flow"
 date = 2023-05-15
 translationKey = "defer"
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Devolviendo múltiples valores desde una función: Tuplas vs. Colecciones"
 description = "Aprende como puedes devolver multiples valores desde una función"
+summary = "Aprende como puedes devolver multiples valores desde una función"
 date = 2023-06-12
 translationKey = "salida-funciones"
 +++

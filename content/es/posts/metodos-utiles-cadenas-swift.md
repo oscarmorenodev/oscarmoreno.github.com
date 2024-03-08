@@ -1,6 +1,7 @@
 +++
 title = "Métodos útiles para cadenas en Swift"
 description = "Aprende métodos útiles para cadenas en Swift y muestra la información que necesites"
+summary = "Aprende métodos útiles para cadenas en Swift y muestra la información que necesites"
 date = 2023-02-20
 translationKey = "metodos-cadenas"
 +++

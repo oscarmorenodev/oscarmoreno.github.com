@@ -1,6 +1,7 @@
 +++
 title = "Mi (nuevo) primer post"
 description = "Quién soy y por qué he relanzado mi blog"
+summary = "Quién soy y por qué he relanzado mi blog"
 date = 2023-01-02
 translationKey = 'primer-post'
 +++

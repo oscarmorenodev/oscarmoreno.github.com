@@ -1,6 +1,7 @@
 +++
 title = "Swift Collection Types"
 description = "Swift has three collection types to manage common values"
+summary = "Swift has three collection types to manage common values"
 date = 2023-03-06
 translationKey = "colecciones"
 +++

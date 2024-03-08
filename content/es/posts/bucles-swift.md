@@ -1,6 +1,7 @@
 +++
 title = "Explorando los bucles en Swift"
 description = "Iterando y realizando tareas repetitivas"
+summary = "Iterando y realizando tareas repetitivas"
 date = 2023-03-20
 translationKey = "bucles"
 +++

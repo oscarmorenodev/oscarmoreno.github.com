@@ -1,6 +1,7 @@
 +++
 title = "Understanding the Basics of Swift Functions"
 description = "Functions let us organize code, reuse it, and avoid duplications"
+summary = "Functions let us organize code, reuse it, and avoid duplications"
 date = 2023-05-29
 translationKey = "funciones"
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Entendiendo los closures en Swift"
 description = "Un closure es un bloque que puede ser usado en tu código"
+summary = "Un closure es un bloque que puede ser usado en tu código"
 date = 2023-09-05
 translationKey = 'closures'
 +++

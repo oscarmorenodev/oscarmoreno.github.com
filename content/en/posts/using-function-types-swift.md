@@ -1,6 +1,7 @@
 +++
 title = "Using Function Types in Swift"
 description = "As Functions are first-class citizens, you can enjoy its benefits"
+summary = "As Functions are first-class citizens, you can enjoy its benefits"
 date = 2023-07-10
 translationKey = "uso-funciones"
 +++

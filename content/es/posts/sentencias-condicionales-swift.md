@@ -1,6 +1,7 @@
 +++
 title = "Condicionales como base de Swift"
 description = "Controlando el comportamiento de la aplicación basándose en condiciones"
+summary = "Controlando el comportamiento de la aplicación basándose en condiciones"
 date = 2023-04-03
 translationKey = "conditionals"
 +++

@@ -1,9 +1,9 @@
 +++
 title = "Etiquetas de argumentos de función y nombres de parámetros"
 description = "Descubriendo las bases sobre parámetros de entrada en las funciones" 
+summary = "Descubriendo las bases sobre parámetros de entrada en las funciones" 
 date = 2023-06-26
 translationKey = "parametros"
-
 +++
 
 Comprender las complejidades de las etiquetas de argumentos de funciones y los nombres de parámetros es esencial para aprovechar al máximo el lenguaje de programación Swift. En este artículo, exploraremos estos conceptos con un enfoque en la simplicidad, atendiendo a desarrolladores con experiencia limitada en la creación de funciones. ¡Así que, comencemos!

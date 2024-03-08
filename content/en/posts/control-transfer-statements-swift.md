@@ -1,6 +1,7 @@
 +++
 title = "Exploring Control Transfer Statements in Swift"
 description = "Altering the flow of execution within the code"
+summary = "Altering the flow of execution within the code"
 date = 2023-04-17
 translationKey = "traspaso-control"
 +++

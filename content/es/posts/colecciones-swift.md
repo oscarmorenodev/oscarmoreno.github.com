@@ -1,6 +1,7 @@
 +++
 title = "Colecciones en Swift"
 description = "Swift tiene tres tipos de colecciones y su uso depende de cómo quieres gestionar sus valores"
+summary = "Swift tiene tres tipos de colecciones y su uso depende de cómo quieres gestionar sus valores"
 date = 2023-03-06
 translationKey = "colecciones"
 +++

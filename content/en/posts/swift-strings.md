@@ -1,6 +1,7 @@
 +++
 title = "Swift Strings"
 description = "As other languages, Strings are a fundamental type that allows save text"
+summary = "As other languages, Strings are a fundamental type that allows save text"
 date = 2023-02-06
 translationKey = "cadenas"
 +++

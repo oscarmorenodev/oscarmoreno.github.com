@@ -1,6 +1,7 @@
 +++
 title = "Understanding the Guard Statement for Early Exit"
 description = "Exit early from a code block"
+summary = "Exit early from a code block"
 date = 2023-05-02
 translationKey = "guard"
 +++

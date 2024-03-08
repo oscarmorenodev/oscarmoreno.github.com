@@ -1,6 +1,7 @@
 +++
 title = "Swift Fundamentals about Conditionals"
 description = "Controling the program's behavior based on conditions"
+summary = "Controling the program's behavior based on conditions"
 date = 2023-04-03
 translationKey = "conditionals"
 +++

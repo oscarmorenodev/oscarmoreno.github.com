@@ -1,6 +1,7 @@
 +++
 title = "Explorando las sentencias de traspaso de control en Swift"
 description = "Alterar el flujo de control dentro del código"
+summary = "Alterar el flujo de control dentro del código"
 date = 2023-04-17
 translationKey = "traspaso-control"
 +++

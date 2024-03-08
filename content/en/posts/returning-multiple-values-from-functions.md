@@ -1,6 +1,7 @@
 +++
 title = "Returning Multiple Values from a Function: Tuples vs. Collections"
 description = "Learn how you can return multiple values from a single function"
+summary = "Learn how you can return multiple values from a single function"
 date = 2023-06-12
 translationKey = "salida-funciones"
 +++

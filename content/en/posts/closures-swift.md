@@ -1,6 +1,7 @@
 +++
 title = "Understanding Closures in Swift"
 description = "A closure expression is a self-contained block that can be used in your code"
+summary = "A closure expression is a self-contained block that can be used in your code"
 date = 2023-09-05
 translationKey = "closures"
 +++

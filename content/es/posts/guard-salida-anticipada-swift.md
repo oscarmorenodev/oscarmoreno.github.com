@@ -1,6 +1,7 @@
 +++
 title = "Entendiendo la sentencia guard para una salida anticipiada"
 description = "Saliendo antes de tiempo en un bloque de código"
+summary = "Saliendo antes de tiempo en un bloque de código"
 date = 2023-05-02
 translationKey = "guard"
 +++

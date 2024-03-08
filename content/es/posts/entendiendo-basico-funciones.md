@@ -1,6 +1,7 @@
 +++
 title = "Entendiendo lo básico de las funciones en Swift"
 description = "Las funciones nos permiten organizar el códgo, reusarlo y evitar duplicados"
+summary = "Las funciones nos permiten organizar el códgo, reusarlo y evitar duplicados"
 date = 2023-05-29
 translationKey = "funciones"
 +++

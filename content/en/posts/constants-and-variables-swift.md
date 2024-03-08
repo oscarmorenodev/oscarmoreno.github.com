@@ -1,6 +1,7 @@
 +++
 title = "Constants and Variables to Save Values in Swift"
 description = "How to save and manage data values in Swift"
+summary = "How to save and manage data values in Swift"
 date = 2023-01-16
 translationKey = "constantes-variables"
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Descubriendo defer en Swift"
 description = "Ejecuta un bloque de código al finalizar un flujo del programa"
+summary = "Ejecuta un bloque de código al finalizar un flujo del programa"
 date = 2023-05-15
 translationKey = "defer"
 +++

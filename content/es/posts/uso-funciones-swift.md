@@ -1,6 +1,7 @@
 +++
 title = "Usando funciones en Swift"
-description = "Como las funciones son ciudadnos de primera clase en Swift, puedes aprovechar sus beneficios"
+description = "Como las funciones son ciudadanos de primera clase en Swift, puedes aprovechar sus beneficios"
+summary = "Como las funciones son ciudadanos de primera clase en Swift, puedes aprovechar sus beneficios"
 date = 2023-07-10
 translationKey = "uso-funciones"
 +++

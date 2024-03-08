@@ -1,6 +1,7 @@
 +++
 title = "Function Argument Labels and Parameter Names"
 description = "Discover the basics about input parameters in functions"
+summary = "Discover the basics about input parameters in functions"
 date = 2023-06-26
 translationKey = "parametros"
 +++

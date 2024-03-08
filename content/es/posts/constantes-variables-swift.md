@@ -1,6 +1,7 @@
 +++
 title = "Constantes y variables para guardar datos"
 description = "Como guardar y gestionar valores de datos en Swift"
+summary = "Como guardar y gestionar valores de datos en Swift"
 date = 2023-01-16
 translationKey = "constantes-variables"
 +++

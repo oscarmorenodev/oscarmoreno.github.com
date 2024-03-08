@@ -1,6 +1,7 @@
 +++
 title = "Exploring Loops in Swift"
 description = "Iterating and performing repetitive tasks"
+summary = "Iterating and performing repetitive tasks"
 date = 2023-03-20
 translationKey = "bucles"
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Números en Swift"
 description = "Programar ha sido a menudo para procesar números y obtener resultados demasiado difíciles de calcular por humanos"
+summary = "Programar ha sido a menudo para procesar números y obtener resultados demasiado difíciles de calcular por humanos"
 date = 2023-01-30
 translationKey = "numeros"
 +++
