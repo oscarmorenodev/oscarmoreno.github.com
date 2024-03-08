@@ -10,7 +10,7 @@ When you save a text in a constant or a variable, your are saving a string in Sw
 ## Initialize a String
 A string literal is a text writed with a double quote at beginning and at the end. So, if you need to save a text in a constant or a variable, you only must to assign a string literal to it.
 
-```
+```swift
 let coach = "Ted Lasso"
 var team = "AFC Richmond"
 ```
@@ -22,7 +22,7 @@ If you need to save the value of two strings in another constant or variable, yo
 
 It is as easy as use the operator `+` between the two values when you have to assign it.
 
-```
+```swift
 let name = "Michael"
 let lastName = "Scott"
 
@@ -30,14 +30,14 @@ let funnyBoss = name + lastName
 ```
 
 Another way, it is to use the operator `+=` to add text to a previous initialized string
-```
+```swift
 var spy = "Bond"
 spy += ", James Bond"
 ```
 In the above example, the final value of `spy` is `Bond, James Bond`
 
 And, as a String is a Collection of characters, you can also use the method `.append()`
-```
+```swift
 var greet = "Hello, world"
 greet.append("!")
 ```
@@ -48,7 +48,7 @@ But maybe the most used feature in Strings could be String interpolation. It all
 
 In this case, you can do it, writing the constant or variable name, inside parenthesis "()", and starting with a backlash "\". That is `\(variableName)`
 
-```
+```swift
 let name = "Forest"
 let fullName = "Forest Gump"
 
@@ -61,7 +61,7 @@ Finishing (althought it is not used often in real world apps) maybe sometimes yo
 
 To save a multiline string, you only need to write three quotation marks at the beginning, and finish with another three in a single line. For example:
 
-```
+```swift
 let text = """
 To be, or not to be, that is the question:
 Whether 'tis nobler in the mind to suffer

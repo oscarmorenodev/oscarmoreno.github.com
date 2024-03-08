@@ -35,40 +35,40 @@ Dictionaries are unordered collections composed by key-value associations.
 
 If you want to create an empty array, you will need specify the data type. There are different ways to create an empty array, this a example.
 
-```
+```swift
 var numbers = [Int]()
 ```
 
 But, if you want to create it with values, you don't need specify the types. Next, you can see how to create an strings array
 
-```
+```swift
 var tutorials = ["SwiftUI", "Combine", "AsyncAwait"] 
 ```
 
 And, if you need to access to a value, you must indicate the position of the value in the array. But, remember that collections index starts by 0.
 
-```
+```swift
 let firstCourse = tutorials[0]
 ```
-The above code will store "SwiftUI" in ```firstCourse``` constant.
+The above code will store "SwiftUI" in `firstCourse` constant.
 
 ### Sets
 
 Again, you will need specify data type for create an empty set. 
 
-```
+```swift
 var numbers = Set<Int>()
 ```
 
 Create a set with values, is similar to create an array but, in this case, you will need to specify that is a set to don't create an array
 
-```
+```swift
 var tutorials = ["SwiftUI", "Combine", "AsyncAwait"] 
 ```
 
 But, in this case, as sets have not an index, you cannot use it to access to the data. At least, you can check if the value exists.
 
-```
+```swift
 var swiftuiExists = tutorials.contains("SwiftUI")
 ```
 The above code wil store true in ```swiftuiExists``` variable
@@ -77,17 +77,17 @@ The above code wil store true in ```swiftuiExists``` variable
 
 And, lastly, you can create an empty dictionary specifying both the key type and the value type
 
-```
+```swift
 var nameOfNumbers = [Int: String]()
 ```
 
 To create a dictionary with values, it is also similar to an array, but you have to write the key of each value. Remember that the keys must be uniques.
-```
+```swift
 var requirements = ["View":"SwiftUI", "Database":"CoreData", "AugmentedReality":"ARKit"]
 ```
 
 And, if you want to access to a value, you only need know the index
-```
+```swift
 let database = requirements["Database"]
 ```
 ***

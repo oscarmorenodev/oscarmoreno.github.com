@@ -21,21 +21,21 @@ La sentencia `if` es la forma más simple de sentencia condicional en Swift. Te 
 
 Por ejemplo, digamos que quieres mostrar un mensaje si la edad de un usuario es mayor o igual a 18 años:
 
-```
+```swift
 let userAge = 20
 
 if userAge >= 18 {
     print("Welcome! You can access.")
 }
 }
-```
+```swift
 
 ### La sentencia `if`-`else`
 La sentencia `if`-`else` amplía la sentencia `if` al facilitar un bloque de código alternativo para ejecutar cuando la condición que se evalúa resulta falsa.
 
 Considera el siguiente ejemplo que verifica si un número es positivo o negativo:
 
-```
+```swift
 let number = -5
 
 if number > 0 {
@@ -43,14 +43,14 @@ if number > 0 {
 } else {
     print("The number is negative.")
 }
-```
+```swift
 
 ### La sentencia `switch`
 La sentencia `switch` ofrece una forma más concisa de manejar múltiples condiciones posibles. Evalúa un valor determinado frente a varios casos y ejecuta el bloque de código asociado con el primer caso coincidente.
 
 Supongamos que quieres mostrar un mensaje según el rol de un usuario:
 
-```
+```swift
 let userRole = "admin"
 
 switch userRole {
@@ -61,7 +61,7 @@ case "user":
 default:
     print("Unknown role.")
 }
-```
+```swift
 
 ## Mejores prácticas para utilizar condicionales:
 

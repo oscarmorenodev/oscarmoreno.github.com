@@ -21,7 +21,7 @@ The `if` statement is the simplest form of conditional statement in Swift. It al
 
 For example, let's say you want to display a message if a user's age is greater than or equal to 18:
 
-```
+```swift
 let userAge = 20
 
 if userAge >= 18 {
@@ -34,7 +34,7 @@ The `if`-`else` statement expands upon the if statement by providing an alternat
 
 Consider the following example that checks whether a number is positive or negative:
 
-```
+```swift
 let number = -5
 
 if number > 0 {
@@ -49,7 +49,7 @@ The `switch` statement offers a more concise way to handle multiple possible con
 
 Let's say you want to display a message based on a user's role:
 
-```
+```swift
 let userRole = "admin"
 
 switch userRole {

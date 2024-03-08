@@ -34,10 +34,10 @@ It depends of bits number, but each one has a max and min number to store. You c
 <br/>
 But, if you don’t remember the values, you can use the methods .max or .min
 
-```
+```swift
 let minValue = Int.min //minValue is equal to
 let maxValue = Int.max //maxValue is equal to
-```
+```swift
 
 ## Floating-Point numbers
 Unlike integers, floating-point numbers has a fractional component. But, like integers, can be positive or negative.  

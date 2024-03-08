@@ -15,7 +15,7 @@ In this article, we will examine into each of these statements, providing exampl
 The `continue` statement is primarily used within loop constructs (such as ‘for-in' or 'while') to skip the remaining code within the current iteration and proceed to the next iteration.It allows you to selectively skip over specific parts of a loop without terminating it entirely.
 Here's an example to illustrate its usage:
 
-```
+```swift
 for number in 1...10 {
     if number % 2 == 0 {
         continue
@@ -25,7 +25,7 @@ for number in 1...10 {
 ```
 
 Output
-```
+```swift
 1
 3
 5
@@ -40,7 +40,7 @@ The `break` statement is used to terminate the execution of a loop or switch sta
 
 Consider the following example:
 
-```
+```swift
 let cars = [“Red Bull", “Aston Martin", “Ferrari", "Mercedes", "McClaren"]
 
 for name in names {
@@ -52,7 +52,7 @@ for name in names {
 ```
 
 Output
-```
+```swift
 Red Bull
 Aston Martin
 Ferrari
@@ -67,7 +67,7 @@ This behavior differs from the default behavior of a switch statement, where con
 
 Consider the following example:
 
-```
+```swift
 let grade = "A"
 
 switch grade {
@@ -84,7 +84,7 @@ switch grade {
 ```
 
 Output
-```
+```swift
 Excellent
 Good
 ```

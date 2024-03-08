@@ -10,7 +10,7 @@ Working as iOS developers, we often come across scenarios where we need to retur
 ## Using Tuples
 Tuples are lightweight data structures that allow us to group multiple values together. They provide a simple way to return multiple values from a function. Consider the following example:
 
-```
+```swift
 func getMovieDetails(movieId: Int) -> (String, String) {
     // Retrieve movie details from the database
     let movieTitle = "Back to the Future"
@@ -29,7 +29,7 @@ In this example, the getMovieDetails function returns a tuple containing the mov
 ## Using Collections
 Collections, such as arrays or dictionaries, offer a more flexible approach for returning multiple values. Let's see how we can modify our previous example to utilize an array:
 
-```
+```swift
 func getMovieDetails(movieId: Int) -> [String] {
     // Retrieve movie details from the database
     let movieTitle = "Back to the Future"

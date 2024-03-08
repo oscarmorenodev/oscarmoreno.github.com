@@ -13,7 +13,7 @@ A function is a block of code that performs a specific task. It allows you to en
 ## Syntax and Structure:
 In Swift, a function declaration begins with the `func` keyword, followed by the function name and parentheses. If the function accepts parameters, they are specified within the parentheses. The return type is indicated by an arrow `->` followed by the type. Here's an example:
 
-```
+```swift
 func greet(name: String) -> String {
     return "Hello, \(name)!"
 }
@@ -24,7 +24,7 @@ In this example, we have a function named "greet" that accepts a parameter calle
 ### Example Scenario
 Let's say we're building an app related to TV shows. We can create a function to recommend a show based on the user's preferences. Here's an example:
 
-```
+```swift
 func recommendShow(userPreference: String) -> String {
     if userPreference == "action" {
         return "You should watch 'Game of Thrones'!"

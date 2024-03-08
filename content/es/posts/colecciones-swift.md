@@ -35,19 +35,19 @@ Los diccionarios son colecciones desordenadas compuestas por asociaciones de cla
 
 Si quieres crear un array vacío, necesitarás especificar el tipo de dato. Hay diferentes maneras de crear un array vacío, este es un ejemplo.
 
-```
+```swift
 var numbers = [Int]()
 ```
 
 Pero, si quieres crearlo con valores, no necesitas especificar los tipos. A continuación, puedes ver cómo crear un array de strings
 
-```
+```swift
 var tutorials = ["SwiftUI", "Combine", "AsyncAwait"] 
 ```
 
 Y, si necesitas acceder a un valor, debes indicar la posición del valor en el array. Pero, recuerda que el índice de las colecciones comienza por 0.
 
-```
+```swift
 let firstCourse = tutorials[0]
 ```
 El código anterior almacenará `SwiftUI` en la constante `firstCourse`.
@@ -56,19 +56,19 @@ El código anterior almacenará `SwiftUI` en la constante `firstCourse`.
 
 Nuevamente, necesitarás especificar el tipo de dato para crear un set vacío.
 
-```
+```swift
 var numbers = Set<Int>()
 ```
 
 Crear un set con valores es similar a crear un array pero, en este caso, necesitarás especificar que es un set para no crear un array
 
-```
+```swift
 var tutorials = ["SwiftUI", "Combine", "AsyncAwait"] 
 ```
 
 Pero, en este caso, como los sets no tienen índice, no puedes usarlo para acceder a los datos. Al menos, puedes comprobar si el valor existe.
 
-```
+```swift
 var swiftuiExists = tutorials.contains("SwiftUI")
 ```
 El código anterior almacenará true en la variable `swiftuiExists`
@@ -77,17 +77,17 @@ El código anterior almacenará true en la variable `swiftuiExists`
 
 Y, por último, puedes crear un diccionario vacío especificando tanto el tipo de clave como el tipo de valor
 
-```
+```swift
 var nameOfNumbers = [Int: String]()
 ```
 
 Para crear un diccionario con valores, también es similar a un array, pero tienes que escribir la clave de cada valor. Recuerda que las claves deben ser únicas.
-```
+```swift
 var requirements = ["View":"SwiftUI", "Database":"CoreData", "AugmentedReality":"ARKit"]
 ```
 
 Y, si quieres acceder a un valor, solo necesitas conocer el índice
-```
+```swift
 let database = requirements["Database"]
 ```
 ***

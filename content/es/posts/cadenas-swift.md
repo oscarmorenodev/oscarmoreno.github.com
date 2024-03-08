@@ -9,7 +9,7 @@ Cuando guardas un texto en una constante o una variable, estás guardando una ca
 
 ## Inicializar una Cadena
 Un literal de cadena es un texto escrito con comillas dobles al principio y al final. Entonces, si necesitas guardar un texto en una constante o una variable, solo debes asignar un literal de cadena a ella.
-```
+```swift
 let coach = "Ted Lasso"
 var team = "AFC Richmond"
 ```
@@ -20,7 +20,7 @@ Si necesitas guardar el valor de dos cadenas en otra constante o variable, puede
 
 Es tan fácil como usar el operador `+` entre los dos valores cuando tienes que asignarlo.
 
-```
+```swift
 let name = "Michael"
 let lastName = "Scott"
 
@@ -28,14 +28,14 @@ let funnyBoss = name + lastName
 ```
 
 Otra forma es usar el operador `+=` para agregar texto a una cadena previamente inicializada.
-```
+```swift
 var spy = "Bond"
 spy += ", James Bond"
 ```
 En el ejemplo anterior, el valor final de `spy` es `Bond, James Bond`
 
 Y, como una String es una Colección de caracteres, también puedes usar el método `.append()`
-```
+```swift
 var greet = "Hello, world"
 greet.append("!")
 ```
@@ -46,7 +46,7 @@ Pero quizás la característica más utilizada en las cadenas podría ser la int
 
 En este caso, puedes hacerlo escribiendo el nombre de la constante o variable, dentro de paréntesis "()", y comenzando con una barra invertida "\". Es decir, `\(nombreDeVariable)`
 
-```
+```swift
 let name = "Forest"
 let fullName = "Forest Gump"
 
@@ -59,7 +59,7 @@ Para terminar (aunque no se utiliza a menudo en aplicaciones del mundo real), ta
 
 Para guardar una cadena de varias líneas, solo necesitas escribir tres comillas al principio, y terminar con otras tres en una sola línea. Por ejemplo:
 
-```
+```swift
 let text = """
 To be, or not to be, that is the question:
 Whether 'tis nobler in the mind to suffer

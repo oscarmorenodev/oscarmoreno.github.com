@@ -16,7 +16,7 @@ Permite verificar condiciones específicas y asegurar que se cumplan antes de co
 Si las condiciones no se cumplen, la sentencia `guard` termina el ámbito actual, permitiéndonos manejar los escenarios de fallo de manera elegante.
 
 La sintaxis para una sentencia `guard` es la siguiente:
-```
+```swift
 guard condition else {
     // Code to handle the failure case
     // Return, throw, or perform any necessary cleanup
@@ -34,7 +34,7 @@ Este bloque típicamente contiene código para manejar el caso de fallo, como re
 ### Salida anticipada para condiciones inaceptables
 Las sentencias `guard` pueden ayudar a evitar declaraciones condicionales anidadas proporcionando salidas tempranas para condiciones que se consideran inaceptables. Esto simplifica el código y mejora la legibilidad. Por ejemplo:
 
-```
+```swift
 let amount = 500
 let accountBalance = 1000
 

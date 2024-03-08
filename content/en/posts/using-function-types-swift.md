@@ -10,7 +10,7 @@ As developers, we often manage situations where we need to work with functions i
 ## Determining the Function Type
 
 In Swift, functions are considered first-class citizens, which means they can be assigned to variables or constants and can also be used as types. To determine the type of a function, we can use the function's signature. The signature consists of the parameter types and return type. Let's consider an example:
-```
+```swift
 func add(_ a: Int, _ b: Int) -> Int {
     return a + b
 }
@@ -20,7 +20,7 @@ The type of this function can be represented as (Int, Int) -> Int, where (Int, I
 ## Using Functions Types as Parameters
 
 One of the advantages of using functions types is the ability to pass them as parameters to other functions. This enables us to create higher-order functions that can accept different behaviors based on the functions provided. Let's take an example where we have a function that applies a given operation on an array of integers:
-```
+```swift
 func applyOperation(_ numbers: [Int], operation: (Int) -> Int) -> [Int] {
     var result = [Int]()
     for number in numbers {
@@ -36,7 +36,7 @@ In the above code, the applyOperation function takes an array of integers and a 
 
 Another powerful aspect of using functions types is the ability to use them as output return. This enables us to create functions that dynamically generate and return other functions based on certain conditions or requirements. Let's consider an example:
 
-```
+```swift
 func operationFactory() -> (Int) -> Int {
     if condition {
         return { number in

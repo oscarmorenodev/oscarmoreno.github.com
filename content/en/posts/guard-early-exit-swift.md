@@ -17,7 +17,7 @@ If the conditions aren't met, the `guard` statement terminates the current scope
 
 The syntax for a `guard` statement is as follows:
 
-```
+```swift
 guard condition else {
     // Code to handle the failure case
     // Return, throw, or perform any necessary cleanup
@@ -35,7 +35,7 @@ This block typically contains code to handle the failure case, such as returning
 ### Early Exit for Unacceptable Conditions
 `guard` statements can help avoid nested conditional statements by providing early exits for conditions that are considered unacceptable. This simplifies code and improves readability. For instance:
 
-```
+```swift
 let amount = 500
 let accountBalance = 1000
 

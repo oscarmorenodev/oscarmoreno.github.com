@@ -15,7 +15,7 @@ En este artículo, examinaremos cada una de estas sentencias, dando ejemplos y e
 `continue` se usa principalmente dentro de bucles (como `for-in` o `while`) para omitir el código restante dentro de la iteración actual y pasar a la siguiente. Te permite omitir selectivamente partes específicas de un bucle sin terminarlo por completo.
 Aquí un ejemplo para ilustrar su uso:
 
-```
+```swift
 for number in 1...10 {
     if number % 2 == 0 {
         continue
@@ -25,7 +25,7 @@ for number in 1...10 {
 ```
 
 Resultado
-```
+```swift
 1
 3
 5
@@ -40,7 +40,7 @@ En este ejemplo, la instrucción `continue` se utiliza para omitir la impresión
 
 Fñijate el siguiente ejemplo:
 
-```
+```swift
 let cars = [“Red Bull", “Aston Martin", “Ferrari", "Mercedes", "McClaren"]
 
 for name in names {
@@ -52,7 +52,7 @@ for name in names {
 ```
 
 Resultado
-```
+```swift
 Red Bull
 Aston Martin
 Ferrari
@@ -67,7 +67,7 @@ Este comportamiento es distinto del comportamiento predeterminado de un `switch`
 
 Veamos el siguiente ejemplo:
 
-```
+```swift
 let grade = "A"
 
 switch grade {
@@ -84,7 +84,7 @@ switch grade {
 ```
 
 Resultado
-```
+```swift
 Excellent
 Good
 ```

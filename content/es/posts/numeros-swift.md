@@ -33,7 +33,7 @@ Depende del número de bits, pero cada uno tiene un número máximo y mínimo pa
 
 Pero, si no recuerdas los valores, puedes usar los métodos .max o .min
 
-```
+```swift
 let minValue = Int.min //minValue is equal to
 let maxValue = Int.max //maxValue is equal to
 ```

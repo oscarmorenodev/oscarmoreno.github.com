@@ -9,7 +9,7 @@ Closures are a fundamental concept in Swift. They are powerful tools that allow 
 
 ## Closure Expressions
 A closure expression is a self-contained block of code that can be passed around and used in your code, just like any other variable. In Swift, you can define closures using the {} braces. Here's a simple example:
-```
+```swift
 let greet = {
     print("Hello, world!")
 }
@@ -18,7 +18,7 @@ let greet = {
 ## Trailing Closures
 Trailing closures are a convenient way to include a closure expression as the last argument of a function. This makes your code more readable. Suppose you have a function that takes a closure as an argument:
 
-```
+```swift
 func performAction(action: () -> Void) {
     // Perform some setup
     action()
@@ -33,7 +33,7 @@ performAction {
 ## Capturing Values
 Closures can capture and store references to variables and constants from the surrounding context in which they are defined. This means they can "remember" and manipulate those values even if they are no longer in scope. Here's an example:
 
-```
+```swift
 func makeIncrementer(incrementAmount: Int) -> () -> Int {
     var total = 0
     let incrementer: () -> Int = {

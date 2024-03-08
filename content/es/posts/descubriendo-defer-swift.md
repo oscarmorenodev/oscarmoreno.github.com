@@ -16,7 +16,7 @@ Asegura que se ejecute un código de limpieza o finalización específico antes 
 ## Sintaxis de defer
 La sintaxis es simple. Comienzas con la palabra clave `defer` seguido por el bloque de código que quieres ejecutar más tarde. Aquí un ejemplo:
 
-```
+```swift
 func processFile() {
     print("Opening file...")
     defer {

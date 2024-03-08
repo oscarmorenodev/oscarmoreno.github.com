@@ -10,7 +10,7 @@ Como desarrolladores de iOS, a menudo nos encontramos con escenarios donde neces
 ## Usando Tuplas
 Las tuplas son estructuras de datos ligeras que nos permiten agrupar múltiples valores juntos. Proporcionan una forma sencilla de devolver múltiples valores de una función. Considera el siguiente ejemplo:
 
-```
+```swift
 func getMovieDetails(movieId: Int) -> (String, String) {
     // Retrieve movie details from the database
     let movieTitle = "Back to the Future"
@@ -29,7 +29,7 @@ En este ejemplo, la función `getMovieDetails` devuelve una tupla que contiene e
 ## Usando colecciones
 Las colecciones, como arrays o diccionarios, ofrecen un enfoque más flexible para devolver múltiples valores. Veamos cómo podemos modificar nuestro ejemplo anterior para utilizar un array:
 
-```
+```swift
 func getMovieDetails(movieId: Int) -> [String] {
     // Retrieve movie details from the database
     let movieTitle = "Back to the Future"

@@ -16,7 +16,7 @@ It ensures that specific cleanup or finalization code is executed before leaving
 ## Syntax of Defer
 The syntax is simple. You begin with the keyword `defer` followed by the code block you want to execute later. Here's an example:
 
-```
+```swift
 func processFile() {
     print("Opening file...")
     defer {

@@ -10,7 +10,7 @@ Como desarrolladores, a menudo manejamos situaciones en las que necesitamos trab
 ## Determinar el tipo de función
 
 En Swift, las funciones se consideran ciudadanos de primera clase, lo que significa que pueden asignarse a variables o constantes y también pueden usarse como tipos. Para determinar el tipo de una función, podemos usar la firma de la función. La firma consta de los tipos de parámetros y el tipo de retorno. Consideremos un ejemplo:
-```
+```swift
 func add(_ a: Int, _ b: Int) -> Int {
     return a + b
 }
@@ -21,7 +21,7 @@ El tipo de esta función puede representarse como (Int, Int) -> Int, donde (Int,
 
 Una de las ventajas de usar tipos de funciones es la capacidad de pasarlas como parámetros a otras funciones. Esto nos permite crear funciones de orden superior que pueden aceptar diferentes comportamientos según las funciones proporcionadas. Tomemos un ejemplo donde tenemos una función que aplica una operación dada en una matriz de enteros:
 
-```
+```swift
 func applyOperation(_ numbers: [Int], operation: (Int) -> Int) -> [Int] {
     var result = [Int]()
     for number in numbers {
@@ -37,7 +37,7 @@ En el código anterior, la función applyOperation toma una matriz de enteros y 
 
 Otro aspecto poderoso de usar tipos de funciones es la capacidad de usarlos como valores de retorno. Esto nos permite crear funciones que generan y devuelven dinámicamente otras funciones según ciertas condiciones o requisitos. Consideremos un ejemplo:
 
-```
+```swift
 func operationFactory() -> (Int) -> Int {
     if condition {
         return { number in

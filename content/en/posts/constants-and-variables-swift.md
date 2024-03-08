@@ -19,7 +19,7 @@ To declare a constant you must start with reserved word let, followed by a name 
 
 In the next example, ‘let’ is the reserved word for constants, survivor the name of the constant, and the value that is assigned to the constant ‘survivor’ is “Jack Shepard”. 
 
-```
+```swift
 let survivor = “Jack Shepard”
 ```
 
@@ -45,7 +45,7 @@ var videogame = “Metal Gear Solid”
 
 Ok but, if we want to change a var value, how should we do it? Easy, you only need assign a new value, and don’t write the reserved word var
 
-```
+```swift
 videogame = “Uncharted”
 ```
 

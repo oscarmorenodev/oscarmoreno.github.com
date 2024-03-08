@@ -9,7 +9,7 @@ Los closures son un concepto fundamental en Swift. Son herramientas poderosas qu
 
 ## Closures
 Un closure es un bloque de código autónomo que se puede pasar y utilizar en el código, como cualquier otra constante o variable. En Swift, puedes definir closures usando las llaves {}. Este sería un ejemplo sencillo:
-```
+```swift
 let greet = {
     print("Hello, world!")
 }
@@ -18,7 +18,7 @@ let greet = {
 ## Closures finales
 Los closures finales son una forma conveniente de incluir un closure como último argumento de una función. Esto hace que tu código sea más legible. Supongamos que tienes una función que toma un closure como argumento:
 
-```
+```swift
 func performAction(action: () -> Void) {
     // Perform some setup
     action()
@@ -33,7 +33,7 @@ performAction {
 ## Capturando valores
 Los closures pueden capturar y almacenar referencias a variables y constantes del contexto en el que se definen. Esto significa que pueden "recordar" y manipular esos valores incluso si ya no están dentro de su ámbito. Mira este ejemplo:
 
-```
+```swift
 func makeIncrementer(incrementAmount: Int) -> () -> Int {
     var total = 0
     let incrementer: () -> Int = {

@@ -13,7 +13,7 @@ Whether you're a junior iOS developer or someone looking to refresh their knowle
 ## For-In Loops: Simplifying iteration
 The `for`-`in` loop is particularly useful when you want to iterate over a collection of elements, such as an array or a dictionary. It simplifies the process of accessing each element without the need for manual indexing. Let's take a look at an example:
 
-```
+```swift
 let books = [“A Game of Thrones”,
         “A Clash of Kings”,
          “A Storm of Swords”,
@@ -36,7 +36,7 @@ This loop is ideal for scenarios such as:
 ## While Loops: Executing Code Conditionally
 The while loop executes a block of code repeatedly as long as a given condition remains true. This is particularly useful when you don't know the exact number of iterations in advance. Here's an example to illustrate its usage:
 
-```
+```swift
 var count = 0
 while count < 5 {
     print("Count: \(count)")
@@ -55,7 +55,7 @@ Consider using the while loop in the following situations:
 ## Repeat-While Loop: Ensuring First Code Execution
 The `repeat`-`while` loop is similar to the `while` loop, but with a crucial difference: the condition is evaluated at the end of the loop. This guarantees that the code block executes at least once, even if the condition is initially false. Here's an example:
 
-```
+```swift
 var number = 10
 repeat {
     print(number)

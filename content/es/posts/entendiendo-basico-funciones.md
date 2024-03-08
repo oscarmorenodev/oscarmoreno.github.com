@@ -13,7 +13,7 @@ Una función es un bloque de código que realiza una tarea específica. Te permi
 ## Sintaxis y Estructura:
 En Swift, la declaración de una función comienza con la palabra clave `func`, seguida del nombre de la función y paréntesis. Si la función acepta parámetros, se especifican dentro de los paréntesis. El tipo de retorno se indica con una flecha `->` seguida del tipo. Aquí tienes un ejemplo:
 
-```
+```swift
 func greet(name: String) -> String {
     return "Hello, \(name)!"
 }
@@ -25,7 +25,7 @@ En este ejemplo, tenemos una función llamada `greet` que acepta un parámetro l
 Imaginemos que estamos construyendo una aplicación relacionada con programas de televisión. Podemos crear una función para recomendar un programa en función de las preferencias del usuario. Aquí tienes un ejemplo:
 
 
-```
+```swift
 func recommendShow(userPreference: String) -> String {
     if userPreference == "action" {
         return "You should watch 'Game of Thrones'!"

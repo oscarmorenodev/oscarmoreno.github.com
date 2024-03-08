@@ -19,7 +19,7 @@ Para declarar una constante debes comenzar con la palabra reservada `let`, segui
 
 En el siguiente ejemplo, `let` es la palabra reservada para constantes, `survivor` el nombre de la constante y el valor asignado a `survivor` es `Jack Shepard`.
 
-```
+```swift
 let survivor = “Jack Shepard”
 ```
 
@@ -39,13 +39,13 @@ Para declarar una variable, la estructura es la misma que una constante, pero de
 
 Por lo que, para declarar una variable debes escribir
 
-```
+```swift
 var videogame = “Metal Gear Solid”
 ```
 
 Ok, pero si queremos cambiar el valor de var, ¿cómo deberíamos hacerlo? Fácil, sólo necesitas asignar un nuevo valor y no escribir la palabra reservada var.
 
-```
+```swift
 videogame = “Uncharted”
 ```
 
@@ -56,7 +56,7 @@ Pero es algo que no recomiendo. ¿Por qué? Porque el nombre de una constante o 
 
 Por ejemplo, ¿que significa el valor 10?
 
-```
+```swift
 let times = 10
 
 let numberOfTimesIHaveSeenBackToTheFutureTrilogy = 10

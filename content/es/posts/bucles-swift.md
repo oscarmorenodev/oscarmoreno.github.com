@@ -13,7 +13,7 @@ Ya seas un desarrollador iOS junior o alguien que busca refrescar su conocimient
 ## Bucles for-in: Simplificando la iteración
 El bucle `for`-`in` es particularmente útil cuando quieres iterar sobre una colección de elementos, como un array o un diccionario. Simplifica el proceso de acceder a cada elemento sin la necesidad de indexación manual. Veamos un ejemplo:
 
-```
+```swift
 let books = [“A Game of Thrones”,
         “A Clash of Kings”,
          “A Storm of Swords”,
@@ -36,7 +36,7 @@ Este bucle es ideal para escenarios tales como:
 El bucle while ejecuta un bloque de código repetidamente mientras una condición dada permanezca verdadera. Esto es particularmente útil cuando no conoces el número exacto de iteraciones de antemano. Aquí hay un ejemplo para ilustrar su uso:
 
 
-```
+```swift
 var count = 0
 while count < 5 {
     print("Count: \(count)")
@@ -55,7 +55,7 @@ Considera usar el bucle while en las siguientes situaciones:
 ## Bucle repeat-while: Asegurando la primera ejecución del código
 El bucle `repeat`-`while` es similar al bucle `while`, pero con una diferencia crucial: la condición se evalúa al final del bucle. Esto garantiza que el bloque de código se ejecute al menos una vez, incluso si la condición es inicialmente falsa. Aquí hay un ejemplo:
 
-```
+```swift
 var number = 10
 repeat {
     print(number)
