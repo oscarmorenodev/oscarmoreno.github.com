@@ -14,7 +14,7 @@ copyright = "&copy; 2024 Óscar Moreno"
     description = "iOS Developer"
 
 [params.author]
-name = "Óscar Moreno"
+name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
 headline = "Articles about Swift and Apple programming"
 bio = "Passionate about programming and tech"
