@@ -83,4 +83,9 @@ let track = Track.monaco.rawValue // track is a String with value "monaco"
 In summary, the use of raw values and inheritance from the `String` protocol in your enumerations can improve the readability of your code, facilitate interaction with other parts of your code that use strings and numbers, and help you avoid errors when handling external data. I hope this helps you understand even more the power of enumerations in Swift!
 
 ## Conclusion
-Enumerations in Swift are a powerful and safe way to work with sets of related values. They facilitate the writing of cleaner and more maintainable code, while preventing common errors by limiting the values to those defined in the enumeration. Associated values offer additional flexibility, allowing you to include specific information directly in your data types. And raw values let you use strings of your values. By mastering enumerations, you are taking a huge step towards more robust and efficient software development. It's your turn to experiment with them and see all they can do for your projects!
+Enumerations in Swift are a powerful and safe way to work with sets of related values:
+- They facilitate the writing of **cleaner and more maintainable** code, while preventing common errors by limiting the values to those defined in the enumeration. 
+- Associated values offer additional flexibility, allowing you to **include specific information** directly in your data types. 
+- Raw values let you use **strings** of your values. 
+
+By mastering enumerations, you are taking a huge step towards more robust and efficient software development. It's your turn to experiment with them and see all they can do for your projects!
