@@ -4,6 +4,7 @@ description = "Execute a block of code later in the program's flow"
 summary = "Execute a block of code later in the program's flow"
 date = 2023-05-15
 translationKey = "defer"
+aliases = "/blog/discovering-defer-swift/"
 +++
 
 In Swift, there are various language constructs that make programming more efficient and robust.

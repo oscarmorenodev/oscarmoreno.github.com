@@ -4,6 +4,7 @@ description = "Discover the basics about input parameters in functions"
 summary = "Discover the basics about input parameters in functions"
 date = 2023-06-26
 translationKey = "parametros"
+aliases = "/blog/function-argument-labels-parameters"
 +++
 
 Understanding the intricacies of function argument labels and parameter names is essential to harness the full power of the Swift programming language. In this article, we will explore these concepts with a focus on simplicity, catering to developers with limited experience in function creation. So, let's dive in!

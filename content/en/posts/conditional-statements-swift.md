@@ -4,6 +4,7 @@ description = "Controling the program's behavior based on conditions"
 summary = "Controling the program's behavior based on conditions"
 date = 2023-04-03
 translationKey = "conditionals"
+aliases = "/conditional-statements-swift/"
 +++
 
 Understanding the fundamentals of Swift programming is crucial to creating robust and efficient applications. 

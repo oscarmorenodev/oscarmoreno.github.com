@@ -4,6 +4,7 @@ description = "Swift has three collection types to manage common values"
 summary = "Swift has three collection types to manage common values"
 date = 2023-03-06
 translationKey = "colecciones"
+aliases = "/blog/swift-collection-types"
 +++
 
 The collections are one of the most used data structure when you are programming so, it is extremely important know the different approach you dispose to work with them.

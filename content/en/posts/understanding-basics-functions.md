@@ -4,6 +4,7 @@ description = "Functions let us organize code, reuse it, and avoid duplications"
 summary = "Functions let us organize code, reuse it, and avoid duplications"
 date = 2023-05-29
 translationKey = "funciones"
+aliases = "/blog/understanding-basics-functions/"
 +++
 
 As a developer, it's essential to understand the fundamental concepts of programming. One such concept is functions, which play a crucial role in organizing and reusing code. In this article, we'll explore the basics of functions in Swift. Whether you're a beginner or looking for a refresher, this guide will help you grasp the essentials of functions in a simple and straightforward manner.

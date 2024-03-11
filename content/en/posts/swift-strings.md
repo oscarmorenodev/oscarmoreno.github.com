@@ -4,6 +4,7 @@ description = "As other languages, Strings are a fundamental type that allows sa
 summary = "As other languages, Strings are a fundamental type that allows save text"
 date = 2023-02-06
 translationKey = "cadenas"
+aliases = "/blog/swift-strings/"
 +++
 
 When you save a text in a constant or a variable, your are saving a string in Swift. Furthermore, you can see a string as a serie of characters. For that reason, you can access to the content of a string in various ways, such as Collection (Array i.e.) of characters.

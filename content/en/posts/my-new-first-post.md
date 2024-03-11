@@ -4,6 +4,7 @@ description = "Who I am and why I have relaunch my blog"
 summary = "Who I am and why I have relaunch my blog"
 date = 2023-01-02
 translationKey = "primer-post"
+alias = "/blog/my-new-first-post"
 +++
 
 Hi! I am very happy today, because I have refactored my blog 😉

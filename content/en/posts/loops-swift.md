@@ -4,6 +4,7 @@ description = "Iterating and performing repetitive tasks"
 summary = "Iterating and performing repetitive tasks"
 date = 2023-03-20
 translationKey = "bucles"
+aliases = "/blog/loops-swift/"
 +++
 In iOS development, flow control statements play a crucial role in directing the execution of code. 
 

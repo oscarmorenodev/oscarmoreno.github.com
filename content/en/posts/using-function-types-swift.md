@@ -4,6 +4,7 @@ description = "As Functions are first-class citizens, you can enjoy its benefits
 summary = "As Functions are first-class citizens, you can enjoy its benefits"
 date = 2023-07-10
 translationKey = "uso-funciones"
+aliases = "/blog/using-function-types-swift"
 +++
 
 As developers, we often manage situations where we need to work with functions in our iOS applications. Functions are an integral part of the Swift programming language and provide us with a powerful toolset to build flexible and modular code. In this article, we will explore the concept of using functions types and how it can benefit our development process.

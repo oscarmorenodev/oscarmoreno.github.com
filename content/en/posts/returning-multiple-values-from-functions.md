@@ -4,6 +4,7 @@ description = "Learn how you can return multiple values from a single function"
 summary = "Learn how you can return multiple values from a single function"
 date = 2023-06-12
 translationKey = "salida-funciones"
+aliases = "/blog/returning-multiple-values-from-functions"
 +++
 
 Working as iOS developers, we often come across scenarios where we need to return multiple values from a function. Swift provides us with two useful approaches to achieve this: using tuples and collections. In this article, we will explore both methods and understand when to use each one.

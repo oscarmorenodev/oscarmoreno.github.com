@@ -4,6 +4,7 @@ description = "Programming has been often for process numbers and obtain results
 summary = "Programming has been often for process numbers and obtain results so difficult to calculate for humans"
 date = 2023-01-30
 translationKey = "numeros"
+aliases = "/blog/numbers-in-swift/"
 +++
 
 Programming has been often for process numbers and obtain results so difficult to calculate for humans: universe distances, planet radius, pi…

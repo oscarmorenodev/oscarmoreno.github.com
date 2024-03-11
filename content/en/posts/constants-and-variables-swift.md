@@ -4,6 +4,7 @@ description = "How to save and manage data values in Swift"
 summary = "How to save and manage data values in Swift"
 date = 2023-01-16
 translationKey = "constantes-variables"
+aliases = "/blog/constants-and-variables-swift"
 +++
 
 Programming is a way to manage data, and usually, you need save multiple values temporally: to manage it after other operations, to display it…

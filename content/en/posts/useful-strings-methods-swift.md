@@ -4,6 +4,7 @@ description = "Learn useful String methods in Swift to display data as you need"
 summary = "Learn useful String methods in Swift to display data as you need"
 date = 2023-02-20
 translationKey = "metodos-cadenas"
+aliases = "/blog/useful-strings-methods-swift"
 +++
 
 This post is a complement for the previous one about [Swift Strings](../swift-strings).

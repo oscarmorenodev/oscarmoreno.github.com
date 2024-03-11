@@ -4,6 +4,7 @@ description = "Exit early from a code block"
 summary = "Exit early from a code block"
 date = 2023-05-02
 translationKey = "guard"
+aliases = "/blog/function-argument-labels-parameters"
 +++
 In iOS programming, one powerful construct that helps streamline code readability and improve control flow is the `guard` statement. This statement acts as a gatekeeper, allowing us to gracefully handle exceptional scenarios and exit early from a code block. 
 

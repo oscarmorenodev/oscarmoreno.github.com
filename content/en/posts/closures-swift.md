@@ -4,6 +4,7 @@ description = "A closure expression is a self-contained block that can be used i
 summary = "A closure expression is a self-contained block that can be used in your code"
 date = 2023-09-05
 translationKey = "closures"
+aliases = "/blog/closures-swift/"
 +++
 
 Closures are a fundamental concept in Swift. They are powerful tools that allow you to define and manipulate blocks of code as first-class citizens. In this article, we'll explore closure expressions, trailing closures, capturing values, and the idea that closures are type references.

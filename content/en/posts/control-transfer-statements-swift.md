@@ -4,6 +4,7 @@ description = "Altering the flow of execution within the code"
 summary = "Altering the flow of execution within the code"
 date = 2023-04-17
 translationKey = "traspaso-control"
+aliases = "/blog/control-transfer-statements-swift"
 +++
 
 Control transfer statements are essential tools in programming that allow developers to alter the flow of execution within their code. 
