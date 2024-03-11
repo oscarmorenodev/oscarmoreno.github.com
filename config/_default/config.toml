@@ -8,23 +8,16 @@ theme = "congo"
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
 disqusShortname = "oscarmorenocom"
-googleAnalytics = "G-R502FEV9RG"
 
 [languages]
   [languages.es]
     contentDir = 'content/es'
     languageName = 'Español'
     weight = 1
-    [languages.es.params]
-      # version 4
-      googleAnalytics = "G-348254160"
   [languages.en]
     contentDir = 'content/en'
     languageName = 'English'
     weight = 2
-      [languages.en.params]
-      # version 4
-      googleAnalytics = "G-348254160"
 
 enableRobotsTXT = true
 paginate = 10
