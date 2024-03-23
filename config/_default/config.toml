@@ -7,7 +7,6 @@ theme = "congo"
 
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
-disqusShortname = "oscarmorenocom"
 
 [languages]
   [languages.es]
