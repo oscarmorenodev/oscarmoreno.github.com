@@ -1,6 +1,6 @@
 +++
 title = 'About'
-date = 2024-03-06
+date = 2023-01-01
 translationKey = 'sobre-mi'
 +++
 ### My profesional life
