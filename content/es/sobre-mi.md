@@ -5,6 +5,8 @@ translationKey = 'sobre-mi'
 +++
 Si tengo que hablar sobre mí en una frase, me gusta decir que soy un apasionado de la programación y del mundo tecnológico.
 
+### Mi vida profesional 
+
 Actualmente, trabajo como Desarrollador iOS en [Hiberus](http://www.hiberus.com), una empresa de consultoría global fundada en España, pero que crece rápidamente y está abriendo nuevas oficinas en lugares como Berlín, Londres, México DF o Miami.
 
 Pero, mi experiencia laboral ha estado principalmente enfocada en IT. Además de programar, tengo experiencia previa trabajando como ingeniero QA o DevOps.
