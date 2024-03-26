@@ -8,8 +8,6 @@ theme = "congo"
 # baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'es'
 
-googleAnalytics = "G-R502FEV9RG"
-
 [languages]
   [languages.es]
     contentDir = 'content/es'
