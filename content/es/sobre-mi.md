@@ -2,6 +2,7 @@
 title = 'Sobre mí'
 date = 2023-01-01
 translationKey = 'sobre-mi'
+showComments = false
 +++
 Si tengo que hablar sobre mí en una frase, me gusta decir que soy un apasionado de la programación y del mundo tecnológico.
 

@@ -2,6 +2,7 @@
 title = 'Privacy'
 date = 2023-01-01
 translationKey = 'privacy'
+showComments = false
 +++
 
 We collect usage data using google analytics for the purposes of visualizing the traffic on this website.
