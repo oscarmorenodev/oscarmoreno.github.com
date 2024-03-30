@@ -111,7 +111,7 @@ También sería una opción si esto permite escalar la app ofreciendo caracterí
 
 Después, tus usuarios podrían hacer uso de códigos de descarga o de desbloqueo de características para obtener esa recompensa por la financiación que te han facilitado.
 
-### Aficiliación
+### Afiliación
 Un modelo de afiliación que permita “Invitar a un amigo” a probar la aplicación, aunque conllevaría que tuvieras que recompensar a quienes invitan, te podría traer un considerable número de compras o suscripciones.
 
 ## Conclusión
