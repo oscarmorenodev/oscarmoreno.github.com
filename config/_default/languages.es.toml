@@ -3,19 +3,19 @@ languageName = "Español"
 languageDirection = "ltr"
 weight = 1
 
-title = "Óscar Moreno | Desarrollador iOS "
+title = "Óscar Moreno | Desarrollador Apple "
 copyright = "&copy; 2024 Óscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-    description = "iOS Developer"
+    description = "Apple Developer"
 
 [params.author]
 name = "Óscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Artículos sobre Swift y desarrollo Apple"
+headline = "Artículos sobre programación en dispositivos Apple"
 bio = "Apasionado de la programación y la tecnología"
 links = [
 { email = "mailto:oscar@oscarmorenocom" },

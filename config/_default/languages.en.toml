@@ -3,19 +3,19 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 2
 
-title = "Oscar Moreno | iOS Developer "
+title = "Oscar Moreno | Apple Developer "
 copyright = "&copy; 2024 Óscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-    description = "iOS Developer"
+    description = "Apple Developer"
 
 [params.author]
 name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Articles about Swift and Apple programming"
+headline = "Articles about Apple devices programming"
 bio = "Passionate about programming and tech"
 links = [
 { email = "mailto:oscar@oscarmorenocom" },
