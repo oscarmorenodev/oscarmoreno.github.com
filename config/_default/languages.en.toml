@@ -18,7 +18,9 @@ image = "img/memoji-2-no-bg.png"
 headline = "Articles about Apple devices programming"
 bio = "Passionate about programming and tech"
 links = [
-{ email = "mailto:oscar@oscarmorenocom" },
+  { apple-podcasts = "https://podcasts.apple.com/us/podcast/programando-para-apple/id1737822341" },
+  { spotify = "https://podcasters.spotify.com/pod/show/oscarmorenodev" },
+  { youtube = "https://youtube.com/@oscarmorenodev" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
@@ -60,5 +62,5 @@ links = [
   #   { twitch = "https://twitch.tv/oscarmorenodev" },
   #   { whatsapp = "https://wa.me/phone-number" },
 { x-twitter = "https://twitter.com/oscarmorenodev" },
-  #   { youtube = "https://youtube.com/@oscarmorenodev" },
+{ email = "mailto:oscar@oscarmorenocom" }
 ]
