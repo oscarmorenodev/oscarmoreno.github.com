@@ -2,7 +2,9 @@
 title = 'About'
 date = 2023-01-01
 translationKey = 'sobre-mi'
+showDate = false
 showComments = false
+showPagination = false
 +++
 ### My profesional life
 If I have to talk about me in a sentence, I like to say that I am a passionate about programming and tech world.
