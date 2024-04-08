@@ -2,7 +2,7 @@
 title = "Modelos de negocio de aplicaciones en Apple: Descubre el perfecto para tu app"
 description = "La elección del modelo de negocio y monetización de tu app es vital para su éxito y tus beneficios"
 summary = "La elección del modelo de negocio y monetización de tu app es vital para su éxito y tus beneficios"
-date = 2024-04-03T08:00:00+01:00
+date = 2024-04-04T08:00:00+01:00
 translationKey = "modeloDeNegocio"
 aliases = "/posts/modelos-negocio-apps-apple/"
 +++

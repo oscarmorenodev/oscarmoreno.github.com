@@ -2,7 +2,7 @@
 title = "Business models in Apple apps: Discover the perfect one for you"
 description = "Choosing the business and monetization model of your app is vital for its success and your profits."
 summary = "Choosing the business and monetization model of your app is vital for its success and your profits."
-date = 2024-04-03T08:00:00+01:00
+date = 2024-04-04T08:00:00+01:00
 translationKey = "modeloDeNegocio"
 +++
 There are numerous types of applications. I would dare say, almost as many as there are types of companies or developers. And, although we have a significant number on our devices, it is also true that the number of those we regularly use is drastically reduced.
