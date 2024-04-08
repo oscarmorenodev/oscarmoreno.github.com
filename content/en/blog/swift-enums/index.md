@@ -2,7 +2,7 @@
 title = "Enumerations"
 description = "With enumerations you can define a common type for associated values"
 summary = "With enumerations you can define a common type for associated values"
-date = 2024-03-05
+date = 2024-03-11
 translationKey = "enumeraciones"
 +++
 

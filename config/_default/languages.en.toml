@@ -9,18 +9,18 @@ copyright = "&copy; 2024 Óscar Moreno"
 [params]
   dateFormat = "2 January 2006"
 
-  # mainSections = ["section1", "section2"]
-    description = "Apple Developer"
+  mainSections = ["blog"]
+  description = "Apple Developer"
 
 [params.author]
 name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Articles about Apple devices programming"
+headline = "Passionate about programming and tech <br> Coding and talking about Apple devices programming contenido"
 bio = "Passionate about programming and tech"
 links = [
-  #   { apple-podcasts = "https://podcasts.apple.com/us/podcast/programando-para-apple/id1737822341" },
-  #   { spotify = "https://podcasters.spotify.com/pod/show/oscarmorenodev" },
-  #   { youtube = "https://youtube.com/@oscarmorenodev" },
+{ youtube = "https://youtube.com/@oscarmorenodev" },
+{ apple-podcasts = "https://podcasts.apple.com/us/podcast/programando-para-apple/id1737822341" },
+{ spotify = "https://open.spotify.com/show/4NnnNNlTJRvGLTyINcnUrM?si=1e9038032a684ad0" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },

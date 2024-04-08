@@ -2,8 +2,9 @@
 title = "Enumeraciones"
 description = "Las enumeraciones permiten defininir un tipo común para unos valores asociados"
 summary = "Las enumeraciones permiten defininir un tipo común para unos valores asociados"
-date = 2024-03-05
+date = 2024-03-11T08:00:00+01:00
 translationKey = "enumeraciones"
+aliases = "/posts/enums-swift/"
 +++
 
 Las enumeraciones, o simplemente `enums` como las conocemos en Swift, son esa herramienta imprescindible en tu kit de desarrollo, permitiéndote definir un tipo común para un grupo de valores relacionados. Esto no solo va a mejorar la legibilidad de tu código, sino que también facilitará su mantenimiento y te ayudará a evitar esos errores comunes que a todos nos gusta evitar. Si estás empezando en Swift y aún te estás familiarizando con la creación de funciones, entender las enumeraciones puede ser realmente revelador.

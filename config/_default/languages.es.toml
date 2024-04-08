@@ -9,18 +9,18 @@ copyright = "&copy; 2024 Óscar Moreno"
 [params]
   dateFormat = "2 January 2006"
 
-  # mainSections = ["section1", "section2"]
+    mainSections = ["blog", "podcast"]
     description = "Apple Developer"
 
 [params.author]
 name = "Óscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Artículos sobre programación en dispositivos Apple"
+headline = "Apasionado de la programación y la tecnología <br> Escribiendo código y hablando sobre programación en dispositivos Apple"
 bio = "Apasionado de la programación y la tecnología"
 links = [
-  #   { apple-podcasts = "https://podcasts.apple.com/us/podcast/programando-para-apple/id1737822341" },
-  #   { spotify = "https://podcasters.spotify.com/pod/show/oscarmorenodev" },
-  #   { youtube = "https://youtube.com/@oscarmorenodev" },
+  { youtube = "https://youtube.com/@oscarmorenodev" },
+  { apple-podcasts = "https://podcasts.apple.com/us/podcast/programando-para-apple/id1737822341" },
+  { spotify = "https://open.spotify.com/show/4NnnNNlTJRvGLTyINcnUrM?si=1e9038032a684ad0" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
@@ -32,7 +32,7 @@ links = [
   #   { facebook = "https://facebook.com/username" },
   #   { flickr = "https://www.flickr.com/photos/username/" },
   #   { foursquare = "https://foursquare.com/username" },
-{ github = "https://github.com/oscarmorenodev" },
+  { github = "https://github.com/oscarmorenodev" },
   #   { gitlab = "https://gitlab.com/username" },
   #   { google = "https://www.google.com/" },
   #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
@@ -41,7 +41,7 @@ links = [
   #   { keybase = "https://keybase.io/username" },
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
-{ linkedin = "https://linkedin.com/in/oscarmorenodev" },
+  { linkedin = "https://linkedin.com/in/oscarmorenodev" },
   #   { mastodon = "https://mastodon.instance/@username" },
   #   { medium = "https://medium.com/username" },
   #   { mendeley = "https://www.mendeley.com/" },
@@ -61,6 +61,6 @@ links = [
   #   { tumblr = "https://username.tumblr.com" },
   #   { twitch = "https://twitch.tv/oscarmorenodev" },
   #   { whatsapp = "https://wa.me/phone-number" },
-{ x-twitter = "https://twitter.com/oscarmorenodev" },
-{ email = "mailto:oscar@oscarmorenocom" }
+  { x-twitter = "https://twitter.com/oscarmorenodev" },
+  { email = "mailto:oscar@oscarmorenocom" }
 ]

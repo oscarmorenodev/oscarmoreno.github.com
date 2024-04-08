@@ -2,7 +2,7 @@
 title = "Mastering basics: Structures vs. Clases"
 description = "Both options allow you to encapsulate and reuse values and behaviors, but knowing their differences helps optimize your code"
 summary = "Both options allow you to encapsulate and reuse values and behaviors, but knowing their differences helps optimize your code"
-date = 2024-03-25T08:00:00+01:00
+date = 2024-03-27T08:00:00+01:00
 translationKey = "estructurasYClases"
 +++
 In the world of software development with Swift, one of the fundamental choices we face is the decision between structures and classes. Both are essential constructs that allow us to model our data efficiently, but their differences are crucial for writing efficient and understandable code.

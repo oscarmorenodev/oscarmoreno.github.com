@@ -2,7 +2,7 @@
 title = "Definiendo las características de los tipos: Las propiedades"
 description = "Las propiedades permiten almacenar valores con información sobre el tipo que las define"
 summary = "Las propiedades permiten almacenar valores con información sobre el tipo que las define"
-date = 2024-04-18
+date = 2024-04-18T08:00:00+01:00
 translationKey = "propiedades"
 +++
 
