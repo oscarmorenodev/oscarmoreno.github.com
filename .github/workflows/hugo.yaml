@@ -6,9 +6,9 @@ on:
   push:
     branches:
       - main
-  # Runs every day at 08:15 am (to publish new posts)
+  # Runs every tuesday and thursday at 08:15 am (to publish new posts) Spanish time
   schedule:
-  - cron: '15 8 * * *'
+  - cron: '15 6 * * 2,4'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
