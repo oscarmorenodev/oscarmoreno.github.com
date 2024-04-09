@@ -1,11 +1,13 @@
 +++
-title = "La calidad de tus apps (Ep. 2)"
+title = "La calidad de tus apps"
 description = "Por qué es tan importante tus aplicaciones sean de calidad"
 summary = "Por qué es tan importante tus aplicaciones sean de calidad"
 date = 2024-04-02T08:00:00+01:00
 translationKey = "podcast-calidad"
 +++
 {{< youtube NZFs84e-tkY >}}
+
+Episodio nº 2
 
 Hoy te cuento por qué es tan importante tus aplicaciones sean de calidad y tengan el menor número de bugs, pero además, desde un punto de vista que no es tan habitual, y que muestra tu valor como profesional.
 
