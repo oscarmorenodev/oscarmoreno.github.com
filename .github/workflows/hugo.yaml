@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-  # Runs every tuesday and thursday at 08:15 am (to publish new posts) Spanish time
+  # Runs every day at 08:15 am (to publish new posts) Spanish time
   schedule:
   - cron: '15 6 * * *'
 
