@@ -2,7 +2,7 @@
 title = "La calidad de tus apps"
 description = "Por qué es tan importante tus aplicaciones sean de calidad"
 summary = "Por qué es tan importante tus aplicaciones sean de calidad"
-date = 2024-04-02T08:00:00+01:00
+date = 2024-04-01T08:00:00+01:00
 translationKey = "podcast-calidad"
 +++
 {{< youtube NZFs84e-tkY >}}

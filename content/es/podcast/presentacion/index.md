@@ -2,7 +2,7 @@
 title = "Presentación"
 description = "Presentación del podcast de desarrollo de aplicaciones para dispositivos Apple."
 summary = "Presentación del podcast de desarrollo de aplicaciones para dispositivos Apple."
-date = 2024-03-26T08:00:00+01:00
+date = 2024-03-25T08:00:00+01:00
 translationKey = "podcast-presentacion"
 +++
 {{< youtube SmbZ-knLaUQ >}}

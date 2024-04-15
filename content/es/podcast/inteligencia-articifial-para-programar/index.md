@@ -2,7 +2,7 @@
 title = "Usar IA para programar"
 description = "Mi visión y experiencia sobre cómo aprovechar la inteligencia artificial para programar"
 summary = "Mi visión y experiencia sobre cómo aprovechar la inteligencia artificial para programar"
-date = 2024-04-16T08:00:00+02:00
+date = 2024-04-15T08:00:00+02:00
 translationKey = "podcast-ia-programar"
 +++
 {{< youtube Y5CJ0921xh4 >}}

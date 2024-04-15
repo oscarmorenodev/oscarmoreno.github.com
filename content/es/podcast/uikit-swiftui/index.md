@@ -2,7 +2,7 @@
 title = "De UIKit a SwiftUI"
 description = "Qué me ha supuesto el cambio de trabajar con UIKit a SwiftUI, y las principales ventajas de usarlo"
 summary = "Qué me ha supuesto el cambio de trabajar con UIKit a SwiftUI, y las principales ventajas de usarlo"
-date = 2024-04-09T08:00:00+02:00
+date = 2024-04-08T08:00:00+02:00
 translationKey = "podcast-uikit-swiftui"
 +++
 {{< youtube WRAbND48Lz8 >}}
