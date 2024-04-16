@@ -1,7 +1,7 @@
 +++
 title = "Guía de seguridad aplicada en dispositivos Apple"
-description = "Apple combina numerosos elementos para fomentar y mantener la seguridad en sus dispositivos y aplicaciones"
-summary = "Apple combina numerosos elementos para fomentar y mantener la seguridad en sus dispositivos y aplicaciones"
+description = "Apple combina numerosos elementos para fomentar y mantener la seguridad en sus dispositivos y apps"
+summary = "Apple combina numerosos elementos para fomentar y mantener la seguridad en sus dispositivos y apps"
 date = 2024-04-25T08:00:00+02:00
 translationKey = "seguridadApple"
 +++
