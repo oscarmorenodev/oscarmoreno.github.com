@@ -4,7 +4,7 @@ description = "Te cuento las claves para superar rápida y eficazmente la revisi
 summary = "Te cuento las claves para superar rápida y eficazmente la revisión de publicación de tu app en el App Store"
 date = 2024-03-18T08:00:00+01:00
 translationKey = "publicacionAppStore"
-aliases = "/posts/feature-publicacion-app-store/"
+aliases = "/posts/revision-publicacion-app-store/"
 +++
 ¡Hola! Hoy quiero compartir contigo algunos consejos prácticos y directrices fundamentales para ayudarte a superar con éxito el proceso de revisión en el App Store de Apple. Si eres desarrollador y buscas lanzar tu aplicación en esta plataforma, sabrás que el detalle marca la diferencia. Así que, vamos a adentrarnos juntos en este camino hacia el éxito.
 
