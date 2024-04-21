@@ -2,7 +2,7 @@
 title = "Apple devices Security Guide"
 description = "Apple combines numerous elements to promote and maintain security on its devices and apps"
 summary = "Apple combines numerous elements to promote and maintain security on its devices and apps"
-date = 2024-04-25T08:00:00+02:00
+date = 2024-05-09
 translationKey = "seguridadApple"
 +++
 
