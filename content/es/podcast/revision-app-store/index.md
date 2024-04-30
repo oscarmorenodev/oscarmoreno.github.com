@@ -1,5 +1,5 @@
 +++
-title = "Superar la revisión del App Store"
+title = "Supera la revisión del App Store"
 description = "Descubre los detalles que Apple tiene en cuenta para publicar tu aplicación en el App Store"
 summary = "Descubre los detalles que Apple tiene en cuenta para publicar tu aplicación en el App Store"
 showTableOfContents = false
