@@ -24,6 +24,12 @@ weight = 11
   identifier = "sobre-mi"
   name = "Sobre mí"
   pageRef = "sobre-mi"
+  weight = 97
+
+[[main]]
+  identifier = "contacto"
+  name = "Contacto"
+  pageRef = "contacto"
   weight = 98
 
 [[main]]
