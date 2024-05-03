@@ -6,5 +6,3 @@ date = 2024-05-02
 translationKey = "sesgos"
 externalUrl = "https://www.hiberus.com/crecemos-contigo/como-afectan-los-sesgos-cognitivos-al-desarrollo-de-software/"
 +++
-
-https://www.hiberus.com/crecemos-contigo/como-afectan-los-sesgos-cognitivos-al-desarrollo-de-software/
