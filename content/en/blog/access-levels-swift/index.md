@@ -1,7 +1,7 @@
 +++
-title = "Qué significan los distintos niveles de acceso en Swift"
-description = "Los niveles de acceso definen desde dónde se puede acceder a tu código"
-summary = "Los niveles de acceso definen desde dónde se puede acceder a tu código"
+title = "What the different access levels mean in Swift"
+description = "Access levels define where your code can be accessed"
+summary = "Access levels define where your code can be accessed"
 date = 2024-09-03T08:00:00+02:00
 translationKey = "nivelesAcceso"
 +++
