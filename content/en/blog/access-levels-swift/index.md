@@ -112,7 +112,9 @@ private func myMethod() {}
 
 The different access levels follow a general principle:
 
-> You cannot define any entity inside another entity that has a lower (more restrictive) access level.
+{{< alert >}}
+You cannot define any entity inside another entity that has a lower (more restrictive) access level.
+{{< alert >}}
 
 That is, you cannot define a public variable inside a private class; nor can you define an open variable in an internal method.
 
