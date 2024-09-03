@@ -114,7 +114,7 @@ Los distintos niveles de acceso siguen un principio general:
 
 {{< alert >}}
 No se puede definir ninguna entidad dentro de otra entidad que tenga un nivel de acceso inferior (más restrictivo)
-{{< alert >}}
+{{< /alert >}}
 
 Es decir, no puedes definir una variable pública dentro de una clase privada; ni puedes definir una variable abierta, en un método interno.
 

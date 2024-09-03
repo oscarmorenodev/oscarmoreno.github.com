@@ -114,7 +114,7 @@ The different access levels follow a general principle:
 
 {{< alert >}}
 You cannot define any entity inside another entity that has a lower (more restrictive) access level.
-{{< alert >}}
+{{< /alert >}}
 
 That is, you cannot define a public variable inside a private class; nor can you define an open variable in an internal method.
 
