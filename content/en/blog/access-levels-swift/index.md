@@ -42,7 +42,7 @@ A **package** is a group of modules that form a unit.
 
 When creating a package, you must specify the modules it will contain.
 
-[[ImageSourceModulePackage]]
+![Source module package relationship](sourcemodulepackage.png)
 
 ## Access levels in Swift
 
