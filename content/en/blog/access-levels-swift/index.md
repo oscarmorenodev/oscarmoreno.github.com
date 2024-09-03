@@ -54,11 +54,15 @@ When an entity is defined with `open`, you can access it from any source file wi
 
 Additionally, it can also be accessed from source files in other modules that import the module containing that entity.
 
+On the other hand, it allows access from subclasses or overriding from outside the module.
+
 You should use it when creating a public interface for a framework.
 
 ### public
 
-Using `public` is almost the same as `open`, but in the case of `public`, it’s not used for classes, but for other structures.
+Using `public` is almost the same as `open`.
+
+The difference is that in the case of `public`, you cannot access it from subclasses or override methods.
 
 ### package
 

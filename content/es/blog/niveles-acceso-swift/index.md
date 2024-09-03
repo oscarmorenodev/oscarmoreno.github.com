@@ -54,11 +54,15 @@ Cuando una entidad está definida con `open`, podrás acceder a ella desde cualq
 
 Y además, también desde ficheros fuente de otros módulos, que importen el módulo que contienen dicha entidad.
 
+Por otro lado, permite acceder desde subclases o sobreescribir métodos desde fuera del módulo (overriding).
+
 Lo debes utilizar cuando crees una interfaz pública de un framework.
 
 ### public
 
-Utilizar `public` es casi lo mismo que `open` pero, en el caso de `public`, no se utiliza para clases, sino para el resto de estructuras.
+Utilizar `public` es casi lo mismo que `open`.
+
+La diferencia es que en el caso de public, no puedes acceder desde subclases ni sobescribir métodos.
 
 ### package
 
