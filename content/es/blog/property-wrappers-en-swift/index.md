@@ -150,6 +150,10 @@ Lo más importante:
 - Puedes usar si quieres una propiedad `projectedValue` si quieres exponer alguna funcionalidad adicional
 - Si necesitas un propiedad adicional para realizar las operaciones, declarala como privada para que solo se pueda modificar desde el property wrapper.
 
+Si quieres practicar, aquí tienes un playground con los ejemplos 😉
+
+{{% resources pattern="property-wrappers-in-swift.playground.zip"/%}}
+
 ## Fuentes
 
 [Property Wrappers - Documentación de Swift](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#Property-Wrappers)

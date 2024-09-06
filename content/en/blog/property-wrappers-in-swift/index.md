@@ -150,6 +150,10 @@ The most important points:
 - You can use a `projectedValue` property if you want to expose additional functionality.
 - If you need an additional property to perform operations, declare it as private so that it can only be modified from within the property wrapper.
 
+If you want to practice, here is a playground with examples 😉
+
+{{% resources pattern=".*\.(zip)" color="blue" icon="fa-solid fa-file-arrow-down" /%}}
+
 ## Sources
 
 [Property Wrappers - Swift Documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#Property-Wrappers)
