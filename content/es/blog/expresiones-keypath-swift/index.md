@@ -1,5 +1,5 @@
 +++
-title = "Entiende como funcionan los key-path"
+title = "Cómo funcionan los key-path"
 description = "Las expresiones key-path ofrecen una alternativa para el acceso a datos de los tipos"
 summary = "Las expresiones key-path ofrecen una alternativa para el acceso a datos de los tipos"
 date = 2024-09-17T08:00:00+02:00
