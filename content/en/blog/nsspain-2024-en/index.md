@@ -16,7 +16,7 @@ So today, I'll tell you how I experienced it and why I think you should go if yo
 
 But not without first thanking [hiberus](https://hiberus.com), who made it possible for several colleagues from the iOS team to attend.
 
-## Un poco de historia
+## Once upon a time
 
 [NSSpain](https://nsspain.com) has been a notable event on the Apple developer calendar since its inception in 2013.
 
@@ -185,6 +185,16 @@ It was also very enjoyable and fun to follow the talk and discover the number of
 Especially if we have to work with several formats.
 
 Essential if this is your case.
+
+#### *Warp Speed ​​with Metal Performance Shaders* - Francesco Marini
+
+Francesco gave us a masterclass on Apple hardware and how to take advantage of it to improve the graphical performance of games or apps.
+
+It was a very in-depth talk, which I will watch again (pausing the video at times 😅) to be able to go deeper and look for relevant information.
+
+Lots of quality information.
+
+Specially important to watch if you work with graphics.
 
 #### *“It Scrolls Like Butter” Part 2: Implementing High Performance Scrolling in Threads* - Tim Oliver
 

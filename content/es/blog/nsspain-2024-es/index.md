@@ -184,6 +184,16 @@ Especialmente si debemos trabajar con varios formatos.
 
 Imprescindible si es tu caso.
 
+#### *Warp Speed with Metal Performance Shaders* - Francesco Marini
+
+Francesco nos regaló una masterclass sobre el hardware de Apple y cómo aprovecharlo para mejorar el rendimiento gráfico de juegos o apps.
+
+Fue una charla muy profunda, que sin duda volveré a ver (poniendo el video en pausa por momentos 😅) para poder profundizar y buscar información relativa.
+
+Mucha información y de calidad.
+
+Muy importante también verla si trabajas con gráficos.
+
 #### *“It Scrolls Like Butter” Part 2: Implementing High Performance Scrolling in Threads* - Tim Oliver
 
 También levantó gran expectación la charla de Oliver, y es que no todos los días puedes ver en directo a un ingeniero iOS en Instagram.
