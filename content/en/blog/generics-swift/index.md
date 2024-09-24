@@ -1,5 +1,5 @@
 +++
-title = "Optimize code in Swift thanks to generics"
+title = "Optimize code in Swift with generics"
 description = "Generics in Swift allow you to use very similar code for operations with different types"
 summary = "Generics in Swift allow you to use very similar code for operations with different types"
 date = 2024-10-01T08:00:00+02:00
