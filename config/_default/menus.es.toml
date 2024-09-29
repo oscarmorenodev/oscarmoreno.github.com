@@ -16,11 +16,6 @@
   weight = 10
 
 [[main]]
-  name = "Podcast"
-  pageRef = "podcast"
-  weight = 11
-
-[[main]]
   identifier = "sobre-mi"
   name = "Sobre mí"
   pageRef = "sobre-mi"
