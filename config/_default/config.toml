@@ -6,16 +6,16 @@
 theme = "congo"
 
 # baseURL = "https://oscarmoreno.com/"
-defaultContentLanguage = 'es'
+defaultContentLanguage = 'en'
 
 [languages]
-  [languages.es]
-    contentDir = 'content/es'
-    languageName = 'Español'
-    weight = 1
   [languages.en]
     contentDir = 'content/en'
     languageName = 'English'
+    weight = 1
+  [languages.es]
+    contentDir = 'content/es'
+    languageName = 'Español'
     weight = 2
 
 enableRobotsTXT = true
