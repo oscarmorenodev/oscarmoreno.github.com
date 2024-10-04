@@ -1,5 +1,5 @@
 +++
-title = "Why you should assist to NSSpain"
+title = "Why you should attend NSSpain"
 description = "NSSpain is a special international conference about Apple Engineering"
 summary = "NSSpain is a special international conference about Apple Engineering"
 date = 2024-09-24T08:00:00+02:00
