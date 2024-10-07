@@ -4,6 +4,7 @@ description = "NSSpain is a special international conference about Apple Enginee
 summary = "NSSpain is a special international conference about Apple Engineering"
 date = 2024-09-24T08:00:00+02:00
 translationKey = "nsspain2024"
+aliases = "/en/blog/nsspain-2024-en/"
 +++
 
 Last week I was able to attend an event that meant a lot to me and that I was looking forward to attending for the first time.
