@@ -16,7 +16,7 @@ Subscripts in Swift provide you with a flexible way to access elements found in 
 
 These custom types could be classes, structures, or enumerations.
 
-They offer a simple syntax for setting and retrieving values without the need for separate methods for *getters* and/or *setters*.
+Subscripts offer a simple syntax for setting and retrieving values without the need for separate methods for *getters* and/or *setters*.
 
 Subscripts are special methods that allow access to elements in a collection-like type.
 
