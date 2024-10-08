@@ -4,6 +4,7 @@ description = "NSSpain es una conferencia internacional de ingeniería Apple muy
 summary = "NSSpain es una conferencia internacional de ingeniería Apple muy especial"
 date = 2024-09-24T08:00:00+02:00
 translationKey = "nsspain2024"
+aliases = "/blog/nsspain-2024-es/"
 +++
 
 La pasada semana pude asistir a un evento que significaba mucho para mí y al que tenía muchas ganas de asistir por primera vez.
