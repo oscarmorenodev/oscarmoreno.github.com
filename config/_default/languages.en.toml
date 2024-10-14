@@ -3,7 +3,7 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "Oscar Moreno | Apple Developer "
+title = "Oscar Moreno | iOS Developer "
 copyright = "&copy; 2024 Óscar Moreno"
 
 [params]
@@ -16,7 +16,7 @@ copyright = "&copy; 2024 Óscar Moreno"
 name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
 headline = "Coding and writing about Apple development, Swift & SwiftUI"
-bio = "Passionate about programming and tech"
+bio = "Coding and writing about Apple development, Swift & SwiftUI"
 links = [
   { x-twitter = "https://twitter.com/oscarmorenodev" },
   { linkedin = "https://linkedin.com/in/oscarmorenodev" },
