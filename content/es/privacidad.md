@@ -1,7 +1,7 @@
 +++
 title = 'Privacidad'
 date = 2023-01-01
-translationKey = 'privacidad'
+translationKey = 'privacy'
 showDate = false
 showComments = false
 showAuthor = false

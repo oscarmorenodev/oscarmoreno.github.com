@@ -1,7 +1,7 @@
 +++
 title = 'Sobre mí'
 date = 2023-01-01
-translationKey = 'sobre-mi'
+translationKey = 'about'
 showDate = false
 showComments = false
 showPagination = false
