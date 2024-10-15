@@ -272,7 +272,7 @@ You've seen how easy it is to associate values with different cases of an `enum`
 
 - You just need to define them after each case.
 - Take advantage of Xcode autocomplete to add the values you need.
-- They help you have more stable, readable, and safe code.
+- They help you have more stable, readable, and secure code.
 
 Examples where you can use them include:
 
