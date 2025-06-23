@@ -11,8 +11,8 @@ showPagination = false
 
 You can reach me in social media at:
 
-{{<icon "linkedin">}} [Óscar Moreno](https://linkedin.com/in/oscarmorenodev)
+{{<icon "x-twitter">}} [@oscarmorenodev](https://x.com/oscarmorenodev)
 
-{{<icon "twitter">}} [@oscarmorenodev](https://twitter.com/oscarmorenodev)
+{{<icon "linkedin">}} [Oscar Moreno](https://linkedin.com/in/oscarmorenodev)
 
 Or feel free to contact me at <a href="mailto:oscar@oscarmoreno.com">oscar@oscarmoreno.com</a>

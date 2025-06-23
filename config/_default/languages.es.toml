@@ -3,8 +3,8 @@ languageName = "Español"
 languageDirection = "ltr"
 weight = 2
 
-title = "Óscar Moreno | Desarrollador iOS "
-copyright = "&copy; 2024 Óscar Moreno"
+title = "Oscar Moreno | Desarrollador iOS "
+copyright = "&copy; 2024 Oscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
@@ -13,7 +13,7 @@ copyright = "&copy; 2024 Óscar Moreno"
     description = "Apple Developer"
 
 [params.author]
-name = "Óscar Moreno"
+name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
 headline = "Escribiendo código y hablando sobre programación en dispositivos Apple, Swift y SwiftUI"
 bio = "Escribiendo código y hablando sobre programación en dispositivos Apple, Swift y SwiftUI"

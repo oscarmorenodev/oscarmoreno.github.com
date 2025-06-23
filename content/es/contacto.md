@@ -11,8 +11,8 @@ showPagination = false
 
 Puedes encontrarme en las siguientes redes sociales:
 
-{{<icon "linkedin">}} [Óscar Moreno](https://linkedin.com/in/oscarmorenodev)
+{{<icon "x-twitter">}} [@oscarmorenodev](https://twitter.com/oscarmorenodev)
 
-{{<icon "twitter">}} [@oscarmorenodev](https://twitter.com/oscarmorenodev)
+{{<icon "linkedin">}} [Oscar Moreno](https://linkedin.com/in/oscarmorenodev)
 
 O si prefieres, puedes escribirme un email a <a href="mailto:oscar@oscarmoreno.com">oscar@oscarmoreno.com</a>

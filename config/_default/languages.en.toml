@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "Oscar Moreno | iOS Developer "
-copyright = "&copy; 2024 Óscar Moreno"
+copyright = "&copy; 2024 Oscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
