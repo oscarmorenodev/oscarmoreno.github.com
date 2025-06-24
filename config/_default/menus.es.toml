@@ -16,6 +16,12 @@
   weight = 10
 
 [[main]]
+  identifier = "apps"
+  name = "Apps"
+  pageRef = "apps"
+  weight = 95
+
+[[main]]
   identifier = "about"
   name = "Sobre mí"
   pageRef = "sobre-mi"
