@@ -19,7 +19,7 @@ Recientemente, debido a que soy un usuario entusiasta de los productos de Apple,
 ### Mi vida personal
 Nací en Valencia (España), donde vivo actualmente,. Y nací en los 80, la época del Spectrum, Atari y las primeras videoconsolas de Sega o Nintendo. Así que crecí y disfruté jugando videojuegos con mi Sega Megadrive, viendo dibujos animados como He-man, Dragon Ball o Capitán Tsubasa.
 
-Soy el orgulloso padre de Lucas 👶🏻, mi hijo de 3 años que se ha convertido en el CEO de casa, y el orgulloso esposo de Lorena, la mejor compañera de vida que podría tener. Una mujer maravillosa, con un poder especial para tratar con la infancia (Y conmigo 😅)
+Soy el orgulloso padre de Lucas y Vega, los pequeños que se han convertido en los reyes de la casa, y marido de Lorena, la mejor compañera de vida que podría tener. Una mujer maravillosa, con un poder especial para tratar con la infancia (Y conmigo 😅)
 
-Actualmente, paso mis horas fuera del trabajo con mi familia o mis aficiones, como: disfrutar de series de TV, jugar al ajedrez o ver carreras de Fórmula 1.
+Actualmente, paso mis horas fuera del trabajo con mi familia o mis aficiones, como: disfrutar de series de TV o ver carreras de Fórmula 1.
 

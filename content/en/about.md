@@ -20,6 +20,6 @@ Recently, because I'm a enthusiastic user of Apple products, I decided to learn 
 
 I was born in Valencia (Spain), where I live actually. and I was born at 80’s, the age of Spectrum, Atari and the first Sega's or Nintendo videoconsoles. So, I grow up and enjoyed play videogames with my Sega Megadrive, watch cartoons as He-man, Dragon Ball or Captain Tsubasa.
 
-I'm the proud father of Lucas 👶🏻, my 3 years son that became the home CEO, and the proud husband of Lorena, the best life companion that I could have. A wonderfull woman, with a special power to treat with the childhood (And with me 😅)
+I’m the proud father of Lucas and Vega — the tiny royals who now run our home, and the husband of Lorena, the best life companion that I could have. A wonderfull woman, with a special power to treat with the childhood (And with me 😅)
 
-Nowadays, I spend my non-working hours with my family or my hobbies, such as: enjoying TV Series, playing chess or watching Formula 1 races.
+Nowadays, I spend my non-working hours with my family or my hobbies, such as: enjoying TV Series or watching Formula 1 races.
