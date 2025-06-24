@@ -11,15 +11,21 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "blog"
-  weight = 10
-
-[[main]]
   identifier = "apps"
   name = "Apps"
   pageRef = "apps"
-  weight = 95
+  weight = 9
+
+[[main]]
+  identifier = "newsletter"
+  name = "Newsletter"
+  pageRef = "newsletter"
+  weight = 8
+
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 10
 
 [[main]]
   identifier = "about"
