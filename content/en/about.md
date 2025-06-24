@@ -10,7 +10,7 @@ showPagination = false
 
 If I have to talk about me in a sentence, I like to say that I am a passionate about programming and tech world.
 
-Nowadays, I work as iOS Developer at [Hiberus](http://www.hiberus.com), a global consultancy company founded in Spain, but growing quickly and opening new offices in places such as Berlín, London, México DF or Miami.
+I currently work as an iOS Developer at [Openbank](https://www.openbank.com), the online bank of [Grupo Santander](https://santander.com), which has apps used by millions of people across Europe and the Americas.
 
 But, my work experience have been mainly focused in IT. Besides programming, I have previous experience working as QA or DevOps engineer.
 

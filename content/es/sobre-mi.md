@@ -10,7 +10,7 @@ Si tengo que hablar sobre mí en una frase, me gusta decir que soy un apasionado
 
 ### Mi vida profesional 
 
-Actualmente, trabajo como Desarrollador iOS en [Hiberus](http://www.hiberus.com), una empresa de consultoría global fundada en España, pero que crece rápidamente y está abriendo nuevas oficinas en lugares como Berlín, Londres, México DF o Miami.
+Actualmente, trabajo como Desarrollador iOS en [Openbank](https://www.openbank.com), el banco online de [Grupo Santander](https://santander.com), que disponde de aplicaciones usadas por millones de personas a lo largo de Europa y América.
 
 Pero, mi experiencia laboral ha estado principalmente enfocada en IT. Además de programar, tengo experiencia previa trabajando como ingeniero QA o DevOps.
 
