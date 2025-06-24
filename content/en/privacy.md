@@ -9,7 +9,7 @@ sharingLinks = false
 showPagination = false
 +++
 
-I collect usage data using google analytics for the purposes of visualizing the traffic on this website.
+I collect usage data using Google analytics for the purposes of visualizing the traffic on this website.
 
 All data is anonymized and I do not sell or share any data with third parties.
 
