@@ -16,7 +16,7 @@ showTableOfContents = false
 Looking for a **Swift newsletter** that saves you time and gives you the most important update of the week?  
 **One Swift Thing** is for you.
 
-Each week, I read the best Swift newsletters —covering Swift, SwiftUI, Xcode, tools, productivity and more— and pick **just one article**. The one I think is most useful for Apple developers.
+Each week, I check the best Swift newsletters —covering Swift, SwiftUI, Xcode, tools, productivity and more— and pick **just one article**. The one I think is most useful for Apple developers.
 
 ---
 
@@ -37,7 +37,7 @@ That’s why I made this **Swift newsletter**.
 
 ## ✅ What you’ll get
 
-- 📌 A hand-picked article, once a week.  
+- 📌 The most relevant article, once a week.  
 - 🧠 Context on why I chose it and what you’ll learn.  
 - ✉️ Delivered every Monday.  
 - 🚫 No long lists.
