@@ -21,7 +21,8 @@ googleAnalytics = "G-R502FEV9RG"
     weight = 2
 
 enableRobotsTXT = true
-paginate = 10
+[pagination]
+  pagerSize = 10
 summaryLength = 0
 
 [outputs]
