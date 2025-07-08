@@ -5,6 +5,7 @@ translationKey = 'nsbuddy'
 showDate = false
 showComments = false
 showPagination = false
+showTableOfContents = false
 summary = "NSBuddy is a dedicated macOS app crafted for Swift developers who seek to enhance their coding efficiency and save valuable time. Soon on the App Store"
 +++
 
@@ -12,7 +13,7 @@ NSBuddy is a dedicated macOS app crafted for Swift developers who seek to enhanc
 
 Specifically designed with Swift and SwiftUI, NSBuddy offers a suite of practical utilities tailored to streamline the daily work processes of developers targeting Apple platforms.
 
-Why Choose NSBuddy:
+### Why Choose NSBuddy:
 
 - **Efficient Disk Management:** Easily manage clutter by scheduling or manually removing Derived Data and Xcode previews, freeing up crucial disk space.
 

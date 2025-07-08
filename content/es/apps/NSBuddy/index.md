@@ -5,26 +5,30 @@ translationKey = 'nsbuddy'
 showDate = false
 showComments = false
 showPagination = false
+showTableOfContents = false
+summary = "NSBuddy es una app exclusiva para macOS diseñada para desarrolladores Swift que quieren mejorar su eficiencia al programar y ahorrar un tiempo valioso."
 +++
 
-NSBuddy is a dedicated macOS app crafted for Swift developers who seek to enhance their coding efficiency and save valuable time. Whether you're an experienced developer or just starting out, NSBuddy consolidates all the essential developer tools in one convenient location, allowing you to maintain focus and productivity.
+NSBuddy es una app exclusiva para macOS diseñada para desarrolladores Swift que quieren mejorar su eficiencia al programar y ahorrar un tiempo valioso. Tanto si eres un desarrollador con experiencia como si estás empezando, NSBuddy reúne todas las herramientas esenciales en un solo lugar, permitiéndote mantener el foco y la productividad.
 
-Specifically designed with Swift and SwiftUI, NSBuddy offers a suite of practical utilities tailored to streamline the daily work processes of developers targeting Apple platforms.
+Pensada específicamente para proyectos con Swift y SwiftUI, NSBuddy ofrece un conjunto de utilidades prácticas creadas para simplificar el trabajo diario de quienes desarrollan para plataformas Apple.
 
-Why Choose NSBuddy:
+### Por qué elegir NSBuddy:
 
-- **Efficient Disk Management:** Easily manage clutter by scheduling or manually removing Derived Data and Xcode previews, freeing up crucial disk space.
+- **Gestión eficiente del disco:** Elimina fácilmente archivos temporales programando o limpiando manualmente Derived Data y las previsualizaciones de Xcode, liberando espacio importante en disco.
 
-- **Swift Code Generation:** Accelerate your coding process with instant Swift struct creation and Core Data queries from JSON or other input models.
+- **Generación de código Swift:** Acelera tu flujo de trabajo generando structs en Swift y consultas de Core Data directamente desde JSON u otros modelos.
 
-- **Seamless Format Conversion:** Transform JSON files into Swift models, convert different color formats, or generate code-friendly representations quickly.
+- **Conversión de formatos sin esfuerzo:** Convierte archivos JSON en modelos Swift, transforma formatos de color o genera representaciones listas para usar en código en segundos.
 
-- **Enhanced Code Readability:** Automatically format and beautify JSON to ensure your code is tidy and ready for development.
+- **Código más legible:** Da formato y embellece automáticamente JSON para que tu código esté limpio y listo para el desarrollo.
 
-- **Quick Validation:** Instantly verify and test your regular expressions and JSON structures to prevent errors before they occur.
+- **Validación rápida:** Verifica y prueba al instante tus expresiones regulares y estructuras JSON para evitar errores antes de que ocurran.
 
-- **Personalized Resources:** Organize your go-to tools and documentation with custom developer links, giving you quick access to the resources you rely on most.
+- **Recursos personalizados:** Organiza tus herramientas y documentación favoritas con enlaces personalizados, accediendo rápidamente a los recursos que más utilizas.
 
-- **Tailored Workspace:** Customize your experience by selecting only the tools you need, keeping your workspace clean and focused on what matters.
+- **Espacio de trabajo a medida:** Personaliza tu experiencia eligiendo solo las herramientas que necesitas, manteniendo tu entorno limpio y enfocado en lo importante.
 
-Embrace a more streamlined development process with NSBuddy, where every tool is designed to support your journey as a Swift developer.
+Haz tu proceso de desarrollo más fluido con NSBuddy, donde cada herramienta está diseñada para acompañarte en tu camino como desarrollador Swift.
+
+Pronto en la App Store.
