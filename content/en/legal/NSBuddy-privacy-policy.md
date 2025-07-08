@@ -73,4 +73,4 @@ NSBuddy offers subscription-based access to most of its features. Subscriptions 
 For questions about this privacy policy, you may contact the Developer:
 
 **Oscar Moreno Zamora**  
-[Your email or preferred contact method, optional]
+[Contact]({{< relref "contact.md" >}})
