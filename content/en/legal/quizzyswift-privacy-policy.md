@@ -1,5 +1,6 @@
 +++
 title = 'QuizzySwift Privacy Policy'
+draft = true
 date = 2025-07-27
 translationKey = 'quizzyswift-privacy-policy'
 showDate = false

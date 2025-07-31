@@ -1,5 +1,6 @@
 +++
 title = 'QuizzySwift'
+draft = true
 date = 2025-07-15
 translationKey = 'quizzyswift'
 showDate = false

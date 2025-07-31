@@ -1,5 +1,6 @@
 +++
 title = 'QuizzySwift Terms of Service'
+draft = true
 date = 2025-07-27
 translationKey = 'quizzyswift-terms-service'
 showDate = false
