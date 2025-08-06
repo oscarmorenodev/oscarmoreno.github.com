@@ -31,4 +31,4 @@ Pensada específicamente para proyectos con Swift y SwiftUI, NSBuddy ofrece un c
 
 Haz tu proceso de desarrollo más fluido con NSBuddy, donde cada herramienta está diseñada para acompañarte en tu camino como desarrollador Swift.
 
-Pronto en la App Store.
+{{< downloadmacstore "https://apps.apple.com/es/app/nsbuddy-for-xcode/id6747444451" >}}
