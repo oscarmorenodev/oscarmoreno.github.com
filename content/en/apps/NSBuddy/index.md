@@ -23,6 +23,8 @@ Specifically designed with Swift and SwiftUI, NSBuddy offers a suite of practica
 
 - **Enhanced Code Readability:** Automatically format and beautify JSON to ensure your code is tidy and ready for development.
 
+- **Leverage AI:** Access your favorite prompts instantly
+
 - **Quick Validation:** Instantly verify and test your regular expressions and JSON structures to prevent errors before they occur.
 
 - **Personalized Resources:** Organize your go-to tools and documentation with custom developer links, giving you quick access to the resources you rely on most.
