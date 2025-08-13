@@ -23,6 +23,8 @@ Pensada específicamente para proyectos con Swift y SwiftUI, NSBuddy ofrece un c
 
 - **Código más legible:** Da formato y embellece automáticamente JSON para que tu código esté limpio y listo para el desarrollo.
 
+- **Imppulsa tu productividad con la IA:** Accede y reutiliza tus mejores prompts al instante.
+
 - **Validación rápida:** Verifica y prueba al instante tus expresiones regulares y estructuras JSON para evitar errores antes de que ocurran.
 
 - **Recursos personalizados:** Organiza tus herramientas y documentación favoritas con enlaces personalizados, accediendo rápidamente a los recursos que más utilizas.
