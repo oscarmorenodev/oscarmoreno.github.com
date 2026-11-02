@@ -5,7 +5,7 @@
 # theme
 theme = "congo"
 
-# baseURL = "https://oscarmoreno.com/"
+baseURL = "https://oscarmoreno.com/"
 defaultContentLanguage = 'en'
 
 googleAnalytics = "G-R502FEV9RG"
