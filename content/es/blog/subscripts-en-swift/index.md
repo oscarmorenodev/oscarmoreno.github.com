@@ -6,7 +6,7 @@ date = 2024-10-08T08:00:00+02:00
 translationKey = "subscripts"
 +++
 
-Hace unas semanas escribiendo sobre los [key-path](../expresiones-key-path-swift) me llamó la atención el uso de los **subscripts**.
+Hace unas semanas escribiendo sobre los [key-path](../expresiones-keypath-swift) me llamó la atención el uso de los **subscripts**.
 
 En español lo podríamos traducir como *subíndices*.
 
