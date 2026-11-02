@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  # Pull requests get the same build and checks; only main deploys (see the Deploy step).
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build-deploy:
@@ -22,8 +26,14 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
+      - name: Test
+        run: uv run pytest
+
       - name: Build
         run: uv run site build
+
+      - name: Check links
+        run: uv run site check
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
