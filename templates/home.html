@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "_macros.html" import author_links %}
+{% block content %}
+<article class="profile">
+  <img class="avatar" src="{{ site.author.image }}" alt="{{ site.author.name }}" width="144" height="156" decoding="async">
+  <h1>{{ site.author.name }}</h1>
+  <h2>{{ languages.en.headline }}</h2>
+  {{ author_links() }}
+</article>
+{%- endblock %}

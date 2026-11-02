@@ -1,0 +1,15 @@
+{#- The nav chrome is always English: it's the one site menu, even on the handful of pages whose
+    own content is in Spanish (see build.py for which pages those are and why). -#}
+{% set language = languages.en %}
+<header class="site-header">
+  <nav>
+    <a class="site-title" rel="me" href="{{ language.prefix }}/">{{ language.title }}</a>
+    <button type="button" class="menu-button" aria-label="{{ t("en", "menu") }}" aria-expanded="false" aria-controls="main-menu">{{ icon("bars") }}</button>
+    <ul id="main-menu" class="main-menu">
+      <li class="menu-close"><button type="button" aria-label="{{ t("en", "searchClose") }}">{{ icon("xmark") }}</button></li>
+      {% for item in language.menu %}<li><a href="{{ item.url }}" title="{{ item.name }}"><span>{{ item.name }}</span></a></li>{% endfor %}
+
+      <li><button type="button" class="search-button" title="{{ t("en", "searchOpen") }}" aria-label="{{ t("en", "searchOpen") }}">{{ icon("search") }}</button></li>
+    </ul>
+  </nav>
+</header>

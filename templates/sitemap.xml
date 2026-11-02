@@ -1,0 +1,8 @@
+{#- One unified sitemap: the English site plus the handful of Spanish-only pages that have no
+    English translation to redirect to (see build.py). Pages that redirect are left out. -#}
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for e in entries %}
+<url><loc>{{ absolute(e.url) }}</loc>{% if e.date %}<lastmod>{{ e.date }}</lastmod>{% endif %}</url>
+{% endfor %}
+</urlset>

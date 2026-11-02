@@ -37,7 +37,7 @@ Output
 
 In this example, the `continue` statement is used to skip printing even numbers. When the condition `number % 2 == 0` is true, the `continue` statement is executed, bypassing the `print` statement and proceeding to the next iteration. 
 
-## Break
+## Break
 The `break` statement is used to terminate the execution of a loop or switch statement prematurely. It allows you to exit out of a loop or `switch` block before reaching its natural end.
 
 Consider the following example:

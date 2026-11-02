@@ -1,0 +1,69 @@
+{#- Pieces shared by the page templates. -#}
+
+{% macro author_links() -%}
+<div class="author-links">{% for link in site.author.links %}<a href="{{ link.url }}" target="_blank" aria-label="{{ link.label }}" rel="me noopener noreferrer">{{ icon(link.icon) }}</a>{% endfor %}</div>
+{%- endmacro %}
+
+{% macro article_meta(page) -%}
+{% if page.date and page.params.get("showDate") != false %}<div class="article-meta"><time datetime="{{ page.date }}">{{ format_date(page.date, page.lang) }}</time></div>{% endif %}
+{%- endmacro %}
+
+{% macro toc(lang, entries) -%}
+{% if entries %}
+{% set min_level = entries | map(attribute="level") | min %}
+<aside class="toc">
+  <details open>
+    <summary>{{ t(lang, "tableOfContents") }}</summary>
+    <nav id="TableOfContents"><ul>{% for e in entries %}<li class="toc-l{{ e.level - min_level }}"><a href="#{{ e.id }}">{{ e.text }}</a></li>{% endfor %}</ul></nav>
+  </details>
+</aside>
+{%- endif %}
+{%- endmacro %}
+
+{% macro author_box(lang) -%}
+<div class="author-box">
+  <img src="{{ site.author.image }}" alt="{{ site.author.name }}" width="96" height="104" loading="lazy" decoding="async">
+  <div>
+    <div class="author-label">{{ t(lang, "author") }}</div>
+    <div class="author-name">{{ site.author.name }}</div>
+    <div class="author-bio">{{ t(lang, "bio") }}</div>
+    {{ author_links() }}
+  </div>
+</div>
+{%- endmacro %}
+
+{#- older and newer are the neighbouring articles (newest first: older on the left, newer on the right). -#}
+{% macro article_pagination(older, newer) -%}
+{% if older or newer -%}
+<nav class="article-pagination">
+{%- if older %}<a class="prev" href="{{ older.url }}"><span class="title">← {{ older.title }}</span>{{ article_meta(older) }}</a>{% else %}<span></span>{% endif -%}
+{%- if newer %}<a class="next" href="{{ newer.url }}"><span class="title">{{ newer.title }} →</span>{{ article_meta(newer) }}</a>{% else %}<span></span>{% endif -%}
+</nav>
+{%- endif %}
+{%- endmacro %}
+
+{% macro page_url(section, n) %}{{ section.url if n == 1 else section.url ~ "page/" ~ n ~ "/" }}{% endmacro %}
+
+{% macro list_pagination(section, current, total) -%}
+{% if total > 1 -%}
+<nav class="pagination">
+{%- if current > 1 %}<a href="{{ page_url(section, current - 1) }}" aria-label="{{ t(section.lang, "prevPage") }}">←</a>{% endif -%}
+{%- for n in range(1, total + 1) -%}
+{%- if n == current %}<span aria-current="page">{{ n }}</span>{% else %}<a href="{{ page_url(section, n) }}">{{ n }}</a>{% endif -%}
+{%- endfor -%}
+{%- if current < total %}<a href="{{ page_url(section, current + 1) }}" aria-label="{{ t(section.lang, "nextPage") }}">→</a>{% endif -%}
+</nav>
+{%- endif %}
+{%- endmacro %}
+
+{% macro article_card(page) -%}
+{% set image = feature_image(page) %}
+{% set external = page.params.get("externalUrl") %}
+{% set href = external or page.url %}
+<article class="card">
+{%- if image %}<a class="card-thumb" href="{{ href }}" aria-label="{{ page.title }}"><img src="{{ image.url }}" alt="" width="160" height="160" loading="lazy" decoding="async"></a>{% endif -%}
+<div><h3>
+{%- if external %}<a href="{{ external }}" target="_blank" rel="external">{{ page.title }}</a><span class="external" title="{{ t(page.lang, "externalLink") }}">↗</span>
+{%- else %}<a href="{{ page.url }}">{{ page.title }}</a>{% endif -%}
+</h3>{{ article_meta(page) }}{% if page.summary %}<div class="card-summary">{{ page.summary | safe }}</div>{% endif %}</div></article>
+{%- endmacro %}
