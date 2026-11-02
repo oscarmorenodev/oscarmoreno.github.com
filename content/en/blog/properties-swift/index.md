@@ -258,7 +258,7 @@ print(item.stock) // Prints: 2
 
 With this example, you can try on the one hand how properties are managed to check that a property does not have a negative integer value. And thus, reuse it in other parts of the code, without having to copy and paste the content of the getters and setters.
 
-The use of property wrappers requires and allows many more details, so if you want to know more you can see it in the [official documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming- language/properties/#Property-Wrappers).
+The use of property wrappers requires and allows many more details, so if you want to know more you can see it in the [official documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#Property-Wrappers).
 
 ## Conclusion
 

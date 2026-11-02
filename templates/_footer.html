@@ -1,0 +1,26 @@
+{% set language = languages.en %}
+<footer class="site-footer">
+  <p class="copyright">{{ language.copyright }}</p>
+  <button type="button" class="appearance-switcher" aria-label="appearance switcher">
+    <span class="when-light" title="{{ t("en", "darkAppearance") }}">{{ icon("moon") }}</span>
+    <span class="when-dark" title="{{ t("en", "lightAppearance") }}">{{ icon("sun") }}</span>
+  </button>
+</footer>
+<div id="cookie-notice" hidden>
+  <span>{{ t("en", "cookieText") }}</span>
+  <a href="{{ language.privacy_page }}">{{ t("en", "cookieMore") }}</a>
+  <button type="button" id="cookie-notice-deny">{{ t("en", "cookieDeny") }}</button>
+  <button type="button" id="cookie-notice-accept">{{ t("en", "cookieApprove") }}</button>
+</div>
+<div id="search-wrapper" hidden data-index="/index.json">
+  <div id="search-modal" role="dialog" aria-modal="true">
+    <header>
+      <form role="search">
+        {{ icon("search") }}
+        <input type="search" id="search-query" placeholder="{{ t("en", "searchPlaceholder") }}" aria-label="{{ t("en", "searchPlaceholder") }}" autocomplete="off">
+      </form>
+      <button type="button" id="close-search-button" title="{{ t("en", "searchClose") }}">{{ icon("xmark") }}</button>
+    </header>
+    <ul id="search-results" data-empty="{{ t("en", "noResults") }}"></ul>
+  </div>
+</div>

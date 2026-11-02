@@ -20,7 +20,7 @@ Thanks to SwiftUI, it is not necessary to make adjustments to the constraints as
 
 But, what you should keep in mind is that using the dynamic sizes and the fonts provided by Apple allow you to ensure compatibility with regards to the interface. In addition, the development part is simplified and streamlined.
 
-You can find more info in the official SwiftUI documentation: [Applying to strong dynamic sizing support](https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text#Apply-a -font-supporting-dynamic-sizing)
+You can find more info in the official SwiftUI documentation: [Applying to strong dynamic sizing support](https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text#Apply-a-font-supporting-dynamic-sizing)
 
 In addition, thanks to the SwiftUI preview, you can check how the views will look on multiple devices simultaneously.
 

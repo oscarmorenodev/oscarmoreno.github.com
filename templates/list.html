@@ -1,0 +1,19 @@
+{#- A section's article list, grouped by year. groups: [(year, [pages])]. -#}
+{% extends "base.html" %}
+{% from "_macros.html" import article_card, list_pagination %}
+{% block content %}
+<header><h1>{{ section.title }}</h1></header>
+{% if intro %}<section class="prose section-intro">{{ intro | safe }}</section>{% endif %}
+
+<section class="article-list">
+{% for year, items in groups %}
+<h2 class="year">{{ year }}</h2><hr class="year-rule">
+{% for item in items %}
+{{ article_card(item) }}
+{% endfor %}
+{% else %}
+<p class="empty">{{ t(section.lang, "noArticles") }}</p>
+{% endfor %}
+</section>
+{{ list_pagination(section, current, total) }}
+{%- endblock %}

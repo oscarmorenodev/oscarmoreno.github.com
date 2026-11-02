@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="error-title">{{ t(lang, "notFoundTitle") }}</h1>
+<p class="error-code">{{ t(lang, "notFoundError") }}</p>
+<div class="prose"><p>{{ t(lang, "notFoundDescription") }}</p></div>
+{%- endblock %}
