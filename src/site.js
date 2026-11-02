@@ -15,7 +15,7 @@ export const site = {
     name: "Oscar Moreno",
     image: "/img/memoji-2-no-bg.png",
     links: [
-      { icon: "x-twitter", label: "X-Twitter", url: "https://twitter.com/oscarmorenodev" },
+      { icon: "x-twitter", label: "X", url: "https://x.com/oscarmorenodev" },
       { icon: "linkedin", label: "Linkedin", url: "https://linkedin.com/in/oscarmorenodev" },
     ],
   },
@@ -35,7 +35,7 @@ export const languages = {
       { name: "Blog", url: "/blog/" },
       { name: "About", url: "/about/" },
       { name: "Contact", url: "/contact/" },
-      { name: "Apps", url: "/apps/" },
+      { name: "Projects", url: "/projects/" },
     ],
   },
 };
