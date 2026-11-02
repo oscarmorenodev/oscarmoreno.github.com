@@ -78,26 +78,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Swift Collection Types</h1>
     <div class="article-meta"><time datetime="2023-03-06">6 March 2023</time></div>
-    
+
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#collection-mutability">Collection Mutability</a></li><li class="toc-l0"><a href="#diferences-between-arrays-sets-and-dictionaries">Diferences between arrays, sets and dictionaries</a></li><li class="toc-l0"><a href="#fundamentals-of-different-collection-types">Fundamentals of different collection types</a></li><li class="toc-l1"><a href="#arrays">Arrays</a></li><li class="toc-l1"><a href="#sets">Sets</a></li><li class="toc-l1"><a href="#dictionaries">Dictionaries</a></li></ul></nav>
@@ -106,11 +107,11 @@
     <div class="prose">
 <p>The collections are one of the most used data structure when you are programming so, it is extremely important know the different approach you dispose to work with them.</p>
 <p>Collection types are complex data types, and Swift allow use three collection types: Arrays, Sets and Dictionaries for manage related values.</p>
-<p>The reliability of these collections is based on the types of values and keys that you can store. When you create an instance of a collection, you need to confirm the type of values that it manages. This means that: you cannot store different types that you previously defined, and you can be sure the type of data you will retrieve when you manage a collection. </p>
+<p>The reliability of these collections is based on the types of values and keys that you can store. When you create an instance of a collection, you need to confirm the type of values that it manages. This means that: you cannot store different types that you previously defined, and you can be sure the type of data you will retrieve when you manage a collection.</p>
 <p>Also, thanks to type inference, you can specify the type, or Swift will infere the type.</p>
 <h2 id="collection-mutability">Collection Mutability <a class="heading-anchor" href="#collection-mutability" aria-label="Anchor">#</a></h2>
 <p>As well as variables and constants, collections can be mutable or unmutable depending on how was created.</p>
-<p>If you store an array, set or a dictionary in a variable, you can mutate the collection, because you can add, remove or change a single or multiple values in these collection. </p>
+<p>If you store an array, set or a dictionary in a variable, you can mutate the collection, because you can add, remove or change a single or multiple values in these collection.</p>
 <p>But, if you store it in a constant, you cannot add new elements or modify the ones with was instantiated.</p>
 <h2 id="diferences-between-arrays-sets-and-dictionaries">Diferences between arrays, sets and dictionaries <a class="heading-anchor" href="#diferences-between-arrays-sets-and-dictionaries" aria-label="Anchor">#</a></h2>
 <p>Arrays are ordered collections, where duplications are allowed and values can be accessed by a numeric index (position in the array)</p>
@@ -120,34 +121,35 @@
 <h3 id="arrays">Arrays <a class="heading-anchor" href="#arrays" aria-label="Anchor">#</a></h3>
 <p>If you want to create an empty array, you will need specify the data type. There are different ways to create an empty array, this a example.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> numbers = [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]()</span></span></code></pre></div>
-<p>But, if you want to create it with values, you don&#8217;t need specify the types. Next, you can see how to create an strings array</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> tutorials = [</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Combine"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"AsyncAwait"</span><span style="color:#FFFFFF">] </span></span></code></pre></div>
+<p>But, if you want to create it with values, you don’t need specify the types. Next, you can see how to create an strings array</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> tutorials = [</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Combine"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "AsyncAwait"</span><span style="color:#FFFFFF">] </span></span></code></pre></div>
 <p>And, if you need to access to a value, you must indicate the position of the value in the array. But, remember that collections index starts by 0.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> firstCourse = tutorials[</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">]</span></span></code></pre></div>
-<p>The above code will store &#8220;SwiftUI&#8221; in <code>firstCourse</code> constant.</p>
+<p>The above code will store “SwiftUI” in <code>firstCourse</code> constant.</p>
 <h3 id="sets">Sets <a class="heading-anchor" href="#sets" aria-label="Anchor">#</a></h3>
-<p>Again, you will need specify data type for create an empty set. </p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> numbers = </span><span style="color:#D0A8FF">Set</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">>()</span></span></code></pre></div>
-<p>Create a set with values, is similar to create an array but, in this case, you will need to specify that is a set to don&#8217;t create an array</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> tutorials = [</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Combine"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"AsyncAwait"</span><span style="color:#FFFFFF">] </span></span></code></pre></div>
+<p>Again, you will need specify data type for create an empty set.</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> numbers = Set&lt;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">&gt;()</span></span></code></pre></div>
+<p>Create a set with values, is similar to create an array but, in this case, you will need to specify that is a set to don’t create an array</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> tutorials = [</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Combine"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "AsyncAwait"</span><span style="color:#FFFFFF">] </span></span></code></pre></div>
 <p>But, in this case, as sets have not an index, you cannot use it to access to the data. At least, you can check if the value exists.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> swiftuiExists = tutorials.</span><span style="color:#A167E6">contains</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <p>The above code wil store true in <code>swiftuiExists</code> variable</p>
 <h3 id="dictionaries">Dictionaries <a class="heading-anchor" href="#dictionaries" aria-label="Anchor">#</a></h3>
 <p>And, lastly, you can create an empty dictionary specifying both the key type and the value type</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> nameOfNumbers = [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">]()</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> nameOfNumbers = [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">]()</span></span></code></pre></div>
 <p>To create a dictionary with values, it is also similar to an array, but you have to write the key of each value. Remember that the keys must be uniques.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> requirements = [</span><span style="color:#FC6A5D">"View"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Database"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"CoreData"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"AugmentedReality"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"ARKit"</span><span style="color:#FFFFFF">]</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> requirements = [</span><span style="color:#FC6A5D">"View"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"SwiftUI"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Database"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"CoreData"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "AugmentedReality"</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D">"ARKit"</span><span style="color:#FFFFFF">]</span></span></code></pre></div>
 <p>And, if you want to access to a value, you only need know the index</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> database = requirements[</span><span style="color:#FC6A5D">"Database"</span><span style="color:#FFFFFF">]</span></span></code></pre></div>
 <hr>
 <br/>
-In next posts, I will write about useful methods in collection types to manage arrays, sets and dictionaries.<p>Happy coding! 👨🏻‍💻</p>
+In next posts, I will write about useful methods in collection types to manage arrays, sets and dictionaries.
+<p>Happy coding! 👨🏻‍💻</p>
 
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -156,12 +158,12 @@ In next posts, I will write about useful methods in collection types to manage a
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/useful-strings-methods-swift/"><span class="title">← Useful String Methods in Swift</span><div class="article-meta"><time datetime="2023-02-20">20 February 2023</time></div></a><a class="next" href="/blog/loops-swift/"><span class="title">Exploring Loops in Swift →</span><div class="article-meta"><time datetime="2023-03-20">20 March 2023</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/useful-strings-methods-swift/"><span class="title">← Useful String Methods in Swift</span><div class="article-meta"><time datetime="2023-02-20">20 February 2023</time></div></a><a class="next" href="/blog/loops-swift/"><span class="title">Exploring Loops in Swift →</span><div class="article-meta"><time datetime="2023-03-20">20 March 2023</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -186,5 +188,6 @@ In next posts, I will write about useful methods in collection types to manage a
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

@@ -80,26 +80,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Defining characteristics of types: The properties</h1>
     <div class="article-meta"><time datetime="2024-04-18">18 April 2024</time></div>
-    <img class="feature" src="/es/blog/propiedades-swift/feature-propiedades-swift.webp" alt="" decoding="async">
+<img class="feature" src="/es/blog/propiedades-swift/feature-propiedades-swift.webp" alt="" decoding="async">
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#stored-properties">Stored properties</a></li><li class="toc-l1"><a href="#properties-on-constant-instances">Properties on constant instances</a></li><li class="toc-l1"><a href="#lazy-properties">Lazy properties</a></li><li class="toc-l0"><a href="#computed-properties">Computed properties</a></li><li class="toc-l1"><a href="#read-only-properties">Read-only properties</a></li><li class="toc-l0"><a href="#property-observers">Property Observers</a></li><li class="toc-l0"><a href="#property-wrappers">Property wrappers</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li></ul></nav>
@@ -112,20 +113,20 @@
 <li>Behaviors</li>
 <li>Characteristics</li>
 </ul>
-<p>Among the behaviors you could identify: Call a contact, browse the internet, take a photo&#8230; That is, actions you can perform with the device, or in other words: what it can do.</p>
-<p>And about the characteristics, you could see: the size of the screen, the weight, the color&#8230; That is, details that define what the object is like, or rather, <strong>properties</strong></p>
+<p>Among the behaviors you could identify: Call a contact, browse the internet, take a photo… That is, actions you can perform with the device, or in other words: what it can do.</p>
+<p>And about the characteristics, you could see: the size of the screen, the weight, the color… That is, details that define what the object is like, or rather, <strong>properties</strong></p>
 <p>And the properties are those that will store the characteristics of the types (classes, structures, enumerations or protocols) that define said property.</p>
 <p>With that, we can define the properties in 2 different ways: through <strong>stored properties</strong>, or through <strong>calculated properties</strong>.</p>
 <h2 id="stored-properties">Stored properties <a class="heading-anchor" href="#stored-properties" aria-label="Anchor">#</a></h2>
 <p>Stored properties are the simplest way to define a property. Within a type, you indicate its property; and to do this, write the type of value (constant or variable), next to the name of the property.</p>
 <p>From there, you can indicate the type of value (and you will assign the value when you initialize it) or you can assign it a value, and Swift will infer the type of data you are storing.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Movie</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> title: </span><span style="color:#D0A8FF">String</span></span>
-<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> year: </span><span style="color:#D0A8FF">Int</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> released = </span><span style="color:#FC5FA3">false</span></span>
+<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> title:</span><span style="color:#D0A8FF"> String</span></span>
+<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> year:</span><span style="color:#D0A8FF"> Int</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> released =</span><span style="color:#FC5FA3"> false</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> theFuture = </span><span style="color:#A167E6">Movie</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">title</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "The future"</span><span style="color:#A167E6">, year</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 2026</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> theFuture = Movie(title:</span><span style="color:#FC6A5D"> "The future"</span><span style="color:#FFFFFF">, year:</span><span style="color:#D0BF69"> 2026</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <p>In that example, you can see 3 properties for the <code>Movie</code> structure.</p>
 <p>The title and year, you must indicate it at initialization. While, if you do not indicate otherwise, the instance is created indicating that the movie has not been released since <code>released</code> will be initialized as <code>false</code> if you have not indicated anything.</p>
 <h3 id="properties-on-constant-instances">Properties on constant instances <a class="heading-anchor" href="#properties-on-constant-instances" aria-label="Anchor">#</a></h3>
@@ -142,23 +143,23 @@
 <span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> played</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> videogameInStruct = </span><span style="color:#A167E6">VideogameStruct</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">title</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "The last of us"</span><span style="color:#A167E6">, played</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// ERROR: Change 'let' to 'var' to make it mutable</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> videogameInClass = </span><span style="color:#A167E6">VidegameClass</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">title</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "God of war"</span><span style="color:#A167E6">, played</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> videogameInStruct = VideogameStruct(title:</span><span style="color:#FC6A5D"> "The last of us"</span><span style="color:#FFFFFF">, played:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">)</span><span style="color:#6C7986"> // ERROR: Change 'let' to 'var' to make it mutable</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> videogameInClass = VidegameClass(title:</span><span style="color:#FC6A5D"> "God of war"</span><span style="color:#FFFFFF">, played:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFFFFF">videogameInStruct.played = </span><span style="color:#FC5FA3">true</span><span style="color:#6C7986"> // ERROR: Change 'let' to 'var' to make it mutable</span></span>
-<span class="line"><span style="color:#FFFFFF">videgameInClass.played = </span><span style="color:#FC5FA3">true</span><span style="color:#6C7986"> // You can change the value.</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">videogameInStruct.played =</span><span style="color:#FC5FA3"> true</span><span style="color:#6C7986"> // ERROR: Change 'let' to 'var' to make it mutable</span></span>
+<span class="line"><span style="color:#FFFFFF">videgameInClass.played =</span><span style="color:#FC5FA3"> true</span><span style="color:#6C7986"> // You can change the value.</span></span></code></pre></div>
 <p>As you see, in case of structure, this code will not compile. Both at instantiation and when trying to modify the value, it will tell you to change <code>let</code> to <code>var</code> to make it mutable.</p>
 <h3 id="lazy-properties">Lazy properties <a class="heading-anchor" href="#lazy-properties" aria-label="Anchor">#</a></h3>
 <p>Lazy properties are <em>lazy</em> properties because their initial value is not calculated until they need to be used.</p>
 <p>To define them you just have to use the reserved word <code>lazy</code> at the beginning of the declaration.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">class</span><span style="color:#5DD8FF"> Network</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> online: </span><span style="color:#D0A8FF">Bool</span><span style="color:#FFFFFF"> = </span><span style="color:#FC5FA3">false</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> online:</span><span style="color:#D0A8FF"> Bool</span><span style="color:#FFFFFF"> =</span><span style="color:#FC5FA3"> false</span></span>
 <span class="line"><span style="color:#6C7986">     // Logic to check if internet connection works.</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Device</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> owner: </span><span style="color:#D0A8FF">String</span></span>
-<span class="line"><span style="color:#FC5FA3">     lazy</span><span style="color:#FC5FA3"> var</span><span style="color:#FFFFFF"> network = </span><span style="color:#A167E6">Network</span><span style="color:#FFFFFF">()</span></span>
+<span class="line"><span style="color:#FC5FA3">     let</span><span style="color:#FFFFFF"> owner:</span><span style="color:#D0A8FF"> String</span></span>
+<span class="line"><span style="color:#FC5FA3">     lazy var</span><span style="color:#FFFFFF"> network = Network()</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>The <code>lazy</code> properties are especially useful for optimizing performance, since the value will not be accessed if it is not needed.</p>
 <p>In the previous example, you can instantiate the device and assign it an owner, but since knowing if it is online is a more complex task that involves other operations, you can continue without checking it until you need it.</p>
@@ -168,29 +169,29 @@
 <p>They are useful when their value depends, for example, on the value of other properties within that same type.</p>
 <p>Here you can see a example:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> TVSeries</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> title: </span><span style="color:#D0A8FF">String</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> startYear: </span><span style="color:#D0A8FF">Int</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> endYear: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">? </span><span style="color:#6C7986">// A nil value indicates the series has not concluded</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> title:</span><span style="color:#D0A8FF"> String</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> startYear:</span><span style="color:#D0A8FF"> Int</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> endYear:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">?</span><span style="color:#6C7986"> // A nil value indicates the series has not concluded</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">     // Computed property to determine if the series is still airing</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> isAiring: </span><span style="color:#D0A8FF">Bool</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> isAiring:</span><span style="color:#D0A8FF"> Bool</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">         get</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">             if</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> endYear = endYear {</span></span>
-<span class="line"><span style="color:#FC5FA3">                 return</span><span style="color:#FC5FA3"> false</span><span style="color:#6C7986"> // The series has concluded</span></span>
-<span class="line"><span style="color:#FFFFFF">             } </span><span style="color:#FC5FA3">else</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">                 return</span><span style="color:#FC5FA3"> true</span><span style="color:#6C7986"> // The series is still airing</span></span>
+<span class="line"><span style="color:#FC5FA3">             if let</span><span style="color:#FFFFFF"> endYear = endYear {</span></span>
+<span class="line"><span style="color:#FC5FA3">                 return false</span><span style="color:#6C7986"> // The series has concluded</span></span>
+<span class="line"><span style="color:#FFFFFF">             }</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">                 return true</span><span style="color:#6C7986"> // The series is still airing</span></span>
 <span class="line"><span style="color:#FFFFFF">             }</span></span>
 <span class="line"><span style="color:#FFFFFF">         }</span></span>
 <span class="line"><span style="color:#FFFFFF">        </span></span>
 <span class="line"><span style="color:#FC5FA3">         set</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">             let</span><span style="color:#FFFFFF"> result = newValue ? </span><span style="color:#FC6A5D">"is"</span><span style="color:#FFFFFF"> : </span><span style="color:#FC6A5D">"is not"</span></span>
-<span class="line"><span style="color:#A167E6">             print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(title)</span><span style="color:#FFFFFF"> \(result)</span><span style="color:#FC6A5D"> on air!"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">             let</span><span style="color:#FFFFFF"> result = newValue ?</span><span style="color:#FC6A5D"> "is"</span><span style="color:#FFFFFF"> :</span><span style="color:#FC6A5D"> "is not"</span></span>
+<span class="line"><span style="color:#A167E6">             print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(title) \(result)</span><span style="color:#FC6A5D"> on air!"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">         }</span></span>
 <span class="line"><span style="color:#FFFFFF">     }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> breakingBad = </span><span style="color:#A167E6">TVSeries</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">title</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Breaking Bad"</span><span style="color:#A167E6">, startYear</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 2008</span><span style="color:#A167E6">, endYear</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 2013</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> strangerThings = </span><span style="color:#A167E6">TVSeries</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">title</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Stranger Things"</span><span style="color:#A167E6">, startYear</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 2016</span><span style="color:#A167E6">, endYear</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> nil</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> breakingBad = TVSeries(title:</span><span style="color:#FC6A5D"> "Breaking Bad"</span><span style="color:#FFFFFF">, startYear:</span><span style="color:#D0BF69"> 2008</span><span style="color:#FFFFFF">, endYear:</span><span style="color:#D0BF69"> 2013</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> strangerThings = TVSeries(title:</span><span style="color:#FC6A5D"> "Stranger Things"</span><span style="color:#FFFFFF">, startYear:</span><span style="color:#D0BF69"> 2016</span><span style="color:#FFFFFF">, endYear:</span><span style="color:#FC5FA3"> nil</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(breakingBad.title)</span><span style="color:#FC6A5D"> is still airing?: </span><span style="color:#FFFFFF">\(breakingBad.isAiring)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(strangerThings.title)</span><span style="color:#FC6A5D"> is still airing?: </span><span style="color:#FFFFFF">\(strangerThings.isAiring)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
@@ -201,10 +202,10 @@
 <p>Calculated properties, which only have <code>get</code> but do not have <code>set</code> will be considered read-only properties, since nothing will be executed, when the value is set, and therefore will only be readable.</p>
 <p>You can see this example:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Rectangle</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> width: </span><span style="color:#D0A8FF">Double</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> height: </span><span style="color:#D0A8FF">Double</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> width:</span><span style="color:#D0A8FF"> Double</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> height:</span><span style="color:#D0A8FF"> Double</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> area: </span><span style="color:#D0A8FF">Double</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> area:</span><span style="color:#D0A8FF"> Double</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">         get</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">             return</span><span style="color:#FFFFFF"> width * height</span></span>
 <span class="line"><span style="color:#FFFFFF">         }</span></span>
@@ -217,14 +218,14 @@
 <li>There is only a single statement, the <code>return</code> can be omitted.</li>
 </ul>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Rectangle</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> width: </span><span style="color:#D0A8FF">Double</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> height: </span><span style="color:#D0A8FF">Double</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> width:</span><span style="color:#D0A8FF"> Double</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> height:</span><span style="color:#D0A8FF"> Double</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> area: </span><span style="color:#D0A8FF">Double</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> area:</span><span style="color:#D0A8FF"> Double</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FFFFFF">         width * height</span></span>
 <span class="line"><span style="color:#FFFFFF">     }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
-<p>This way, you can improve the readability of your code&#8230; and whoever has to maintain it will thank you 😉.</p>
+<p>This way, you can improve the readability of your code… and whoever has to maintain it will thank you 😉.</p>
 <h2 id="property-observers">Property Observers <a class="heading-anchor" href="#property-observers" aria-label="Anchor">#</a></h2>
 <p>Property observers make it possible to take actions when the value of a property changes. That is, it would be similar to <code>set</code> of a calculated property, but observers allow you to execute actions:</p>
 <ul>
@@ -240,55 +241,55 @@
 </ul>
 <p>Look at this other example:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> ProgressTracker</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> task: </span><span style="color:#D0A8FF">String</span></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> percentageComplete: </span><span style="color:#D0A8FF">Double</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">         willSet</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">newPercentage</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> task:</span><span style="color:#D0A8FF"> String</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> percentageComplete:</span><span style="color:#D0A8FF"> Double</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">         willSet</span><span style="color:#FFFFFF">(newPercentage) {</span></span>
 <span class="line"><span style="color:#A167E6">             print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Will set percentageComplete for </span><span style="color:#FFFFFF">\(task)</span><span style="color:#FC6A5D"> to </span><span style="color:#FFFFFF">\(newPercentage)</span><span style="color:#FC6A5D">%"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">         }</span></span>
 <span class="line"><span style="color:#FC5FA3">         didSet</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">             print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Did set percentageComplete for </span><span style="color:#FFFFFF">\(task)</span><span style="color:#FC6A5D"> from </span><span style="color:#FFFFFF">\(oldValue)</span><span style="color:#FC6A5D">% to </span><span style="color:#FFFFFF">\(percentageComplete)</span><span style="color:#FC6A5D">%"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">             if</span><span style="color:#FFFFFF"> percentageComplete == </span><span style="color:#D0BF69">100.0</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">             if</span><span style="color:#FFFFFF"> percentageComplete ==</span><span style="color:#D0BF69"> 100.0</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">                 print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(task)</span><span style="color:#FC6A5D"> is now complete."</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">             }</span></span>
 <span class="line"><span style="color:#FFFFFF">         }</span></span>
 <span class="line"><span style="color:#FFFFFF">     }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> reportProgress = </span><span style="color:#A167E6">ProgressTracker</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">task</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Download"</span><span style="color:#A167E6">, percentageComplete</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete = </span><span style="color:#D0BF69">30</span></span>
-<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete = </span><span style="color:#D0BF69">80</span></span>
-<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete = </span><span style="color:#D0BF69">100</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> reportProgress = ProgressTracker(task:</span><span style="color:#FC6A5D"> "Download"</span><span style="color:#FFFFFF">, percentageComplete:</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete =</span><span style="color:#D0BF69"> 30</span></span>
+<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete =</span><span style="color:#D0BF69"> 80</span></span>
+<span class="line"><span style="color:#FFFFFF">reportProgress.percentageComplete =</span><span style="color:#D0BF69"> 100</span></span></code></pre></div>
 <p>As you can see, you can pass the name of the value that you can use in its block (such as with the constant <code>newPercentaje</code>).</p>
 <p>You can also use <code>oldValue</code>, which is the constant that Swift automatically creates, and which stores the old value.</p>
 <h2 id="property-wrappers">Property wrappers <a class="heading-anchor" href="#property-wrappers" aria-label="Anchor">#</a></h2>
 <p>Finally, it is important to know that there are also property wrappers, they allow you to separate the code that manages how a property is stored and the code that defines said property, and this is achieved by wrapping the calculation.</p>
 <p>You could do it in the following way:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">@</span><span style="color:#FD8F3F">propertyWrapper</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">@propertyWrapper</span></span>
 <span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> NonNegative</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">     private</span><span style="color:#FC5FA3"> var</span><span style="color:#FFFFFF"> value: </span><span style="color:#D0A8FF">Int</span></span>
+<span class="line"><span style="color:#FC5FA3">     private var</span><span style="color:#FFFFFF"> value:</span><span style="color:#D0A8FF"> Int</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> wrappedValue: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">     var</span><span style="color:#FFFFFF"> wrappedValue:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">         get</span><span style="color:#FFFFFF"> { value }</span></span>
-<span class="line"><span style="color:#FC5FA3">         set</span><span style="color:#FFFFFF"> { value = </span><span style="color:#A167E6">max</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">0</span><span style="color:#A167E6">, newValue</span><span style="color:#FFFFFF">) } </span><span style="color:#6C7986">// Ensure the value is never negative</span></span>
+<span class="line"><span style="color:#FC5FA3">         set</span><span style="color:#FFFFFF"> { value =</span><span style="color:#A167E6"> max</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">, newValue) }</span><span style="color:#6C7986"> // Ensure the value is never negative</span></span>
 <span class="line"><span style="color:#FFFFFF">     }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">     // Initialize with a value that is guaranteed to be non-negative</span></span>
-<span class="line"><span style="color:#FC5FA3">     init</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">wrappedValue</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#FC5FA3">         self</span><span style="color:#FFFFFF">.</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF"> = </span><span style="color:#A167E6">max</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">0</span><span style="color:#A167E6">, wrappedValue</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">     init</span><span style="color:#FFFFFF">(wrappedValue:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FC5FA3">         self</span><span style="color:#FFFFFF">.value =</span><span style="color:#A167E6"> max</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">, wrappedValue)</span></span>
 <span class="line"><span style="color:#FFFFFF">     }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> InventoryItem</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FFFFFF">     @</span><span style="color:#FD8F3F">NonNegative</span><span style="color:#FC5FA3"> var</span><span style="color:#FFFFFF"> stock: </span><span style="color:#D0A8FF">Int</span></span>
+<span class="line"><span style="color:#FFFFFF">     @NonNegative</span><span style="color:#FC5FA3"> var</span><span style="color:#FFFFFF"> stock:</span><span style="color:#D0A8FF"> Int</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> item = </span><span style="color:#A167E6">InventoryItem</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">stock</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 5</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">item.stock</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints: 5</span></span>
+<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> item = InventoryItem(stock:</span><span style="color:#D0BF69"> 5</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(item.stock)</span><span style="color:#6C7986"> // Prints: 5</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFFFFF">item.stock = </span><span style="color:#D0BF69">-3</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">item.stock</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints: 2</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">item.stock = -</span><span style="color:#D0BF69">3</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(item.stock)</span><span style="color:#6C7986"> // Prints: 2</span></span></code></pre></div>
 <p>With this example, you can try on the one hand how properties are managed to check that a property does not have a negative integer value. And thus, reuse it in other parts of the code, without having to copy and paste the content of the getters and setters.</p>
-<p>The use of property wrappers requires and allows many more details, so if you want to know more you can see it in the [official documentation](<a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-" target="_blank" rel="noreferrer">https://docs.swift.org/swift-book/documentation/the-swift-programming-</a> language/properties/#Property-Wrappers).</p>
+<p>The use of property wrappers requires and allows many more details, so if you want to know more you can see it in the <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/#Property-Wrappers" target="_blank" rel="noreferrer">official documentation</a>.</p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Anchor">#</a></h2>
 <p>You have seen how properties basically define the characteristics of the type to which they belong.</p>
 <p>But, in order to make the most of them, and optimize your code, it is key to know all the operations you can do with them.</p>
@@ -297,7 +298,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -306,12 +307,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/apple-apps-business-models/"><span class="title">← Business models in Apple apps: Discover the perfect one for you</span><div class="article-meta"><time datetime="2024-04-04T08:00:00.000+01:00">4 April 2024</time></div></a><a class="next" href="/blog/apple-ecosistem-compatibility/"><span class="title">Ensure compatibility of apps for the Apple ecosystem →</span><div class="article-meta"><time datetime="2024-04-25">25 April 2024</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/apple-apps-business-models/"><span class="title">← Business models in Apple apps: Discover the perfect one for you</span><div class="article-meta"><time datetime="2024-04-04T08:00:00.000+01:00">4 April 2024</time></div></a><a class="next" href="/blog/apple-ecosistem-compatibility/"><span class="title">Ensure compatibility of apps for the Apple ecosystem →</span><div class="article-meta"><time datetime="2024-04-25">25 April 2024</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -336,5 +337,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

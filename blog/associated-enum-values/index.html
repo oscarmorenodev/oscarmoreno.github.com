@@ -78,26 +78,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Enhance Your Enums with Associated Values</h1>
     <div class="article-meta"><time datetime="2024-10-15T08:00:00.000+02:00">15 October 2024</time></div>
-    
+
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#how-to-define-associated-values-in-your-enumerations">How to Define Associated Values in Your Enumerations</a></li><li class="toc-l0"><a href="#assigning-associated-values-to-an-enumeration-case">Assigning Associated Values to an Enumeration Case</a></li><li class="toc-l0"><a href="#advantages-of-using-associated-types-for-enums">Advantages of Using Associated Types for Enums</a></li><li class="toc-l1"><a href="#improved-readability">Improved Readability</a></li><li class="toc-l1"><a href="#greater-stability">Greater Stability</a></li><li class="toc-l0"><a href="#examples-of-using-associated-values">Examples of Using Associated Values</a></li><li class="toc-l1"><a href="#error-handling">Error Handling</a></li><li class="toc-l1"><a href="#defining-view-actions">Defining View Actions</a></li><li class="toc-l1"><a href="#modeling-complex-data">Modeling Complex Data</a></li><li class="toc-l1"><a href="#managing-states">Managing States</a></li><li class="toc-l1"><a href="#advanced-filters">Advanced Filters</a></li><li class="toc-l0"><a href="#conclusions">Conclusions</a></li><li class="toc-l0"><a href="#source">Source</a></li></ul></nav>
@@ -106,7 +107,7 @@
     <div class="prose">
 <p>One of my favorite features in Swift is <strong>enums</strong>.</p>
 <p>They are easy to understand and use.</p>
-<p>But sometimes, we don&#8217;t make the most of them.</p>
+<p>But sometimes, we don’t make the most of them.</p>
 <p>And that can be achieved (among other ways) through associated values.</p>
 <p>Associated values allow you to attach values of different types to the different cases of an enumeration.</p>
 <p>If you need it, I also wrote an article on <a href="/blog/swift-enums/">enumerations</a>.</p>
@@ -114,11 +115,11 @@
 <h2 id="how-to-define-associated-values-in-your-enumerations">How to Define Associated Values in Your Enumerations <a class="heading-anchor" href="#how-to-define-associated-values-in-your-enumerations" aria-label="Anchor">#</a></h2>
 <p>You just need to include, after each case, the type of value you want to associate.</p>
 <p>You can define as many values as you want.</p>
-<p>Although, as in other cases, it&#8217;s not recommended to have too many values.</p>
+<p>Although, as in other cases, it’s not recommended to have too many values.</p>
 <p>In this way, you will improve readability and reduce complexity.</p>
 <p>Moreover, optionally, you can also specify the parameter name.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> User</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    let</span><span style="color:#FFFFFF"> name: </span><span style="color:#D0A8FF">String</span></span>
+<span class="line"><span style="color:#FC5FA3">    let</span><span style="color:#FFFFFF"> name:</span><span style="color:#D0A8FF"> String</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> Resolution</span><span style="color:#FFFFFF"> {</span></span>
@@ -127,168 +128,168 @@
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> State</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> toDo(</span><span style="color:#41A1C0">estimatedDate</span><span style="color:#FFFFFF">: Date)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> inProgress(</span><span style="color:#41A1C0">assignee</span><span style="color:#FFFFFF">: User)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> done(</span><span style="color:#41A1C0">time</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> toDo(estimatedDate: Date)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> inProgress(assignee: User)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> done(time:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> close(Resolution)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>As you can see, each case of the <code>State</code> enum has an associated value.</p>
 <p>All of them have a parameter name except for the closing case.</p>
 <h2 id="assigning-associated-values-to-an-enumeration-case">Assigning Associated Values to an Enumeration Case <a class="heading-anchor" href="#assigning-associated-values-to-an-enumeration-case" aria-label="Anchor">#</a></h2>
 <p>Once the <code>enum</code> is defined, when you choose a case, you must assign a value of the specified type.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state = State.</span><span style="color:#A167E6">toDo</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">estimatedDate</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> Date.now.addingTimeInterval</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">86400</span><span style="color:#FFFFFF">))</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state2 = State.</span><span style="color:#A167E6">inProgress</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">assignee</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> .</span><span style="color:#FC5FA3">init</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "John"</span><span style="color:#FFFFFF">))</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state3 = State.</span><span style="color:#A167E6">done</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">time</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state4 = State.</span><span style="color:#A167E6">close</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.completed</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state = State.toDo(estimatedDate: Date.now.addingTimeInterval(</span><span style="color:#D0BF69">86400</span><span style="color:#FFFFFF">))</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state2 = State.inProgress(assignee: .</span><span style="color:#FC5FA3">init</span><span style="color:#FFFFFF">(name:</span><span style="color:#FC6A5D"> "John"</span><span style="color:#FFFFFF">))</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state3 = State.done(time:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> state4 = State.close(.completed)</span></span></code></pre></div>
 <p>Additionally, this also occurs when using a <code>switch</code> to handle different situations.</p>
-<p>But, in this way, the parameter assigned in each case of the <code>switch</code> doesn&#8217;t need to have the same name as in the definition.</p>
-<p>Nor are you required to reference the parameter if you don&#8217;t need it for handling.</p>
+<p>But, in this way, the parameter assigned in each case of the <code>switch</code> doesn’t need to have the same name as in the definition.</p>
+<p>Nor are you required to reference the parameter if you don’t need it for handling.</p>
 <p>You can see this better in the following example.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> manageTask</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> task: State) {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> manageTask</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> task: State) {</span></span>
 <span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> task {</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .toDo:</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Task is not started yet."</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">inProgress</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> assignee</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .inProgress(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> assignee):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(assignee)</span><span style="color:#FC6A5D"> is working on it"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">done</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">var</span><span style="color:#A167E6"> duration</span><span style="color:#FFFFFF">):</span></span>
-<span class="line"><span style="color:#FFFFFF">        duration /= </span><span style="color:#D0BF69">60</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .done(</span><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> duration):</span></span>
+<span class="line"><span style="color:#FFFFFF">        duration /=</span><span style="color:#D0BF69"> 60</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Task was completed in </span><span style="color:#FFFFFF">\(duration)</span><span style="color:#FC6A5D"> hours"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">close</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> finalState</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .close(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> finalState):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Task is finished. It was </span><span style="color:#FFFFFF">\(finalState)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">manageTask</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.toDo</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">estimatedDate</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> Date.now.addingTimeInterval</span><span style="color:#FFFFFF">(</span><span style="color:#D0BF69">172_800</span><span style="color:#FFFFFF">)))</span></span>
+<span class="line"><span style="color:#FFFFFF">manageTask(.toDo(estimatedDate: Date.now.addingTimeInterval(</span><span style="color:#D0BF69">172_800</span><span style="color:#FFFFFF">)))</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> user = </span><span style="color:#A167E6">User</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Erlich Bachman"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#A167E6">manageTask</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.inProgress</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">assignee</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> user</span><span style="color:#FFFFFF">))</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> user = User(name:</span><span style="color:#FC6A5D"> "Erlich Bachman"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FFFFFF">manageTask(.inProgress(assignee: user))</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">manageTask</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.done</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">minutes</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 90.0</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
-<p>As you can see, in the <code>toDo</code> case, the estimated start date is not used, so you don&#8217;t need to retrieve that value.</p>
+<span class="line"><span style="color:#FFFFFF">manageTask(.done(minutes:</span><span style="color:#D0BF69"> 90.0</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<p>As you can see, in the <code>toDo</code> case, the estimated start date is not used, so you don’t need to retrieve that value.</p>
 <p>While in the <code>done</code> and <code>close</code> cases, the parameter name in the definition does not match the name in the <code>switch</code>.</p>
 <h2 id="advantages-of-using-associated-types-for-enums">Advantages of Using Associated Types for Enums <a class="heading-anchor" href="#advantages-of-using-associated-types-for-enums" aria-label="Anchor">#</a></h2>
 <h3 id="improved-readability">Improved Readability <a class="heading-anchor" href="#improved-readability" aria-label="Anchor">#</a></h3>
 <p>I know I say this often, but we spend more time reading code than writing it.</p>
-<p>So it&#8217;s better for that activity to be as simple as possible.</p>
-<p>Thanks to associated values, you don&#8217;t need to create external structures to associate with the cases.</p>
+<p>So it’s better for that activity to be as simple as possible.</p>
+<p>Thanks to associated values, you don’t need to create external structures to associate with the cases.</p>
 <p>Moreover, the code hierarchy remains simpler without those classes.</p>
 <h3 id="greater-stability">Greater Stability <a class="heading-anchor" href="#greater-stability" aria-label="Anchor">#</a></h3>
 <p>Strong typing is one of the greatest advantages of Swift.</p>
 <p>And it is reinforced by this feature.</p>
 <p>You must define the type of each associated value.</p>
 <p>You can only assign a value of that type, allowing you to avoid errors due to incorrect typing.</p>
-<p>Additionally, if you&#8217;re using a <code>switch</code> to handle actions based on the case, you&#8217;re required to address all cases.</p>
+<p>Additionally, if you’re using a <code>switch</code> to handle actions based on the case, you’re required to address all cases.</p>
 <p>And Xcode itself helps you add the associated values if needed.</p>
 <h2 id="examples-of-using-associated-values">Examples of Using Associated Values <a class="heading-anchor" href="#examples-of-using-associated-values" aria-label="Anchor">#</a></h2>
 <h3 id="error-handling">Error Handling <a class="heading-anchor" href="#error-handling" aria-label="Anchor">#</a></h3>
 <p>It is common that, to complement the information of an error, you need additional data.</p>
 <p>This information could be the message to display or something you need to solve the error.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> ArcadeMachineError</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Error</span><span style="color:#FFFFFF"> {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> ArcadeMachineError</span><span style="color:#FFFFFF">: Error {</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> invalidSelection</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> insufficientFunds(</span><span style="color:#41A1C0">coinsNeeded</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> userUnknown(</span><span style="color:#41A1C0">user</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> insufficientFunds(coinsNeeded:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> userUnknown(user:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayError</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> error: ArcadeMachineError) {</span></span>
+<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayError</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> error: ArcadeMachineError) {</span></span>
 <span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> error {</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .invalidSelection:</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Invalid selection"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">insufficientFunds</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> coinsNeeded</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .insufficientFunds(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> coinsNeeded):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Insufficient funds. You need </span><span style="color:#FFFFFF">\(coinsNeeded)</span><span style="color:#FC6A5D"> coins"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">userUnknown</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> user</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .userUnknown(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> user):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"User </span><span style="color:#FFFFFF">\(user)</span><span style="color:#FC6A5D"> is unknown"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">displayError</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.userUnknown</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">user</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "pacman"</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">displayError(.userUnknown(user:</span><span style="color:#FC6A5D"> "pacman"</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
 <h3 id="defining-view-actions">Defining View Actions <a class="heading-anchor" href="#defining-view-actions" aria-label="Anchor">#</a></h3>
 <p>Actions executed as a result of user interaction often require related values:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> UserAction</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> login(</span><span style="color:#41A1C0">username</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">password</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> login(username:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">, password:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> logout</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> updateProfile(</span><span style="color:#41A1C0">name</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">age</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> updateProfile(name:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">, age:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> performAction</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> action: UserAction) {</span></span>
+<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> performAction</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> action: UserAction) {</span></span>
 <span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> action {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">login</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> username, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> password</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .login(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> username,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> password):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Logging in with </span><span style="color:#FFFFFF">\(username)</span><span style="color:#FC6A5D"> and </span><span style="color:#FFFFFF">\(password)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .logout:</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Logging out"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">updateProfile</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> name, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> age</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .updateProfile(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> name,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> age):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Updating profile with name: </span><span style="color:#FFFFFF">\(name)</span><span style="color:#FC6A5D">, age: </span><span style="color:#FFFFFF">\(age)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">performAction</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.updateProfile</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "grogu"</span><span style="color:#A167E6">, age</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 50</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">performAction(.updateProfile(name:</span><span style="color:#FC6A5D"> "grogu"</span><span style="color:#FFFFFF">, age:</span><span style="color:#D0BF69"> 50</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
 <h3 id="modeling-complex-data">Modeling Complex Data <a class="heading-anchor" href="#modeling-complex-data" aria-label="Anchor">#</a></h3>
 <p>For example, when dealing with multimedia elements.</p>
 <p>These often come with different types of associated data.</p>
-<p>With an enumeration and associated values, it&#8217;s as easy to define as it is to handle.</p>
+<p>With an enumeration and associated values, it’s as easy to define as it is to handle.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> MediaType</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> image(</span><span style="color:#41A1C0">url</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">resolution</span><span style="color:#FFFFFF">: (width: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, height: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">))</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> video(</span><span style="color:#41A1C0">url</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">duration</span><span style="color:#FFFFFF">: TimeInterval)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> audio(</span><span style="color:#41A1C0">url</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">bitrate</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> image(url:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">, resolution: (width:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, height:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">))</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> video(url:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">, duration: TimeInterval)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> audio(url:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">, bitrate:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> handleMedia</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> media: MediaType) {</span></span>
+<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> handleMedia</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> media: MediaType) {</span></span>
 <span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> media {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">image</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> url, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> resolution</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .image(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> url,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> resolution):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Image URL: </span><span style="color:#FFFFFF">\(url)</span><span style="color:#FC6A5D">, Resolution: </span><span style="color:#FFFFFF">\(resolution.width)</span><span style="color:#FC6A5D">x</span><span style="color:#FFFFFF">\(resolution.height)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">video</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> url, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> duration</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .video(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> url,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> duration):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Video URL: </span><span style="color:#FFFFFF">\(url)</span><span style="color:#FC6A5D">, Duration: </span><span style="color:#FFFFFF">\(duration)</span><span style="color:#FC6A5D"> seconds"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">audio</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> url, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> bitrate</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .audio(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> url,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> bitrate):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Audio URL: </span><span style="color:#FFFFFF">\(url)</span><span style="color:#FC6A5D">, Bitrate: </span><span style="color:#FFFFFF">\(bitrate)</span><span style="color:#FC6A5D"> kbps"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">handleMedia</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.video</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">url</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "R.Astley-never_gonna_give_you_up.mp4"</span><span style="color:#A167E6">,</span></span>
-<span class="line"><span style="color:#A167E6">                   duration</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 213</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">handleMedia(.video(url:</span><span style="color:#FC6A5D"> "R.Astley-never_gonna_give_you_up.mp4"</span><span style="color:#FFFFFF">,</span></span>
+<span class="line"><span style="color:#FFFFFF">                   duration:</span><span style="color:#D0BF69"> 213</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
 <h3 id="managing-states">Managing States <a class="heading-anchor" href="#managing-states" aria-label="Anchor">#</a></h3>
 <p>This is possibly the most widespread use of associated values in enums.</p>
-<p>And it&#8217;s because the states of an app often involve related data such as the user, the view being displayed, etc.</p>
+<p>And it’s because the states of an app often involve related data such as the user, the view being displayed, etc.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> AppState</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> onboarding(</span><span style="color:#41A1C0">step</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> loggedIn(</span><span style="color:#41A1C0">userID</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> onboarding(step:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> loggedIn(userID:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> loggedOut</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> handleAppState</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> state: AppState) {</span></span>
+<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> handleAppState</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> state: AppState) {</span></span>
 <span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> state {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">onboarding</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> step</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .onboarding(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> step):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Onboarding step </span><span style="color:#FFFFFF">\(step)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">loggedIn</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> userID</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .loggedIn(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> userID):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"User logged in with ID </span><span style="color:#FFFFFF">\(userID)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .loggedOut:</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"User logged out"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">handleAppState</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.onboarding</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">step</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 1</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">handleAppState(.onboarding(step:</span><span style="color:#D0BF69"> 1</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
 <h3 id="advanced-filters">Advanced Filters <a class="heading-anchor" href="#advanced-filters" aria-label="Anchor">#</a></h3>
 <p>Associated values can also be very useful for filters.</p>
 <p>When you use them, you need to define the value of those filters.</p>
 <p>Thus, you can easily set them.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> Filter</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> priceRange(</span><span style="color:#41A1C0">min</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Double</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">max</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Double</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> category(</span><span style="color:#41A1C0">name</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> availability(</span><span style="color:#41A1C0">isInStock</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Bool</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> priceRange(</span><span style="color:#A167E6">min</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> Double</span><span style="color:#FFFFFF">,</span><span style="color:#A167E6"> max</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> Double</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> category(name:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> availability(isInStock:</span><span style="color:#D0A8FF"> Bool</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> applyFilter</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> filter: Filter) {</span></span>
-<span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#FFFFFF"> filter {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">priceRange</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> min, </span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> max</span><span style="color:#FFFFFF">):</span></span>
-<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Filter by price range: </span><span style="color:#FFFFFF">\(min)</span><span style="color:#FC6A5D"> - </span><span style="color:#FFFFFF">\(max)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">category</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> name</span><span style="color:#FFFFFF">):</span></span>
+<span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> applyFilter</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#A167E6"> filter</span><span style="color:#FFFFFF">: Filter) {</span></span>
+<span class="line"><span style="color:#FC5FA3">    switch</span><span style="color:#A167E6"> filter</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .priceRange(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> min,</span><span style="color:#FC5FA3"> let</span><span style="color:#FFFFFF"> max):</span></span>
+<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Filter by price range: </span><span style="color:#FFFFFF">\(</span><span style="color:#A167E6">min</span><span style="color:#FFFFFF">)</span><span style="color:#FC6A5D"> - </span><span style="color:#FFFFFF">\(</span><span style="color:#A167E6">max</span><span style="color:#FFFFFF">)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .category(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> name):</span></span>
 <span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Filter by category: </span><span style="color:#FFFFFF">\(name)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .</span><span style="color:#A167E6">availability</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">let</span><span style="color:#A167E6"> isInStock</span><span style="color:#FFFFFF">):</span></span>
-<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Filter by availability: </span><span style="color:#FFFFFF">\(isInStock ? </span><span style="color:#FC6A5D">"In stock"</span><span style="color:#FFFFFF"> : </span><span style="color:#FC6A5D">"Out of stock"</span><span style="color:#FFFFFF">)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> .availability(</span><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> isInStock):</span></span>
+<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Filter by availability: </span><span style="color:#FFFFFF">\(isInStock ?</span><span style="color:#FC6A5D"> "In stock"</span><span style="color:#FFFFFF"> :</span><span style="color:#FC6A5D"> "Out of stock"</span><span style="color:#FFFFFF">)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">applyFilter</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">.priceRange</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">min</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10.0</span><span style="color:#A167E6">, max</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 20.0</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">applyFilter(.priceRange(</span><span style="color:#A167E6">min</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10.0</span><span style="color:#FFFFFF">,</span><span style="color:#A167E6"> max</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 20.0</span><span style="color:#FFFFFF">))</span></span></code></pre></div>
 <h2 id="conclusions">Conclusions <a class="heading-anchor" href="#conclusions" aria-label="Anchor">#</a></h2>
-<p>You&#8217;ve seen how easy it is to associate values with different cases of an <code>enum</code>:</p>
+<p>You’ve seen how easy it is to associate values with different cases of an <code>enum</code>:</p>
 <ul>
 <li>You just need to define them after each case.</li>
 <li>Take advantage of Xcode autocomplete to add the values you need.</li>
@@ -310,7 +311,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -319,12 +320,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/swift-subscripts/"><span class="title">← Access collections in a easy way</span><div class="article-meta"><time datetime="2024-10-08T08:00:00.000+02:00">8 October 2024</time></div></a><span></span></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/swift-subscripts/"><span class="title">← Access collections in a easy way</span><div class="article-meta"><time datetime="2024-10-08T08:00:00.000+02:00">8 October 2024</time></div></a><span></span></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -349,5 +350,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

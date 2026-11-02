@@ -80,26 +80,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Access collections in a easy way</h1>
     <div class="article-meta"><time datetime="2024-10-08T08:00:00.000+02:00">8 October 2024</time></div>
-    <img class="feature" src="/es/blog/subscripts-en-swift/feature-swift-subscripts.webp" alt="" decoding="async">
+<img class="feature" src="/es/blog/subscripts-en-swift/feature-swift-subscripts.webp" alt="" decoding="async">
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#what-are-subscripts-in-swift">What are subscripts in Swift</a></li><li class="toc-l0"><a href="#how-to-create-subscripts">How to create subscripts</a></li><li class="toc-l0"><a href="#how-to-access-elements-using-subscripts-in-swift">How to access elements using subscripts in Swift</a></li><li class="toc-l0"><a href="#subscripts-with-multiple-parameters">Subscripts with multiple parameters</a></li><li class="toc-l0"><a href="#type-subscripts">Type Subscripts</a></li><li class="toc-l0"><a href="#conclusions">Conclusions</a></li><li class="toc-l0"><a href="#sources">Sources</a></li></ul></nav>
@@ -107,7 +108,7 @@
 </aside>
     <div class="prose">
 <p>A few weeks ago, while writing about <a href="/blog/swift-keypath-expressions/">key-paths</a>, <strong>subscripts</strong> attracted my attention.</p>
-<p>So, I continued investigating it, and now that I have seen the advantages it offers, I&#8217;ll explain how to take advantage of it to have more customized and readable code.</p>
+<p>So, I continued investigating it, and now that I have seen the advantages it offers, I’ll explain how to take advantage of it to have more customized and readable code.</p>
 <h2 id="what-are-subscripts-in-swift">What are subscripts in Swift <a class="heading-anchor" href="#what-are-subscripts-in-swift" aria-label="Anchor">#</a></h2>
 <p>Subscripts in Swift provide you with a flexible way to access elements found in collections, sequences, or custom types.</p>
 <p>These custom types could be classes, structures, or enumerations.</p>
@@ -116,25 +117,25 @@
 <p>And for this, the same notation as <a href="/blog/swift-collection-types/#arrays">arrays</a> is used. That is, using square brackets <code>[]</code>.</p>
 <h2 id="how-to-create-subscripts">How to create subscripts <a class="heading-anchor" href="#how-to-create-subscripts" aria-label="Anchor">#</a></h2>
 <p>To create a subscript, you simply need to create a method with the name <code>subscript</code>.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">index</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Index</span><span style="color:#FFFFFF">) -> OutputType {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">subscript</span><span style="color:#FFFFFF">(index: Index) -&gt; OutputType {</span></span>
 <span class="line"><span style="color:#FC5FA3">    get</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#6C7986">        // Return a value</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
-<span class="line"><span style="color:#FC5FA3">    set</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">newValue</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FC5FA3">    set</span><span style="color:#FFFFFF">(newValue) {</span></span>
 <span class="line"><span style="color:#6C7986">        // Set a value</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
-<p>It&#8217;s not mandatory to use <code>set</code> if you simply want to return the value, so it wouldn&#8217;t be necessary to explicitly indicate the <code>get</code> either.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">index</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Index</span><span style="color:#FFFFFF">) -> OutputType {</span></span>
+<p>It’s not mandatory to use <code>set</code> if you simply want to return the value, so it wouldn’t be necessary to explicitly indicate the <code>get</code> either.</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">subscript</span><span style="color:#FFFFFF">(index: Index) -&gt; OutputType {</span></span>
 <span class="line"><span style="color:#6C7986">    // Return a value</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <h2 id="how-to-access-elements-using-subscripts-in-swift">How to access elements using subscripts in Swift <a class="heading-anchor" href="#how-to-access-elements-using-subscripts-in-swift" aria-label="Anchor">#</a></h2>
 <p>Following the previous syntax, here you can see how to create a <code>subscript</code> method for a structure that returns the element you ask for from the Fibonacci sequence.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Fibonacci</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">position</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">        guard</span><span style="color:#FFFFFF"> n > </span><span style="color:#D0BF69">1</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> { </span><span style="color:#FC5FA3">return</span><span style="color:#FFFFFF"> n }</span></span>
-<span class="line"><span style="color:#FC5FA3">        var</span><span style="color:#FFFFFF"> a = </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">, b = </span><span style="color:#D0BF69">1</span></span>
-<span class="line"><span style="color:#FC5FA3">        for</span><span style="color:#A167E6"> _</span><span style="color:#FC5FA3"> in</span><span style="color:#D0BF69"> 2</span><span style="color:#FFFFFF">...n {</span></span>
+<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(position:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">        guard</span><span style="color:#FFFFFF"> n &gt;</span><span style="color:#D0BF69"> 1</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span><span style="color:#FC5FA3"> return</span><span style="color:#FFFFFF"> n }</span></span>
+<span class="line"><span style="color:#FC5FA3">        var</span><span style="color:#FFFFFF"> a =</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">, b =</span><span style="color:#D0BF69"> 1</span></span>
+<span class="line"><span style="color:#FC5FA3">        for _ in</span><span style="color:#D0BF69"> 2.</span><span style="color:#FFFFFF">..n {</span></span>
 <span class="line"><span style="color:#FC5FA3">            let</span><span style="color:#FFFFFF"> temp = a + b</span></span>
 <span class="line"><span style="color:#FFFFFF"> a = b</span></span>
 <span class="line"><span style="color:#FFFFFF"> b = temp</span></span>
@@ -143,86 +144,86 @@
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>As you can see, you can pass a <code>position</code> parameter to the <code>subscript</code> method to know the position of the element you want to obtain.</p>
-<p>As you can also check, you don&#8217;t need a <em>setter</em> to set a value.</p>
+<p>As you can also check, you don’t need a <em>setter</em> to set a value.</p>
 <p>So if you indicate the position you want, you can have the value of that position.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> fib = </span><span style="color:#A167E6">Fibonacci</span><span style="color:#FFFFFF">()</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> fib = Fibonacci()</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "13"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">fib</span><span style="color:#FFFFFF">[</span><span style="color:#D0BF69">7</span><span style="color:#FFFFFF">]) </span></span></code></pre></div>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(fib[</span><span style="color:#D0BF69">7</span><span style="color:#FFFFFF">]) </span></span></code></pre></div>
 <h2 id="subscripts-with-multiple-parameters">Subscripts with multiple parameters <a class="heading-anchor" href="#subscripts-with-multiple-parameters" aria-label="Anchor">#</a></h2>
 <p>Subscripts can take multiple parameters, allowing more complex forms of access.</p>
 <p>Here you can see an example of a structure to create a 3D cube.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Cube3D</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    private</span><span style="color:#FC5FA3"> var</span><span style="color:#FFFFFF"> cells: [[[</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]]]</span></span>
-<span class="line"><span style="color:#FC5FA3">    let</span><span style="color:#FFFFFF"> size: </span><span style="color:#D0A8FF">Int</span></span>
+<span class="line"><span style="color:#FC5FA3">    private var</span><span style="color:#FFFFFF"> cells: [[[</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]]]</span></span>
+<span class="line"><span style="color:#FC5FA3">    let</span><span style="color:#FFFFFF"> size:</span><span style="color:#D0A8FF"> Int</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    init</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">size</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">defaultValue</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> = </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.</span><span style="color:#A167E6">size</span><span style="color:#FFFFFF"> = size</span></span>
-<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.cells = </span><span style="color:#D0A8FF">Array</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">repeating</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> Array</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">repeating</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> Array</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">repeating</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> defaultValue, count</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> size</span><span style="color:#FFFFFF">)</span><span style="color:#A167E6">, count</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> size</span><span style="color:#FFFFFF">)</span><span style="color:#A167E6">, count</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> size</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    init</span><span style="color:#FFFFFF">(size:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, defaultValue:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> =</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.size = size</span></span>
+<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.cells =</span><span style="color:#D0A8FF"> Array</span><span style="color:#FFFFFF">(repeating:</span><span style="color:#D0A8FF"> Array</span><span style="color:#FFFFFF">(repeating:</span><span style="color:#D0A8FF"> Array</span><span style="color:#FFFFFF">(repeating: defaultValue,</span><span style="color:#A167E6"> count</span><span style="color:#FFFFFF">: size),</span><span style="color:#A167E6"> count</span><span style="color:#FFFFFF">: size),</span><span style="color:#A167E6"> count</span><span style="color:#FFFFFF">: size)</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">x</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">y</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">z</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(x:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, y:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, z:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">        get</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">            guard</span><span style="color:#A167E6"> isValidIndex</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">x</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> x, y</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> y, z</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> z</span><span style="color:#FFFFFF">) </span><span style="color:#FC5FA3">else</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">            guard</span><span style="color:#FFFFFF"> isValidIndex(x: x, y: y, z: z)</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">                fatalError</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Index out of range"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FC5FA3">            return</span><span style="color:#FFFFFF"> cells[x][y][z]</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FC5FA3">        set</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">            guard</span><span style="color:#A167E6"> isValidIndex</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">x</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> x, y</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> y, z</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> z</span><span style="color:#FFFFFF">) </span><span style="color:#FC5FA3">else</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">            guard</span><span style="color:#FFFFFF"> isValidIndex(x: x, y: y, z: z)</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">                fatalError</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Index out of range"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF"> cells[x][y][z] = newValue</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">xRange</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Range</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">>, </span><span style="color:#41A1C0">yRange</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Range</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">>, </span><span style="color:#41A1C0">z</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> [[</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]] {</span></span>
-<span class="line"><span style="color:#FC5FA3">        guard</span><span style="color:#A167E6"> isValidRange</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">xRange</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> xRange, yRange</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> yRange, z</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> z</span><span style="color:#FFFFFF">) </span><span style="color:#FC5FA3">else</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">    subscript</span><span style="color:#FFFFFF">(xRange:</span><span style="color:#D0A8FF"> Range</span><span style="color:#FFFFFF">&lt;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">&gt;, yRange:</span><span style="color:#D0A8FF"> Range</span><span style="color:#FFFFFF">&lt;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">&gt;, z:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt; [[</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]] {</span></span>
+<span class="line"><span style="color:#FC5FA3">        guard</span><span style="color:#FFFFFF"> isValidRange(xRange: xRange, yRange: yRange, z: z)</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">            fatalError</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Range out of cube bounds"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> xRange.</span><span style="color:#A167E6">map</span><span style="color:#FFFFFF"> { x </span><span style="color:#FC5FA3">in</span></span>
-<span class="line"><span style="color:#FFFFFF"> yRange.</span><span style="color:#A167E6">map</span><span style="color:#FFFFFF"> { y </span><span style="color:#FC5FA3">in</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> xRange.</span><span style="color:#A167E6">map</span><span style="color:#FFFFFF"> { x</span><span style="color:#FC5FA3"> in</span></span>
+<span class="line"><span style="color:#FFFFFF"> yRange.</span><span style="color:#A167E6">map</span><span style="color:#FFFFFF"> { y</span><span style="color:#FC5FA3"> in</span></span>
 <span class="line"><span style="color:#FFFFFF"> cells[x][y][z]</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    private</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> isValidIndex</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">x</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">y</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">z</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Bool</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> x >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; x &#x3C; size &#x26;&#x26; y >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; y &#x3C; size &#x26;&#x26; z >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; z &#x3C; size</span></span>
+<span class="line"><span style="color:#FC5FA3">    private func</span><span style="color:#41A1C0"> isValidIndex</span><span style="color:#FFFFFF">(x:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, y:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">, z:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Bool</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> x &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; x &lt; size &amp;&amp; y &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; y &lt; size &amp;&amp; z &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; z &lt; size</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    private</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> isValidRange</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">xRange</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Range</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">>, </span><span style="color:#41A1C0">yRange</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Range</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">>, </span><span style="color:#41A1C0">z</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Bool</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> xRange.lowerBound >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; xRange.upperBound &#x3C;= size &#x26;&#x26;</span></span>
-<span class="line"><span style="color:#FFFFFF"> yRange.lowerBound >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; yRange.upperBound &#x3C;= size &#x26;&#x26;</span></span>
-<span class="line"><span style="color:#FFFFFF"> z >= </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF"> &#x26;&#x26; z &#x3C; size</span></span>
+<span class="line"><span style="color:#FC5FA3">    private func</span><span style="color:#41A1C0"> isValidRange</span><span style="color:#FFFFFF">(xRange:</span><span style="color:#D0A8FF"> Range</span><span style="color:#FFFFFF">&lt;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">&gt;, yRange:</span><span style="color:#D0A8FF"> Range</span><span style="color:#FFFFFF">&lt;</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">&gt;, z:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Bool</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> xRange.lowerBound &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; xRange.upperBound &lt;= size &amp;&amp;</span></span>
+<span class="line"><span style="color:#FFFFFF"> yRange.lowerBound &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; yRange.upperBound &lt;= size &amp;&amp;</span></span>
+<span class="line"><span style="color:#FFFFFF"> z &gt;=</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF"> &amp;&amp; z &lt; size</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>After the parameters and the initializer, it has two <code>subscript</code> methods.</p>
 <p>The first takes three position parameters, to determine the place in the 3D cube, and has both a getter and a setter.</p>
 <p>The second also takes several parameters, of type <code>Range</code>.</p>
 <p>This second subscript would allow obtaining a 2D slice of the cube.</p>
-<div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>As you are working with collections and sequences, it is very important to check that you never access positions outside the index to avoid crashes. That&#8217;s why the <code>isValidIndex</code> and <code>isValidRange</code> methods.</span></div>
-<p>And now, you&#8217;ll be able to assign and retrieve the cube values.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> cube = </span><span style="color:#A167E6">Cube3D</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">size</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 5</span><span style="color:#A167E6">, defaultValue</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">)</span></span>
+<div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>As you are working with collections and sequences, it is very important to check that you never access positions outside the index to avoid crashes. That’s why the <code>isValidIndex</code> and <code>isValidRange</code> methods.</span></div>
+<p>And now, you’ll be able to assign and retrieve the cube values.</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> cube = Cube3D(size:</span><span style="color:#D0BF69"> 5</span><span style="color:#FFFFFF">, defaultValue:</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">] = </span><span style="color:#D0BF69">1</span></span>
-<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">1</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">2</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">3</span><span style="color:#FFFFFF">] = </span><span style="color:#D0BF69">5</span></span>
-<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">] = </span><span style="color:#D0BF69">9</span></span>
+<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">] =</span><span style="color:#D0BF69"> 1</span></span>
+<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">1</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 2</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 3</span><span style="color:#FFFFFF">] =</span><span style="color:#D0BF69"> 5</span></span>
+<span class="line"><span style="color:#FFFFFF">cube[</span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4</span><span style="color:#FFFFFF">] =</span><span style="color:#D0BF69"> 9</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints  "1"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">cube</span><span style="color:#FFFFFF">[</span><span style="color:#D0BF69">0</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">0</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(cube[</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">])</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "5"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">cube</span><span style="color:#FFFFFF">[</span><span style="color:#D0BF69">1</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">2</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">3</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(cube[</span><span style="color:#D0BF69">1</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 2</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 3</span><span style="color:#FFFFFF">])</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "9"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">cube</span><span style="color:#FFFFFF">[</span><span style="color:#D0BF69">4</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">4</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(cube[</span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4</span><span style="color:#FFFFFF">])</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> slice = cube[</span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">..&#x3C;</span><span style="color:#D0BF69">2</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">..&#x3C;</span><span style="color:#D0BF69">3</span><span style="color:#FFFFFF">, </span><span style="color:#D0BF69">0</span><span style="color:#FFFFFF">]</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> slice = cube[</span><span style="color:#D0BF69">0.</span><span style="color:#FFFFFF">.&lt;</span><span style="color:#D0BF69">2</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0.</span><span style="color:#FFFFFF">.&lt;</span><span style="color:#D0BF69">3</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 0</span><span style="color:#FFFFFF">]</span></span>
 <span class="line"><span style="color:#6C7986">// Prints [[1, 0, 0], [0, 0, 0]]</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">slice</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(slice)</span></span></code></pre></div>
 <h2 id="type-subscripts">Type Subscripts <a class="heading-anchor" href="#type-subscripts" aria-label="Anchor">#</a></h2>
 <p>You can also define subscripts on the type itself, instead of on instances.</p>
 <p>To do this, indicate the <code>static</code> keyword before <code>subscript</code>, just as you would create any static method.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> DayOfWeek</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> monday = </span><span style="color:#D0BF69">1</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">enum</span><span style="color:#5DD8FF"> DayOfWeek</span><span style="color:#FFFFFF">:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> monday =</span><span style="color:#D0BF69"> 1</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> tuesday</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> wednesday</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> thursday</span></span>
@@ -230,15 +231,15 @@
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> saturday</span></span>
 <span class="line"><span style="color:#FC5FA3">    case</span><span style="color:#FFFFFF"> sunday</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    static</span><span style="color:#FC5FA3"> subscript</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">index</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> DayOfWeek? {</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#A167E6"> DayOfWeek</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">rawValue</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> index</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    static subscript</span><span style="color:#FFFFFF">(index:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt; DayOfWeek? {</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> DayOfWeek(rawValue: index)</span></span>
 <span class="line"><span style="color:#FFFFFF"> }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>And now, if you want to access any day of the week from the enumeration, you just need to indicate its index.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#6C7986">// day is equal to .wednesday</span></span>
 <span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> day = DayOfWeek[</span><span style="color:#D0BF69">3</span><span style="color:#FFFFFF">]</span></span></code></pre></div>
 <div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>Note that Monday has been assigned 1 since, at least in Spain, Monday is the first day of the week.
-And it feels more natural to access it that way. If it hadn&#8217;t been indicated, in the previous example, <code>day</code> would be equal to <code>thursday</code> and the <code>monday</code> case would be accessed through index 0.</span></div>
+And it feels more natural to access it that way. If it hadn’t been indicated, in the previous example, <code>day</code> would be equal to <code>thursday</code> and the <code>monday</code> case would be accessed through index 0.</span></div>
 <h2 id="conclusions">Conclusions <a class="heading-anchor" href="#conclusions" aria-label="Anchor">#</a></h2>
 <p>Summarizing, about <em>subscripts</em>, the most important points:</p>
 <ul>
@@ -246,7 +247,7 @@ And it feels more natural to access it that way. If it hadn&#8217;t been indicat
 <li>They can be used both to get and set values.</li>
 <li>Multiple subscripts can be defined for a single type.</li>
 <li>Subscripts can have multiple input parameters.</li>
-<li>You can create static subscripts that don&#8217;t belong to the instance but to the type.</li>
+<li>You can create static subscripts that don’t belong to the instance but to the type.</li>
 </ul>
 <p>But, keep the following in mind to make the most of them:</p>
 <ul>
@@ -263,7 +264,7 @@ And it feels more natural to access it that way. If it hadn&#8217;t been indicat
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -272,12 +273,12 @@ And it feels more natural to access it that way. If it hadn&#8217;t been indicat
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/generics-swift/"><span class="title">← Optimize code in Swift with generics</span><div class="article-meta"><time datetime="2024-10-01T08:00:00.000+02:00">1 October 2024</time></div></a><a class="next" href="/blog/associated-enum-values/"><span class="title">Enhance Your Enums with Associated Values →</span><div class="article-meta"><time datetime="2024-10-15T08:00:00.000+02:00">15 October 2024</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/generics-swift/"><span class="title">← Optimize code in Swift with generics</span><div class="article-meta"><time datetime="2024-10-01T08:00:00.000+02:00">1 October 2024</time></div></a><a class="next" href="/blog/associated-enum-values/"><span class="title">Enhance Your Enums with Associated Values →</span><div class="article-meta"><time datetime="2024-10-15T08:00:00.000+02:00">15 October 2024</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -302,5 +303,6 @@ And it feels more natural to access it that way. If it hadn&#8217;t been indicat
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

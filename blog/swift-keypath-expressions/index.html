@@ -80,26 +80,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Understanding how key-paths work</h1>
     <div class="article-meta"><time datetime="2024-09-17T08:00:00.000+02:00">17 September 2024</time></div>
-    <img class="feature" src="/es/blog/expresiones-keypath-swift/feature-expresiones-keypath-swift.webp" alt="" decoding="async">
+<img class="feature" src="/es/blog/expresiones-keypath-swift/feature-expresiones-keypath-swift.webp" alt="" decoding="async">
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#writing-a-key-path-expression">Writing a Key-Path Expression</a></li><li class="toc-l0"><a href="#accessing-a-value-using-a-key-path">Accessing a Value Using a Key-Path</a></li><li class="toc-l1"><a href="#identity-key-path">Identity Key-Path</a></li><li class="toc-l1"><a href="#accessing-multiple-values-from-a-type">Accessing Multiple Values from a Type</a></li><li class="toc-l1"><a href="#accessing-subscripts">Accessing Subscripts</a></li><li class="toc-l1"><a href="#accessing-optional-values">Accessing Optional Values</a></li><li class="toc-l0"><a href="#key-path-as-an-alternative-to-closures-and-functions">Key-Path as an Alternative to Closures and Functions</a></li><li class="toc-l0"><a href="#scope-of-key-paths">Scope of Key-Paths</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li><li class="toc-l0"><a href="#source">Source</a></li></ul></nav>
@@ -113,139 +114,140 @@
 <h2 id="writing-a-key-path-expression">Writing a Key-Path Expression <a class="heading-anchor" href="#writing-a-key-path-expression" aria-label="Anchor">#</a></h2>
 <p>Key-path expressions have the following structure</p>
 <p><code>\&lt;#type name#&gt;.&lt;#path#&gt;</code></p>
-<p>The <em>type name</em> is the concrete name of a type (structure, class, enumeration&#8230;) including basic types like <code>Int</code>, <code>[String]</code>, or <code>Set&lt;Double&gt;</code>.</p>
+<p>The <em>type name</em> is the concrete name of a type (structure, class, enumeration…) including basic types like <code>Int</code>, <code>[String]</code>, or <code>Set&lt;Double&gt;</code>.</p>
 <p>The <em>path</em> can contain a property, a subscript, or optionals.</p>
 <div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg></span></span><span>When compiled, the key-path expression is replaced by an instance of the <a href="https://developer.apple.com/documentation/swift/keypath" target="_blank" rel="noreferrer">KeyPath class</a></span></div>
 <h2 id="accessing-a-value-using-a-key-path">Accessing a Value Using a Key-Path <a class="heading-anchor" href="#accessing-a-value-using-a-key-path" aria-label="Anchor">#</a></h2>
 <p>So, if you want to access a key-path value, you can do so through the subscript that requires a ket-path, which is available for all types.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Driver</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> name: </span><span style="color:#D0A8FF">String</span></span>
+<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> name:</span><span style="color:#D0A8FF"> String</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> driver = </span><span style="color:#A167E6">Driver</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Fernando Alonso"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> driver = Driver(name:</span><span style="color:#FC6A5D"> "Fernando Alonso"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> pathToNameProperty = \Driver.name</span></span>
 <span class="line"></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> driverName = driver[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: pathToNameProperty]</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">driverName</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "Fernando Alonso"</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> driverName = driver[keyPath: pathToNameProperty]</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(driverName)</span><span style="color:#6C7986"> // Prints "Fernando Alonso"</span></span></code></pre></div>
 <p>Keep in mind that the <em>type name</em> can be omitted when type inference can determine the expected type.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Race</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> winner: Driver</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    func</span><span style="color:#41A1C0"> displayWinnerProperty</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">keypath</span><span style="color:#FFFFFF">: KeyPath&#x3C;Driver, </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">>) {</span></span>
-<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"The winner is </span><span style="color:#FFFFFF">\(winner[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: keypath])</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    func</span><span style="color:#41A1C0"> displayWinnerProperty</span><span style="color:#FFFFFF">(keypath: KeyPath&lt;Driver,</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">&gt;) {</span></span>
+<span class="line"><span style="color:#A167E6">        print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"The winner is </span><span style="color:#FFFFFF">\(winner[keyPath: keypath])</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> sai = </span><span style="color:#A167E6">Driver</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Carlos Sainz"</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> race = </span><span style="color:#A167E6">Race</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">winner</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> sai</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FFFFFF">race.</span><span style="color:#A167E6">displayWinnerProperty</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">keypath</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> \.name</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "The winner is Carlos Sainz"</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> sai = Driver(name:</span><span style="color:#FC6A5D"> "Carlos Sainz"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> race = Race(winner: sai)</span></span>
+<span class="line"><span style="color:#FFFFFF">race.displayWinnerProperty(keypath: \.name)</span><span style="color:#6C7986"> // Prints "The winner is Carlos Sainz"</span></span></code></pre></div>
 <h3 id="identity-key-path">Identity Key-Path <a class="heading-anchor" href="#identity-key-path" aria-label="Anchor">#</a></h3>
 <p>Additionally, the <em>path</em> can refer to <code>self</code>, known as an <em>identity key-path</em> (<code>\.self</code>).</p>
 <p>The identity key-path refers to the instance itself.</p>
 <p>Due to this, it can be useful to replace an entire instance with a single line.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> verstappenPoints = (</span><span style="color:#A167E6">a</span><span style="color:#FFFFFF">: </span><span style="color:#D0BF69">25</span><span style="color:#FFFFFF">, </span><span style="color:#A167E6">b</span><span style="color:#FFFFFF">: </span><span style="color:#D0BF69">18</span><span style="color:#FFFFFF">, </span><span style="color:#A167E6">c</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69">25</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> verstappenPoints = (a:</span><span style="color:#D0BF69"> 25</span><span style="color:#FFFFFF">, b:</span><span style="color:#D0BF69"> 18</span><span style="color:#FFFFFF">, c:</span><span style="color:#D0BF69">25</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#6C7986">// Equivalent to verstappenPoints = (a: 18, b: 25, c: 25)</span></span>
-<span class="line"><span style="color:#FFFFFF">verstappenPoints[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: \.</span><span style="color:#FC5FA3">self</span><span style="color:#FFFFFF">] = (</span><span style="color:#A167E6">a</span><span style="color:#FFFFFF">: </span><span style="color:#D0BF69">18</span><span style="color:#FFFFFF">, </span><span style="color:#A167E6">b</span><span style="color:#FFFFFF">: </span><span style="color:#D0BF69">25</span><span style="color:#FFFFFF">, </span><span style="color:#A167E6">c</span><span style="color:#FFFFFF">: </span><span style="color:#D0BF69">25</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">verstappenPoints</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "(a: 18, b: 25, c: 25)"</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">verstappenPoints[keyPath: \.</span><span style="color:#FC5FA3">self</span><span style="color:#FFFFFF">] = (a:</span><span style="color:#D0BF69"> 18</span><span style="color:#FFFFFF">, b:</span><span style="color:#D0BF69"> 25</span><span style="color:#FFFFFF">, c:</span><span style="color:#D0BF69"> 25</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(verstappenPoints)</span><span style="color:#6C7986"> // Prints "(a: 18, b: 25, c: 25)"</span></span></code></pre></div>
 <p>But this feature is often leveraged in SwiftUI, for example, in a ForEach.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#A167E6">List</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#A167E6">    ForEach</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">[</span><span style="color:#D0BF69">2</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">4</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">6</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">8</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">10</span><span style="color:#A167E6">], id</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> \.</span><span style="color:#FC5FA3">self</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#A167E6">        Text</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(</span><span style="color:#FC5FA3">$0</span><span style="color:#FFFFFF">)</span><span style="color:#FC6A5D"> is even"</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">List {</span></span>
+<span class="line"><span style="color:#FFFFFF">    ForEach([</span><span style="color:#D0BF69">2</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 6</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 8</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">], id: \.</span><span style="color:#FC5FA3">self</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FFFFFF">        Text(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\($0)</span><span style="color:#FC6A5D"> is even"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <h3 id="accessing-multiple-values-from-a-type">Accessing Multiple Values from a Type <a class="heading-anchor" href="#accessing-multiple-values-from-a-type" aria-label="Anchor">#</a></h3>
 <p>Another feature is that you can access nested properties.</p>
 <p>So, you can refer to the property of a property value.</p>
-<p>Here&#8217;s an example:</p>
+<p>Here’s an example:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Championsip</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> winner: Driver</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    init</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">winnerName</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.winner = </span><span style="color:#A167E6">Driver</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">name</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> winnerName</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    init</span><span style="color:#FFFFFF">(winnerName:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FC5FA3">        self</span><span style="color:#FFFFFF">.winner = Driver(name: winnerName)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> champion = </span><span style="color:#A167E6">Championsip</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">winnerName</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Max Verstappen"</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> champion = Championsip(winnerName:</span><span style="color:#FC6A5D"> "Max Verstappen"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> nestedKeyPath = \Championsip.winner.name</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> championName = champion[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: nestedKeyPath]</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">championName</span><span style="color:#FFFFFF">)  </span><span style="color:#6C7986">// Prints "Max Verstappen"</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> championName = champion[keyPath: nestedKeyPath]</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(championName)</span><span style="color:#6C7986">  // Prints "Max Verstappen"</span></span></code></pre></div>
 <h3 id="accessing-subscripts">Accessing Subscripts <a class="heading-anchor" href="#accessing-subscripts" aria-label="Anchor">#</a></h3>
 <p>Also, there are another possibility. The <em>path</em> can include <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/subscripts/" target="_blank" rel="noreferrer">subscripts</a> using square brackets.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> tracks = [</span><span style="color:#FC6A5D">"Spa"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Monza"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Montmelo"</span><span style="color:#FFFFFF">, </span><span style="color:#FC6A5D">"Suzuka"</span><span style="color:#FFFFFF">]</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> fasterTrack = tracks[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: \[</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">].[</span><span style="color:#D0BF69">1</span><span style="color:#FFFFFF">]]</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">fasterTrack</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "Monza"</span></span></code></pre></div>
-<div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>In this case, it&#8217;s essential that the subscript parameter type conforms to the <code>Hashable</code> protocol.</span></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> tracks = [</span><span style="color:#FC6A5D">"Spa"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Monza"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Montmelo"</span><span style="color:#FFFFFF">,</span><span style="color:#FC6A5D"> "Suzuka"</span><span style="color:#FFFFFF">]</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> fasterTrack = tracks[keyPath: \[</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">].[</span><span style="color:#D0BF69">1</span><span style="color:#FFFFFF">]]</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(fasterTrack)</span><span style="color:#6C7986"> // Prints "Monza"</span></span></code></pre></div>
+<div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>In this case, it’s essential that the subscript parameter type conforms to the <code>Hashable</code> protocol.</span></div>
 <p>Also, you should note that in this case, the captured values use value semantics, not reference semantics.</p>
 <p>So, a copy will not update its value even you modify the original.</p>
-<p>Here&#8217;s an example:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> index = </span><span style="color:#D0BF69">1</span></span>
+<p>Here’s an example:</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> index =</span><span style="color:#D0BF69"> 1</span></span>
 <span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> pathToTrack = \[</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">].[index]</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> closure: ([</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">]) -> </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF"> = { strings </span><span style="color:#FC5FA3">in</span><span style="color:#FFFFFF"> strings[index] }</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> closure: ([</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">]) -&gt;</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF"> = { strings</span><span style="color:#FC5FA3"> in</span><span style="color:#FFFFFF"> strings[index] }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">tracks</span><span style="color:#FFFFFF">[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> pathToTrack</span><span style="color:#FFFFFF">]) </span><span style="color:#6C7986">// Prints "Monza"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">closure</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">tracks</span><span style="color:#FFFFFF">)) </span><span style="color:#6C7986">// Prints "bonjour"</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(tracks[keyPath: pathToTrack])</span><span style="color:#6C7986"> // Prints "Monza"</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(closure(tracks))</span><span style="color:#6C7986"> // Prints "bonjour"</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FFFFFF">index += </span><span style="color:#D0BF69">1</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">tracks</span><span style="color:#FFFFFF">[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> pathToTrack</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#FFFFFF">index +=</span><span style="color:#D0BF69"> 1</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(tracks[keyPath: pathToTrack])</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "Monza"</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Because 'fn' closes over 'index', it uses the new value</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">closure</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">greetings</span><span style="color:#FFFFFF">))</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(closure(greetings))</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "Spa"</span></span></code></pre></div>
 <h3 id="accessing-optional-values">Accessing Optional Values <a class="heading-anchor" href="#accessing-optional-values" aria-label="Anchor">#</a></h3>
 <p>To access optional values, you simply need to use optional chaining or force unwrapping.</p>
 <p>Again, an example.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> firstTrack: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">? = tracks.</span><span style="color:#A167E6">first</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> count = tracks[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: \[</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">].</span><span style="color:#A167E6">first</span><span style="color:#FFFFFF">?.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">]</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">count </span><span style="color:#FFFFFF">as</span><span style="color:#D0A8FF"> Any</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> firstTrack:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">? = tracks.</span><span style="color:#A167E6">first</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> count = tracks[keyPath: \[</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">].</span><span style="color:#A167E6">first</span><span style="color:#FFFFFF">?.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">]</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">count</span><span style="color:#FC5FA3"> as</span><span style="color:#D0A8FF"> Any</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#6C7986">// Prints Montmelo characters number "Optional(8)"</span></span></code></pre></div>
 <h2 id="key-path-as-an-alternative-to-closures-and-functions">Key-Path as an Alternative to Closures and Functions <a class="heading-anchor" href="#key-path-as-an-alternative-to-closures-and-functions" aria-label="Anchor">#</a></h2>
 <p>You can also use key-paths in other contexts.</p>
 <p>For example, in situations where you need to pass a function or closure.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> Lap</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> time: </span><span style="color:#D0A8FF">Double</span></span>
-<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> valid: </span><span style="color:#D0A8FF">Bool</span></span>
+<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> time:</span><span style="color:#D0A8FF"> Double</span></span>
+<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> valid:</span><span style="color:#D0A8FF"> Bool</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> timelaps = [</span></span>
-<span class="line"><span style="color:#A167E6">    Lap</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">time</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 106.0</span><span style="color:#A167E6">, valid</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> true</span><span style="color:#FFFFFF">),</span></span>
-<span class="line"><span style="color:#A167E6">    Lap</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">time</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 99.5</span><span style="color:#A167E6">, valid</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> true</span><span style="color:#FFFFFF">),</span></span>
-<span class="line"><span style="color:#A167E6">    Lap</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">time</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 102.0</span><span style="color:#A167E6">, valid</span><span style="color:#FFFFFF">:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FFFFFF">    Lap(time:</span><span style="color:#D0BF69"> 106.0</span><span style="color:#FFFFFF">, valid:</span><span style="color:#FC5FA3"> true</span><span style="color:#FFFFFF">),</span></span>
+<span class="line"><span style="color:#FFFFFF">    Lap(time:</span><span style="color:#D0BF69"> 99.5</span><span style="color:#FFFFFF">, valid:</span><span style="color:#FC5FA3"> true</span><span style="color:#FFFFFF">),</span></span>
+<span class="line"><span style="color:#FFFFFF">    Lap(time:</span><span style="color:#D0BF69"> 102.0</span><span style="color:#FFFFFF">, valid:</span><span style="color:#FC5FA3"> false</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">]</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Usual</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> validLaps1 = timelaps.</span><span style="color:#A167E6">filter</span><span style="color:#FFFFFF">{ </span><span style="color:#FC5FA3">$0</span><span style="color:#FFFFFF">.valid }</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">validLaps1.count</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "2"</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> validLaps1 = timelaps.</span><span style="color:#A167E6">filter</span><span style="color:#FFFFFF">{ $0.valid }</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(validLaps1.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">)</span><span style="color:#6C7986"> // Prints "2"</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Equivalent with key-paths</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> validLaps2 = timelaps.</span><span style="color:#A167E6">filter</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">\.valid</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">validLaps2.count</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// Prints "2"</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> validLaps2 = timelaps.</span><span style="color:#A167E6">filter</span><span style="color:#FFFFFF">(\.valid)</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(validLaps2.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">)</span><span style="color:#6C7986"> // Prints "2"</span></span></code></pre></div>
 <p>Note at the end of the example, where you can filter the valid laps with <code>.filter(\.valid)</code> instead of most common <code>.filter{ $0.valid }</code></p>
 <h2 id="scope-of-key-paths">Scope of Key-Paths <a class="heading-anchor" href="#scope-of-key-paths" aria-label="Anchor">#</a></h2>
-<p>Lastly, regarding key-paths, there&#8217;s something important you should keep in mind.</p>
+<p>Lastly, regarding key-paths, there’s something important you should keep in mind.</p>
 <div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg></span></span><span>The results of a key-path expression are only evaluated at the point where that expression is evaluated.</span></div>
-<p>If you call a function within a subscript in a key-path expression, the function will only be called once, as part of the expression&#8217;s evaluation, but not every time the key-path is used.</p>
+<p>If you call a function within a subscript in a key-path expression, the function will only be called once, as part of the expression’s evaluation, but not every time the key-path is used.</p>
 <p>You can see this new example:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayValidLap</span><span style="color:#FFFFFF">() -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayValidLap</span><span style="color:#FFFFFF">() -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#A167E6">    print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"Valid lap!"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FC5FA3">    return</span><span style="color:#D0BF69"> 0</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> greetingKeyPath = \[Lap][</span><span style="color:#A167E6">displayValidLap</span><span style="color:#FFFFFF">()]</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> greetingKeyPath = \[Lap][displayValidLap()]</span></span>
 <span class="line"><span style="color:#6C7986">// Prints "Valid lap!"</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Using greetingKeyPath doesn't call displayValidLap again.</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> someLap = timelaps[</span><span style="color:#A167E6">keyPath</span><span style="color:#FFFFFF">: greetingKeyPath]</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> someLap = timelaps[keyPath: greetingKeyPath]</span></span></code></pre></div>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Anchor">#</a></h2>
 <p>Key-paths are complex and can be difficult to see their utility.</p>
-<p>However, they are used in SwiftUI, so it&#8217;s important to know and understand them.</p>
+<p>However, they are used in SwiftUI, so it’s important to know and understand them.</p>
 <p>Most importantly, remember that:</p>
 <ul>
 <li>Their structure is <code>\&lt;#type name#&gt;.&lt;#path#&gt;</code>.</li>
-<li>The <em>type name</em> is the name of the type and the <em>path</em> is the name of the property&#8217;s type.</li>
+<li>The <em>type name</em> is the name of the type and the <em>path</em> is the name of the property’s type.</li>
 <li>When compiled, they are replaced by an instance of the <code>KeyPath</code> class.</li>
-<li>You can access:<ul>
+<li>You can access:
+<ul>
 <li>A parameter</li>
 <li>An entire instance (<code>\.self</code>)</li>
 <li>A subscript</li>
@@ -253,7 +255,7 @@
 </ul>
 </li>
 </ul>
-<p>And since practice makes perfect, here&#8217;s a playground for you to play with 😉</p>
+<p>And since practice makes perfect, here’s a playground for you to play with 😉</p>
 <div class="attachments"><div class="attachments-label">Attachments</div><ul><li><a href="/es/blog/expresiones-keypath-swift/key-paths-swift.playground.zip" download>key-paths-swift.playground.zip</a></li></ul></div>
 <h2 id="source">Source <a class="heading-anchor" href="#source" aria-label="Anchor">#</a></h2>
 <p><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/#Key-Path-Expression" target="_blank" rel="noreferrer">Key-path Expressions - Swift Documentation</a></p>
@@ -261,7 +263,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -270,12 +272,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/property-wrappers-in-swift/"><span class="title">← How to create Property Wrappers for reuse code</span><div class="article-meta"><time datetime="2024-09-10T08:00:00.000+02:00">10 September 2024</time></div></a><a class="next" href="/blog/nsspain-2024-en/"><span class="title">Why you should attend NSSpain →</span><div class="article-meta"><time datetime="2024-09-24T08:00:00.000+02:00">24 September 2024</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/property-wrappers-in-swift/"><span class="title">← How to create Property Wrappers for reuse code</span><div class="article-meta"><time datetime="2024-09-10T08:00:00.000+02:00">10 September 2024</time></div></a><a class="next" href="/blog/nsspain-2024-en/"><span class="title">Why you should attend NSSpain →</span><div class="article-meta"><time datetime="2024-09-24T08:00:00.000+02:00">24 September 2024</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -300,5 +302,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

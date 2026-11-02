@@ -78,26 +78,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Useful String Methods in Swift</h1>
     <div class="article-meta"><time datetime="2023-02-20">20 February 2023</time></div>
-    
+
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#count-characters">Count characters</a></li><li class="toc-l0"><a href="#insert-or-remove">Insert or remove</a></li><li class="toc-l1"><a href="#insert">Insert</a></li><li class="toc-l1"><a href="#remove">Remove</a></li><li class="toc-l0"><a href="#modify-strings">Modify strings</a></li><li class="toc-l1"><a href="#uppercase-and-lowercase">Uppercase and lowercase</a></li><li class="toc-l1"><a href="#extract-a-string-to-an-array">Extract a string to an array</a></li><li class="toc-l1"><a href="#replacing-occurrences">Replacing occurrences</a></li></ul></nav>
@@ -106,16 +107,16 @@
     <div class="prose">
 <p>This post is a complement for the previous one about <a href="/blog/swift-strings/">Swift Strings</a>.</p>
 <p>I real-world projects, you can store a lot of strings but, it is important that you know how to transform those strings, to display them according to your view.</p>
-<p>For this reason, let&#8217;s see usual methods that you can use for it.</p>
+<p>For this reason, let’s see usual methods that you can use for it.</p>
 <h2 id="count-characters">Count characters <a class="heading-anchor" href="#count-characters" aria-label="Anchor">#</a></h2>
 <p>Because a String is a Collection of Characters, you can use a very common method in Arrays: <code>count()</code></p>
 <p>Either you can use it in a constant/variable or in a String</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> starWarsIntro = </span><span style="color:#FC6A5D">"A long time ago..."</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> numberOfCharacters = starWarsIntro.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">()  </span><span style="color:#6C7986">// numberOfCharacters value 18</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> starWarsIntro =</span><span style="color:#FC6A5D"> "A long time ago..."</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> numberOfCharacters = starWarsIntro.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">()</span><span style="color:#6C7986">  // numberOfCharacters value 18</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> numberOfCharactersOfGreet = </span><span style="color:#FC6A5D">"Hello World!"</span><span style="color:#FFFFFF">.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">() </span><span style="color:#6C7986">// numberOfCharactersOfGreet value is 12</span></span></code></pre></div>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> numberOfCharactersOfGreet =</span><span style="color:#FC6A5D"> "Hello World!"</span><span style="color:#FFFFFF">.</span><span style="color:#A167E6">count</span><span style="color:#FFFFFF">()</span><span style="color:#6C7986"> // numberOfCharactersOfGreet value is 12</span></span></code></pre></div>
 <p>Even you can combine values in the same String through String interpolation:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> plotTwist = </span><span style="color:#FC6A5D">"I am your father"</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> plotTwist =</span><span style="color:#FC6A5D"> "I am your father"</span></span>
 <span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"The number of character in </span><span style="color:#FFFFFF">\(plotTwist)</span><span style="color:#FC6A5D"> is </span><span style="color:#FFFFFF">\(plotTwist)</span><span style="color:#FC6A5D">.count()"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// It will print "The number of character in I am your father is 16"</span></span></code></pre></div>
@@ -128,38 +129,38 @@
 <li>Insert a substring with the method <code>.insert(contentsOf:at:)</code></li>
 </ul>
 <p>In <code>at</code> you will need to write a index. You can know more about indexes in <a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/#String-Indices" target="_blank" rel="noreferrer">Swift official Documentation - String Indices</a></p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> warning = </span><span style="color:#FC6A5D">"we have a problem"</span></span>
-<span class="line"><span style="color:#FFFFFF">warning.</span><span style="color:#A167E6">insert</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">contentsOf</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Houston, "</span><span style="color:#A167E6">, at</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> warning.startIndex</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> warning =</span><span style="color:#FC6A5D"> "we have a problem"</span></span>
+<span class="line"><span style="color:#FFFFFF">warning.</span><span style="color:#A167E6">insert</span><span style="color:#FFFFFF">(contentsOf:</span><span style="color:#FC6A5D"> "Houston, "</span><span style="color:#FFFFFF">, at: warning.startIndex)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">warning</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// It will print "Houston, we have a problem"</span></span></code></pre></div>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(warning)</span><span style="color:#6C7986"> // It will print "Houston, we have a problem"</span></span></code></pre></div>
 <h3 id="remove">Remove <a class="heading-anchor" href="#remove" aria-label="Anchor">#</a></h3>
 <p>Similar to insert, for remove Swift allow remove characters of substrings:</p>
 <ul>
 <li>Remove a character with the method <code>.remove(:at:)</code></li>
 <li>Remove a substring with the method <code>removeSubrange(_ bounds:)</code></li>
 </ul>
-<p>Be careful with don&#8217;t exit out of bounds</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> greeting = </span><span style="color:#FC6A5D">"Hello World!"</span></span>
-<span class="line"><span style="color:#FFFFFF">greeting.</span><span style="color:#A167E6">remove</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">at</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> greeting.index</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">before</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> greeting.endIndex</span><span style="color:#FFFFFF">))</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">greeting</span><span style="color:#FFFFFF">)  </span><span style="color:#6C7986">// It will print "Hello World"</span></span></code></pre></div>
+<p>Be careful with don’t exit out of bounds</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> greeting =</span><span style="color:#FC6A5D"> "Hello World!"</span></span>
+<span class="line"><span style="color:#FFFFFF">greeting.remove(at: greeting.index(before: greeting.endIndex))</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(greeting)</span><span style="color:#6C7986">  // It will print "Hello World"</span></span></code></pre></div>
 <h2 id="modify-strings">Modify strings <a class="heading-anchor" href="#modify-strings" aria-label="Anchor">#</a></h2>
 <h3 id="uppercase-and-lowercase">Uppercase and lowercase <a class="heading-anchor" href="#uppercase-and-lowercase" aria-label="Anchor">#</a></h3>
 <p>The methods that you can use for it are <code>.uppercased()</code>, <code>.lowercased()</code> or <code>.capitalized()</code></p>
 <p>Examples:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> lordOfTheRings = </span><span style="color:#FC6A5D">"A ring to rule them all"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">lordOfTheRings.uppercased</span><span style="color:#FFFFFF">()) </span><span style="color:#6C7986">// It will print "A RING TO RULE THEM ALL"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">lordOfTheRings.lowercased</span><span style="color:#FFFFFF">()) </span><span style="color:#6C7986">// It will print "a ring to rule them all"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">lordOfTheRings.capitalized</span><span style="color:#FFFFFF">) </span><span style="color:#6C7986">// It will print "A Ring To Rule Them All"</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> lordOfTheRings =</span><span style="color:#FC6A5D"> "A ring to rule them all"</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(lordOfTheRings.uppercased())</span><span style="color:#6C7986"> // It will print "A RING TO RULE THEM ALL"</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(lordOfTheRings.lowercased())</span><span style="color:#6C7986"> // It will print "a ring to rule them all"</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(lordOfTheRings.capitalized)</span><span style="color:#6C7986"> // It will print "A Ring To Rule Them All"</span></span></code></pre></div>
 <h3 id="extract-a-string-to-an-array">Extract a string to an array <a class="heading-anchor" href="#extract-a-string-to-an-array" aria-label="Anchor">#</a></h3>
 <p>For this goal you can use <code>.components(separatedBy: &quot; &quot;)</code></p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> et = “E.T. phone home.”</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> etWords = et.</span><span style="color:#A167E6">components</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">separatedBy</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> " "</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> etWords = et.components(separatedBy:</span><span style="color:#FC6A5D"> " "</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// etWords value is equal to ["E.T.", "phone", "home."]</span></span></code></pre></div>
 <h3 id="replacing-occurrences">Replacing occurrences <a class="heading-anchor" href="#replacing-occurrences" aria-label="Anchor">#</a></h3>
 <p>In this case, a useful method is <code>.replacingOccurrences(of:, with:)</code>, you can replace a character or a string with another character or string</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> darkKnight = </span><span style="color:#FC6A5D">"I am Batman"</span></span>
-<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> coded = darkKnight.</span><span style="color:#A167E6">replacingOccurrences</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">of</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "a"</span><span style="color:#A167E6">, with</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "4"</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> darkKnight =</span><span style="color:#FC6A5D"> "I am Batman"</span></span>
+<span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> coded = darkKnight.replacingOccurrences(of:</span><span style="color:#FC6A5D"> "a"</span><span style="color:#FFFFFF">, with:</span><span style="color:#FC6A5D"> "4"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// coded value is equal to "I 4m B4tm4n"</span></span></code></pre></div>
 <p>Happy coding! 👨🏻‍💻</p>
@@ -167,7 +168,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -176,12 +177,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/swift-strings/"><span class="title">← Swift Strings</span><div class="article-meta"><time datetime="2023-02-06">6 February 2023</time></div></a><a class="next" href="/blog/swift-collection-types/"><span class="title">Swift Collection Types →</span><div class="article-meta"><time datetime="2023-03-06">6 March 2023</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/swift-strings/"><span class="title">← Swift Strings</span><div class="article-meta"><time datetime="2023-02-06">6 February 2023</time></div></a><a class="next" href="/blog/swift-collection-types/"><span class="title">Swift Collection Types →</span><div class="article-meta"><time datetime="2023-03-06">6 March 2023</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -206,5 +207,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

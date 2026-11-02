@@ -78,26 +78,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Using Function Types in Swift</h1>
     <div class="article-meta"><time datetime="2023-07-10">10 July 2023</time></div>
-    
+
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#determining-the-function-type">Determining the Function Type</a></li><li class="toc-l0"><a href="#using-functions-types-as-parameters">Using Functions Types as Parameters</a></li><li class="toc-l0"><a href="#using-functions-types-to-return">Using Functions Types to Return</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li></ul></nav>
@@ -106,36 +107,36 @@
     <div class="prose">
 <p>As developers, we often manage situations where we need to work with functions in our iOS applications. Functions are an integral part of the Swift programming language and provide us with a powerful toolset to build flexible and modular code. In this article, we will explore the concept of using functions types and how it can benefit our development process.</p>
 <h2 id="determining-the-function-type">Determining the Function Type <a class="heading-anchor" href="#determining-the-function-type" aria-label="Anchor">#</a></h2>
-<p>In Swift, functions are considered first-class citizens, which means they can be assigned to variables or constants and can also be used as types. To determine the type of a function, we can use the function&#8217;s signature. The signature consists of the parameter types and return type. Let&#8217;s consider an example:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> a: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">, </span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> b: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
+<p>In Swift, functions are considered first-class citizens, which means they can be assigned to variables or constants and can also be used as types. To determine the type of a function, we can use the function’s signature. The signature consists of the parameter types and return type. Let’s consider an example:</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> a:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">,</span><span style="color:#FC5FA3"> _</span><span style="color:#FFFFFF"> b:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">    return</span><span style="color:#FFFFFF"> a + b</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
-<p>The type of this function can be represented as (Int, Int) -> Int, where (Int, Int) represents the parameter types and Int represents the return type.</p>
+<p>The type of this function can be represented as (Int, Int) -&gt; Int, where (Int, Int) represents the parameter types and Int represents the return type.</p>
 <h2 id="using-functions-types-as-parameters">Using Functions Types as Parameters <a class="heading-anchor" href="#using-functions-types-as-parameters" aria-label="Anchor">#</a></h2>
-<p>One of the advantages of using functions types is the ability to pass them as parameters to other functions. This enables us to create higher-order functions that can accept different behaviors based on the functions provided. Let&#8217;s take an example where we have a function that applies a given operation on an array of integers:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> applyOperation</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">_</span><span style="color:#FFFFFF"> numbers: [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">], </span><span style="color:#41A1C0">operation</span><span style="color:#FFFFFF">: (</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">] {</span></span>
+<p>One of the advantages of using functions types is the ability to pass them as parameters to other functions. This enables us to create higher-order functions that can accept different behaviors based on the functions provided. Let’s take an example where we have a function that applies a given operation on an array of integers:</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> applyOperation</span><span style="color:#FFFFFF">(</span><span style="color:#FC5FA3">_</span><span style="color:#FFFFFF"> numbers: [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">], operation: (</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) -&gt; [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">] {</span></span>
 <span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> result = [</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">]()</span></span>
-<span class="line"><span style="color:#FC5FA3">    for</span><span style="color:#FFFFFF"> number </span><span style="color:#FC5FA3">in</span><span style="color:#FFFFFF"> numbers {</span></span>
-<span class="line"><span style="color:#FC5FA3">        let</span><span style="color:#FFFFFF"> transformedNumber = </span><span style="color:#A167E6">operation</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">number</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FFFFFF">        result.</span><span style="color:#A167E6">append</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">transformedNumber</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    for</span><span style="color:#FFFFFF"> number</span><span style="color:#FC5FA3"> in</span><span style="color:#FFFFFF"> numbers {</span></span>
+<span class="line"><span style="color:#FC5FA3">        let</span><span style="color:#FFFFFF"> transformedNumber = operation(number)</span></span>
+<span class="line"><span style="color:#FFFFFF">        result.append(transformedNumber)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FC5FA3">    return</span><span style="color:#FFFFFF"> result</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>In the above code, the applyOperation function takes an array of integers and a function operation as parameters. The operation parameter represents a function that takes an integer and returns an integer. We can use this higher-order function to perform various operations on our array of numbers.</p>
 <h2 id="using-functions-types-to-return">Using Functions Types to Return <a class="heading-anchor" href="#using-functions-types-to-return" aria-label="Anchor">#</a></h2>
-<p>Another powerful aspect of using functions types is the ability to use them as output return. This enables us to create functions that dynamically generate and return other functions based on certain conditions or requirements. Let&#8217;s consider an example:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> operationFactory</span><span style="color:#FFFFFF">() -> (</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -> </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF"> {</span></span>
+<p>Another powerful aspect of using functions types is the ability to use them as output return. This enables us to create functions that dynamically generate and return other functions based on certain conditions or requirements. Let’s consider an example:</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> operationFactory</span><span style="color:#FFFFFF">() -&gt; (</span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) -&gt;</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">    if</span><span style="color:#FFFFFF"> condition {</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> { number </span><span style="color:#FC5FA3">in</span></span>
-<span class="line"><span style="color:#FFFFFF">            number * </span><span style="color:#D0BF69">2</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> { number</span><span style="color:#FC5FA3"> in</span></span>
+<span class="line"><span style="color:#FFFFFF">            number *</span><span style="color:#D0BF69"> 2</span></span>
 <span class="line"><span style="color:#FFFFFF">        }</span></span>
-<span class="line"><span style="color:#FFFFFF">    } </span><span style="color:#FC5FA3">else</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> { number </span><span style="color:#FC5FA3">in</span></span>
-<span class="line"><span style="color:#FFFFFF">            number / </span><span style="color:#D0BF69">2</span></span>
+<span class="line"><span style="color:#FFFFFF">    }</span><span style="color:#FC5FA3"> else</span><span style="color:#FFFFFF"> {</span></span>
+<span class="line"><span style="color:#FC5FA3">        return</span><span style="color:#FFFFFF"> { number</span><span style="color:#FC5FA3"> in</span></span>
+<span class="line"><span style="color:#FFFFFF">            number /</span><span style="color:#D0BF69"> 2</span></span>
 <span class="line"><span style="color:#FFFFFF">        }</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
-<p>In this example, the operationFactory function returns a function of type (Int) -> Int based on a certain condition. We can utilize this behavior to create more flexible and adaptable code.</p>
+<p>In this example, the operationFactory function returns a function of type (Int) -&gt; Int based on a certain condition. We can utilize this behavior to create more flexible and adaptable code.</p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Anchor">#</a></h2>
 <p>Using functions types in iOS development provides us with a powerful mechanism to create modular and flexible code. By treating functions first-class citizens, we can pass them as parameters to other functions, use them as return types, and dynamically generate them when needed. This approach enhances code reusability, promotes modularity, and allows for the creation of higher-order functions. By leveraging these capabilities, developers can build robust and adaptable iOS applications. So, next time you find yourself in a situation where you need to incorporate different behaviors in your code, consider using functions types for a more elegant solution.</p>
 <p>Happy coding! 👨🏻‍💻</p>
@@ -143,7 +144,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -152,12 +153,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/function-argument-labels-parameters/"><span class="title">← Function Argument Labels and Parameter Names</span><div class="article-meta"><time datetime="2023-06-26">26 June 2023</time></div></a><a class="next" href="/blog/closures-swift/"><span class="title">Understanding Closures in Swift →</span><div class="article-meta"><time datetime="2023-09-05">5 September 2023</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/function-argument-labels-parameters/"><span class="title">← Function Argument Labels and Parameter Names</span><div class="article-meta"><time datetime="2023-06-26">26 June 2023</time></div></a><a class="next" href="/blog/closures-swift/"><span class="title">Understanding Closures in Swift →</span><div class="article-meta"><time datetime="2023-09-05">5 September 2023</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -182,5 +183,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

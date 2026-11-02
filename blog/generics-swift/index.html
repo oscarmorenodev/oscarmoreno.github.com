@@ -80,76 +80,77 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Optimize code in Swift with generics</h1>
     <div class="article-meta"><time datetime="2024-10-01T08:00:00.000+02:00">1 October 2024</time></div>
-    <img class="feature" src="/es/blog/genericos-swift/feature-genericos-swift.png" alt="" decoding="async">
+<img class="feature" src="/es/blog/genericos-swift/feature-genericos-swift.png" alt="" decoding="async">
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#why-use-generics-in-swift">Why use generics in Swift?</a></li><li class="toc-l0"><a href="#how-do-you-create-generics-in-swift">How do you create generics in Swift?</a></li><li class="toc-l1"><a href="#type-parameter-names">Type parameter names</a></li><li class="toc-l1"><a href="#generic-functions">Generic functions</a></li><li class="toc-l1"><a href="#generic-types">Generic types</a></li><li class="toc-l0"><a href="#generic-extensions">Generic extensions</a></li><li class="toc-l0"><a href="#restricting-generics-with-where">Restricting generics with Where</a></li><li class="toc-l0"><a href="#using-multiple-generics">Using multiple generics</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li><li class="toc-l0"><a href="#source">Source</a></li></ul></nav>
   </details>
 </aside>
     <div class="prose">
-<p>As project complexity grows, it&#8217;s common to create very similar code.</p>
+<p>As project complexity grows, it’s common to create very similar code.</p>
 <p>You already know the best way to optimize it is not to repeat it.</p>
 <p>Or at least, take advantage of common points.</p>
 <p>In this case, using <em>generics</em> can be very helpful.</p>
 <p>They may seem complex at first.</p>
-<p>But if you get used to using them, you&#8217;ll have cleaner and more reusable code.</p>
+<p>But if you get used to using them, you’ll have cleaner and more reusable code.</p>
 <h2 id="why-use-generics-in-swift">Why use generics in Swift? <a class="heading-anchor" href="#why-use-generics-in-swift" aria-label="Anchor">#</a></h2>
 <p>Imagine you have a method as simple as the following, which shows a message with a value you pass as a parameter.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> logString</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">value</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">) {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> logString</span><span style="color:#FFFFFF">(value:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">) {</span></span>
 <span class="line"><span style="color:#A167E6">    print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"INFO - Value recorded: </span><span style="color:#FFFFFF">\(value)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "INFO - Value recorded: RandomResult"</span></span>
-<span class="line"><span style="color:#A167E6">logString</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "RandomResult"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">logString(value:</span><span style="color:#FC6A5D"> "RandomResult"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <p>But what if you also need to pass an integer value?</p>
 <p>That method would also be simple.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> logInt</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">value</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Int</span><span style="color:#FFFFFF">) {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> logInt</span><span style="color:#FFFFFF">(value:</span><span style="color:#D0A8FF"> Int</span><span style="color:#FFFFFF">) {</span></span>
 <span class="line"><span style="color:#A167E6">    print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"INFO - Value recorded: </span><span style="color:#FFFFFF">\(value)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "INFO - Value recorded: 10"</span></span>
-<span class="line"><span style="color:#A167E6">logInt</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
-<p>But, as you&#8217;ve probably noticed, it&#8217;s practically the same as the first one.</p>
-<p>And what if you wanted to capture values of other data types? <code>Double</code>, <code>Bool</code>, <code>Float</code>&#8230;</p>
-<p>You&#8217;ve likely already guessed the problem this can cause.</p>
+<span class="line"><span style="color:#FFFFFF">logInt(value:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<p>But, as you’ve probably noticed, it’s practically the same as the first one.</p>
+<p>And what if you wanted to capture values of other data types? <code>Double</code>, <code>Bool</code>, <code>Float</code>…</p>
+<p>You’ve likely already guessed the problem this can cause.</p>
 <p>There would be a significant amount of duplicated code, and therefore, inefficiency.</p>
 <p>This is the problem that generics solve.</p>
 <p>They allow you to create functions and types that work with different types without repeating code.</p>
 <h2 id="how-do-you-create-generics-in-swift">How do you create generics in Swift? <a class="heading-anchor" href="#how-do-you-create-generics-in-swift" aria-label="Anchor">#</a></h2>
 <p>Swift allows you to create both generic functions and your custom generic types.</p>
 <h3 id="type-parameter-names">Type parameter names <a class="heading-anchor" href="#type-parameter-names" aria-label="Anchor">#</a></h3>
-<p>Before creating generics, it&#8217;s important to understand how to name them.</p>
-<p>Although you may not have noticed, you&#8217;ve already used generics before.</p>
-<p>For example, when you&#8217;ve used an <a href="/blog/swift-collection-types/#arrays">array</a>, which is defined as <code>Array&lt;Element&gt;</code>.</p>
-<p><code>Element</code> is any type that makes up the array: <code>String</code>, <code>Int</code>, <code>Double</code>&#8230;</p>
+<p>Before creating generics, it’s important to understand how to name them.</p>
+<p>Although you may not have noticed, you’ve already used generics before.</p>
+<p>For example, when you’ve used an <a href="/blog/swift-collection-types/#arrays">array</a>, which is defined as <code>Array&lt;Element&gt;</code>.</p>
+<p><code>Element</code> is any type that makes up the array: <code>String</code>, <code>Int</code>, <code>Double</code>…</p>
 <p>The same goes for <a href="/blog/swift-collection-types/#diccionarios">dictionaries</a>, which in this case are defined as <code>Dictionary&lt;Key, Value&gt;</code>.</p>
-<p>That&#8217;s why dictionaries work with two elements: a key and a value.</p>
-<p>In some cases, descriptive names like <code>Element</code>, <code>Key</code>, and <code>Value</code> are used in generics&#8230;</p>
-<p>But in others, when there&#8217;s no meaningful relationship, a single uppercase letter is typically used.</p>
+<p>That’s why dictionaries work with two elements: a key and a value.</p>
+<p>In some cases, descriptive names like <code>Element</code>, <code>Key</code>, and <code>Value</code> are used in generics…</p>
+<p>But in others, when there’s no meaningful relationship, a single uppercase letter is typically used.</p>
 <p>The convention, in this latter case, is to use <code>T</code>, <code>U</code>, or <code>V</code>.</p>
-<p>And if you need more? Well, in that case&#8230; you might want to review that code to avoid so many parameters 😉</p>
+<p>And if you need more? Well, in that case… you might want to review that code to avoid so many parameters 😉</p>
 <h3 id="generic-functions">Generic functions <a class="heading-anchor" href="#generic-functions" aria-label="Anchor">#</a></h3>
 <p>Taking the earlier example about log messages, you could create a generic function as follows:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> log</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#FC5FA3">T</span><span style="color:#FFFFFF">>(</span><span style="color:#41A1C0">value</span><span style="color:#FFFFFF">: T) {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> log</span><span style="color:#FFFFFF">&lt;T&gt;(value: T) {</span></span>
 <span class="line"><span style="color:#A167E6">    print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"INFO - Value recorded: </span><span style="color:#FFFFFF">\(value)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>The first difference is replacing the parameter types of the function.</p>
@@ -157,101 +158,102 @@
 <p><code>T</code> refers to any Swift type.</p>
 <p>The second difference is including the generic type to be used, following the function name, between <code>&lt;</code> and <code>&gt;</code>.</p>
 <h3 id="generic-types">Generic types <a class="heading-anchor" href="#generic-types" aria-label="Anchor">#</a></h3>
-<p>Generics aren&#8217;t limited to functions.</p>
+<p>Generics aren’t limited to functions.</p>
 <p>Imagine you want to create a store to store <code>String</code> values.</p>
 <p>It could be a structure like the following:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> StringsStore</span><span style="color:#FFFFFF"> {</span></span>
 <span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> content: [</span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">]</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    mutating</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">string</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">String</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#FFFFFF">        content.</span><span style="color:#A167E6">append</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">string</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    mutating func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(string:</span><span style="color:#D0A8FF"> String</span><span style="color:#FFFFFF">) {</span></span>
+<span class="line"><span style="color:#FFFFFF">        content.append(string)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    mutating</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> clear</span><span style="color:#FFFFFF">() {</span></span>
+<span class="line"><span style="color:#FC5FA3">    mutating func</span><span style="color:#41A1C0"> clear</span><span style="color:#FFFFFF">() {</span></span>
 <span class="line"><span style="color:#FFFFFF">        content.</span><span style="color:#A167E6">removeAll</span><span style="color:#FFFFFF">()</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
-<p>But again, you&#8217;d have the same limitation if you wanted to accept integers as well.</p>
-<p>So, like in the case of functions, you&#8217;d need to replace the parameter type, using, for example, <code>Element</code>.</p>
-<p>And following the type name, you&#8217;d include the type with <code>&lt;Element&gt;</code>.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> ValuesStore</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#FC5FA3">Element</span><span style="color:#FFFFFF">> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> content: [</span><span style="color:#D0A8FF">Element</span><span style="color:#FFFFFF">]</span></span>
+<p>But again, you’d have the same limitation if you wanted to accept integers as well.</p>
+<p>So, like in the case of functions, you’d need to replace the parameter type, using, for example, <code>Element</code>.</p>
+<p>And following the type name, you’d include the type with <code>&lt;Element&gt;</code>.</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">struct</span><span style="color:#5DD8FF"> ValuesStore</span><span style="color:#FFFFFF">&lt;Element&gt; {</span></span>
+<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> content: [Element]</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    mutating</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(</span><span style="color:#41A1C0">value</span><span style="color:#FFFFFF">: </span><span style="color:#D0A8FF">Element</span><span style="color:#FFFFFF">) {</span></span>
-<span class="line"><span style="color:#FFFFFF">        content.</span><span style="color:#A167E6">append</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">    mutating func</span><span style="color:#41A1C0"> add</span><span style="color:#FFFFFF">(value: Element) {</span></span>
+<span class="line"><span style="color:#FFFFFF">        content.append(value)</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">    </span></span>
-<span class="line"><span style="color:#FC5FA3">    mutating</span><span style="color:#FC5FA3"> func</span><span style="color:#41A1C0"> clear</span><span style="color:#FFFFFF">() {</span></span>
+<span class="line"><span style="color:#FC5FA3">    mutating func</span><span style="color:#41A1C0"> clear</span><span style="color:#FFFFFF">() {</span></span>
 <span class="line"><span style="color:#FFFFFF">        content.</span><span style="color:#A167E6">removeAll</span><span style="color:#FFFFFF">()</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>And now, you can use it with different types:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> intsStore = </span><span style="color:#A167E6">ValuesStore</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">content</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> [</span><span style="color:#D0BF69">2</span><span style="color:#A167E6">,</span><span style="color:#D0BF69">4</span><span style="color:#A167E6">,</span><span style="color:#D0BF69">5</span><span style="color:#A167E6">]</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FFFFFF">intsStore.</span><span style="color:#A167E6">add</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> intsStore = ValuesStore(content: [</span><span style="color:#D0BF69">2</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69">4</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69">5</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#FFFFFF">intsStore.add(value:</span><span style="color:#D0BF69"> 10</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "[2, 4, 5, 10]"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">intsStore.content</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(intsStore.content)</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> doublesStore = </span><span style="color:#A167E6">ValuesStore</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">content</span><span style="color:#FFFFFF">:</span><span style="color:#A167E6"> [</span><span style="color:#D0BF69">2.5</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">4.7</span><span style="color:#A167E6">, </span><span style="color:#D0BF69">5.8</span><span style="color:#A167E6">]</span><span style="color:#FFFFFF">)</span></span>
-<span class="line"><span style="color:#FFFFFF">doublesStore.</span><span style="color:#A167E6">add</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">value</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 4.7</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FC5FA3">var</span><span style="color:#FFFFFF"> doublesStore = ValuesStore(content: [</span><span style="color:#D0BF69">2.5</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 4.7</span><span style="color:#FFFFFF">,</span><span style="color:#D0BF69"> 5.8</span><span style="color:#FFFFFF">])</span></span>
+<span class="line"><span style="color:#FFFFFF">doublesStore.add(value:</span><span style="color:#D0BF69"> 4.7</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "[2.5, 4.7, 5.8, 4.7]"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">doublesStore.content</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(doublesStore.content)</span></span></code></pre></div>
 <h2 id="generic-extensions">Generic extensions <a class="heading-anchor" href="#generic-extensions" aria-label="Anchor">#</a></h2>
 <p>You can also create extensions of generic types.</p>
-<p>And you don&#8217;t need to specify the parameter type again.</p>
+<p>And you don’t need to specify the parameter type again.</p>
 <p>That is, you can use the same one from its definition.</p>
 <p>In the case of <code>ValuesStore</code>, it would be as follows:</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">extension</span><span style="color:#5DD8FF"> ValuesStore</span><span style="color:#FFFFFF"> {</span></span>
-<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> lastElement: </span><span style="color:#D0A8FF">Element</span><span style="color:#FFFFFF">? {</span></span>
+<span class="line"><span style="color:#FC5FA3">    var</span><span style="color:#FFFFFF"> lastElement: Element? {</span></span>
 <span class="line"><span style="color:#FFFFFF">        content.</span><span style="color:#A167E6">last</span></span>
 <span class="line"><span style="color:#FFFFFF">    }</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "10"</span></span>
-<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">intsStore.lastElement </span><span style="color:#FFFFFF">??</span><span style="color:#FC6A5D"> "Empty store"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#A167E6">print</span><span style="color:#FFFFFF">(intsStore.lastElement ??</span><span style="color:#FC6A5D"> "Empty store"</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <h2 id="restricting-generics-with-where">Restricting generics with Where <a class="heading-anchor" href="#restricting-generics-with-where" aria-label="Anchor">#</a></h2>
-<p>There may be situations where you need a generic for several types&#8230; but not for <em>all</em> types.</p>
+<p>There may be situations where you need a generic for several types… but not for <em>all</em> types.</p>
 <p>Imagine the following case:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> sumTwoValues</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#FC5FA3">T</span><span style="color:#FFFFFF">>(</span><span style="color:#41A1C0">valueA</span><span style="color:#FFFFFF">: T, </span><span style="color:#41A1C0">valueB</span><span style="color:#FFFFFF">: T) -> T {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> sumTwoValues</span><span style="color:#FFFFFF">&lt;T&gt;(valueA: T, valueB: T) -&gt; T {</span></span>
 <span class="line"><span style="color:#6C7986">    // ERROR: Binary operator '+' cannot be applied to two 'T' operands</span></span>
 <span class="line"><span style="color:#FFFFFF">    valueA + valueB</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>In the example above, you could use integers, doubles, or any type of number, since a sum will be performed.</p>
-<p>But you couldn&#8217;t pass two <code>Bool</code> values because they can&#8217;t be summed.</p>
+<p>But you couldn’t pass two <code>Bool</code> values because they can’t be summed.</p>
 <p>Solution? Restrict <code>T</code> to only allow types that conform to the <code>Numeric</code> protocol.</p>
 <p>To do this, simply use the <code>where</code> clause to indicate the types for <code>T</code>.</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> sumTwoValues</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#FC5FA3">T</span><span style="color:#FFFFFF">>(</span><span style="color:#41A1C0">valueA</span><span style="color:#FFFFFF">: T, </span><span style="color:#41A1C0">valueB</span><span style="color:#FFFFFF">: T) -> T </span><span style="color:#FC5FA3">where</span><span style="color:#FFFFFF"> T: </span><span style="color:#5DD8FF">Numeric</span><span style="color:#FFFFFF"> {</span></span>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> sumTwoValues</span><span style="color:#FFFFFF">&lt;T&gt;(valueA: T, valueB: T) -&gt; T</span><span style="color:#FC5FA3"> where</span><span style="color:#FFFFFF"> T: Numeric {</span></span>
 <span class="line"><span style="color:#FFFFFF">    valueA + valueB</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <p>And now, you can perform the desired operations.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#6C7986">// Returns 7</span></span>
-<span class="line"><span style="color:#A167E6">sumTwoValues</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">valueA</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 2</span><span style="color:#A167E6">, valueB</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 5</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FFFFFF">sumTwoValues(valueA:</span><span style="color:#D0BF69"> 2</span><span style="color:#FFFFFF">, valueB:</span><span style="color:#D0BF69"> 5</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Returns 31.1</span></span>
-<span class="line"><span style="color:#A167E6">sumTwoValues</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">valueA</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 10.5</span><span style="color:#A167E6">, valueB</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 20.6</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">sumTwoValues(valueA:</span><span style="color:#D0BF69"> 10.5</span><span style="color:#FFFFFF">, valueB:</span><span style="color:#D0BF69"> 20.6</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <h2 id="using-multiple-generics">Using multiple generics <a class="heading-anchor" href="#using-multiple-generics" aria-label="Anchor">#</a></h2>
-<p>In the previous examples, you&#8217;ve seen how to use a single generic type: <code>T</code>, or <code>Element</code>.</p>
+<p>In the previous examples, you’ve seen how to use a single generic type: <code>T</code>, or <code>Element</code>.</p>
 <p>This means it could accept any type, but with the limitation that said type was always the same.</p>
-<p>In the previous example, where two values were summed, you could sum two integers or two doubles, etc&#8230; But always the same value.</p>
+<p>In the previous example, where two values were summed, you could sum two integers or two doubles, etc… But always the same value.</p>
 <p>Using multiple types is very simple; you just need to declare other generic types, separated by commas. And keeping in mind the standard naming convention mentioned earlier.</p>
-<p>Here&#8217;s another example:</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayTemp</span><span style="color:#FFFFFF">&#x3C;</span><span style="color:#FC5FA3">City</span><span style="color:#FFFFFF">,</span><span style="color:#FC5FA3">Temp</span><span style="color:#FFFFFF">>(</span><span style="color:#41A1C0">city</span><span style="color:#FFFFFF">: City, </span><span style="color:#41A1C0">temp</span><span style="color:#FFFFFF">: Temp) </span><span style="color:#FC5FA3">where</span><span style="color:#FFFFFF"> City: </span><span style="color:#5DD8FF">StringProtocol</span><span style="color:#FFFFFF">, Temp: </span><span style="color:#5DD8FF">Numeric</span><span style="color:#FFFFFF"> {</span></span>
+<p>Here’s another example:</p>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">func</span><span style="color:#41A1C0"> displayTemp</span><span style="color:#FFFFFF">&lt;City,Temp&gt;(city: City, temp: Temp)</span><span style="color:#FC5FA3"> where</span><span style="color:#FFFFFF"> City: StringProtocol, Temp: Numeric {</span></span>
 <span class="line"><span style="color:#A167E6">    print</span><span style="color:#FFFFFF">(</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">\(city)</span><span style="color:#FC6A5D">:</span><span style="color:#FFFFFF">\(temp)</span><span style="color:#FC6A5D">"</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"><span style="color:#FFFFFF">}</span></span></code></pre></div>
 <div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg></span></span><span>The code above is not optimal, as it could be simplified if the parameters conformed to the <code>StringProtocol</code> and <code>Numeric</code> protocols (<code>displayT(city: String, temp: any Numeric)</code>), has been used to show a simple example.</span></div>
 <p>And now you can use different generic types.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#6C7986">// Prints "Valencia:20"</span></span>
-<span class="line"><span style="color:#A167E6">displayTemp</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">city</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Valencia"</span><span style="color:#A167E6">, temp</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 20</span><span style="color:#FFFFFF">)</span></span>
+<span class="line"><span style="color:#FFFFFF">displayTemp(city:</span><span style="color:#FC6A5D"> "Valencia"</span><span style="color:#FFFFFF">, temp:</span><span style="color:#D0BF69"> 20</span><span style="color:#FFFFFF">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#6C7986">// Prints "Munich:5.5"</span></span>
-<span class="line"><span style="color:#A167E6">displayTemp</span><span style="color:#FFFFFF">(</span><span style="color:#A167E6">city</span><span style="color:#FFFFFF">:</span><span style="color:#FC6A5D"> "Munich"</span><span style="color:#A167E6">, temp</span><span style="color:#FFFFFF">:</span><span style="color:#D0BF69"> 5.5</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
+<span class="line"><span style="color:#FFFFFF">displayTemp(city:</span><span style="color:#FC6A5D"> "Munich"</span><span style="color:#FFFFFF">, temp:</span><span style="color:#D0BF69"> 5.5</span><span style="color:#FFFFFF">)</span></span></code></pre></div>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Anchor">#</a></h2>
 <p>So, to summarize the most important points:</p>
 <ul>
 <li>You should use generics to unify similar code that performs operations with different types.</li>
 <li>You can use them in functions or types.</li>
-<li>You can use:<ul>
+<li>You can use:
+<ul>
 <li>Words like <code>Element</code>, <code>Key</code>, or <code>Value</code> if they have a meaningful relationship.</li>
 <li>Letters like <code>T</code>, <code>U</code>, or <code>V</code> for more abstract cases.</li>
 </ul>
@@ -259,7 +261,7 @@
 <li>If you want to constrain the types of a generic, use the <code>where</code> clause to specify a protocol.</li>
 <li>If you only specify one generic type, you must always use the same type in the function or type.</li>
 </ul>
-<p>And if you want to practice, here&#8217;s the playground with examples 🙂</p>
+<p>And if you want to practice, here’s the playground with examples 🙂</p>
 <div class="attachments"><div class="attachments-label">Attachments</div><ul><li><a href="/es/blog/genericos-swift/generics-swift.playground.zip" download>generics-swift.playground.zip</a></li></ul></div>
 <h2 id="source">Source <a class="heading-anchor" href="#source" aria-label="Anchor">#</a></h2>
 <p><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/" target="_blank" rel="noreferrer">Generics - Swift Documentation</a></p>
@@ -267,7 +269,7 @@
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -276,12 +278,12 @@
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/nsspain-2024-en/"><span class="title">← Why you should attend NSSpain</span><div class="article-meta"><time datetime="2024-09-24T08:00:00.000+02:00">24 September 2024</time></div></a><a class="next" href="/blog/swift-subscripts/"><span class="title">Access collections in a easy way →</span><div class="article-meta"><time datetime="2024-10-08T08:00:00.000+02:00">8 October 2024</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/nsspain-2024-en/"><span class="title">← Why you should attend NSSpain</span><div class="article-meta"><time datetime="2024-09-24T08:00:00.000+02:00">24 September 2024</time></div></a><a class="next" href="/blog/swift-subscripts/"><span class="title">Access collections in a easy way →</span><div class="article-meta"><time datetime="2024-10-08T08:00:00.000+02:00">8 October 2024</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -306,5 +308,6 @@
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

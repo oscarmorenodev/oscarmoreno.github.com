@@ -78,26 +78,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Constants and Variables to Save Values in Swift</h1>
     <div class="article-meta"><time datetime="2023-01-16">16 January 2023</time></div>
-    
+
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#constants">Constants</a></li><li class="toc-l1"><a href="#how-to-declare-a-constant">How to declare a constant</a></li><li class="toc-l0"><a href="#variables">Variables</a></li><li class="toc-l1"><a href="#how-to-declare-a-variable">How to declare a variable</a></li><li class="toc-l0"><a href="#naming-a-constant-variable-or-value">Naming a constant, variable or value</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li></ul></nav>
@@ -111,9 +112,9 @@
 <p>A constant value is saved in a memory space, and it can’t be modified. After a value is established in a constant, it remains immutable.</p>
 <h3 id="how-to-declare-a-constant">How to declare a constant <a class="heading-anchor" href="#how-to-declare-a-constant" aria-label="Anchor">#</a></h3>
 <p>To declare a constant you must start with reserved word let, followed by a name you choose. Then, you must can use the operator ‘=‘ and assign a value.</p>
-<p>In the next example, ‘let’ is the reserved word for constants, survivor the name of the constant, and the value that is assigned to the constant ‘survivor’ is “Jack Shepard”. </p>
+<p>In the next example, ‘let’ is the reserved word for constants, survivor the name of the constant, and the value that is assigned to the constant ‘survivor’ is “Jack Shepard”.</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FC5FA3">let</span><span style="color:#FFFFFF"> survivor = “Jack Shepard”</span></span></code></pre></div>
-<p>The value is between double quotes because is a String value type. You can read about Strings in official documentation: <a href="https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html" target="_blank" rel="noreferrer">Strings and Characters</a> </p>
+<p>The value is between double quotes because is a String value type. You can read about Strings in official documentation: <a href="https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html" target="_blank" rel="noreferrer">Strings and Characters</a></p>
 <div class="alert"><span class="alert-icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M112.1 454.3c0 6.297 1.816 12.44 5.284 17.69l17.14 25.69c5.25 7.875 17.17 14.28 26.64 14.28h61.67c9.438 0 21.36-6.401 26.61-14.28l17.08-25.68c2.938-4.438 5.348-12.37 5.348-17.7L272 415.1h-160L112.1 454.3zM191.4 .0132C89.44 .3257 16 82.97 16 175.1c0 44.38 16.44 84.84 43.56 115.8c16.53 18.84 42.34 58.23 52.22 91.45c.0313 .25 .0938 .5166 .125 .7823h160.2c.0313-.2656 .0938-.5166 .125-.7823c9.875-33.22 35.69-72.61 52.22-91.45C351.6 260.8 368 220.4 368 175.1C368 78.61 288.9-.2837 191.4 .0132zM192 96.01c-44.13 0-80 35.89-80 79.1C112 184.8 104.8 192 96 192S80 184.8 80 176c0-61.76 50.25-111.1 112-111.1c8.844 0 16 7.159 16 16S200.8 96.01 192 96.01z"/></svg></span></span><span><p>Do you know why Swift use <code>let</code> instead <code>const</code> or similar as another languages?
 It comes from the mathematics world, where they say things like:</p>
 <blockquote>
@@ -124,16 +125,16 @@ It comes from the mathematics world, where they say things like:</p>
 <h3 id="how-to-declare-a-variable">How to declare a variable <a class="heading-anchor" href="#how-to-declare-a-variable" aria-label="Anchor">#</a></h3>
 <p>To declare a variable, the structure is the same as a constant, but you must use the reserved word <code>var</code></p>
 <p>Then, for declare a variable you must write</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span>var videogame = “Metal Gear Solid”</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">var videogame = “Metal Gear Solid”</span></span></code></pre></div>
 <p>Ok but, if we want to change a var value, how should we do it? Easy, you only need assign a new value, and don’t write the reserved word var</p>
 <div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">videogame = “Uncharted”</span></span></code></pre></div>
 <h2 id="naming-a-constant-variable-or-value">Naming a constant, variable or value <a class="heading-anchor" href="#naming-a-constant-variable-or-value" aria-label="Anchor">#</a></h2>
 <p>You can use almost any character for a name of constant or variable, including Unicode characters. It means that you can use for example emojis</p>
 <p>But it is something that a I wouldn’t recommend. Why? Because the name of a constant or a variable, should explain without any doubt what is stored within.</p>
 <p>For example, which one explain what means the value 10?</p>
-<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span>let times = 10</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>let numberOfTimesIHaveSeenBackToTheFutureTrilogy = 10</span></span></code></pre></div>
+<div class="highlight"><pre class="shiki xcode-dark" style="background-color:#1f1f24;color:#ffffff" tabindex="0"><code><span class="line"><span style="color:#FFFFFF">let times = 10</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFFFFF">let numberOfTimesIHaveSeenBackToTheFutureTrilogy = 10</span></span></code></pre></div>
 <p>In second case is easier to know</p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Anchor">#</a></h2>
 <p>So, don’t worry about numbers of characters for the name. It is more recommended use a large (but descriptive ) name than use another shorter that doesn’t specify what stores. And, nowadays, IDE’s are in charge to autocomplete names, it won’t be difficult write them 😉</p>
@@ -142,7 +143,7 @@ It comes from the mathematics world, where they say things like:</p>
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -151,12 +152,12 @@ It comes from the mathematics world, where they say things like:</p>
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/my-new-first-post/"><span class="title">← My (New) First Post</span><div class="article-meta"><time datetime="2023-01-02">2 January 2023</time></div></a><a class="next" href="/blog/numbers-in-swift/"><span class="title">Numbers in Swift →</span><div class="article-meta"><time datetime="2023-01-30">30 January 2023</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/my-new-first-post/"><span class="title">← My (New) First Post</span><div class="article-meta"><time datetime="2023-01-02">2 January 2023</time></div></a><a class="next" href="/blog/numbers-in-swift/"><span class="title">Numbers in Swift →</span><div class="article-meta"><time datetime="2023-01-30">30 January 2023</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -181,5 +182,6 @@ It comes from the mathematics world, where they say things like:</p>
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>

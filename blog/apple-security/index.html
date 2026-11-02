@@ -80,26 +80,27 @@
 </head>
 <body>
   <a id="the-top" class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
+<header class="site-header">
   <nav>
     <a class="site-title" rel="me" href="/">Oscar Moreno | Software Engineer</a>
     <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span></button>
     <ul id="main-menu" class="main-menu">
       <li class="menu-close"><button type="button" aria-label="Close (Esc)"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></li>
-      <li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
+<li><a href="/blog/" title="Blog"><span>Blog</span></a></li><li><a href="/about/" title="About"><span>About</span></a></li><li><a href="/contact/" title="Contact"><span>Contact</span></a></li><li><a href="/projects/" title="Projects"><span>Projects</span></a></li>
       <li><button type="button" class="search-button" title="Search (/)" aria-label="Search (/)"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button></li>
     </ul>
   </nav>
 </header>
+
   <main id="main-content">
 <article>
   <header class="article-header">
     <h1>Apple devices Security Guide</h1>
     <div class="article-meta"><time datetime="2024-05-09">9 May 2024</time></div>
-    <img class="feature" src="/es/blog/seguridad-apple/feature-guia-seguridad-apple.webp" alt="" decoding="async">
+<img class="feature" src="/es/blog/seguridad-apple/feature-guia-seguridad-apple.webp" alt="" decoding="async">
   </header>
   <section class="article-body has-toc">
-    <aside class="toc">
+<aside class="toc">
   <details open>
     <summary>Table of Contents</summary>
     <nav id="TableOfContents"><ul><li class="toc-l0"><a href="#hardware-and-biometrics">Hardware and biometrics</a></li><li class="toc-l0"><a href="#os">OS</a></li><li class="toc-l0"><a href="#data-encryption-and-protection">Data encryption and protection</a></li><li class="toc-l0"><a href="#app-security">App security</a></li><li class="toc-l0"><a href="#services">Services</a></li><li class="toc-l0"><a href="#network-security">Network security</a></li><li class="toc-l0"><a href="#development-kit">Development Kit</a></li><li class="toc-l0"><a href="#conclusion">Conclusion</a></li></ul></nav>
@@ -109,10 +110,10 @@
 <p>Apple devices stand out for several reasons: a design that identifies them and many want to copy, durability and reliability, but above all, an ecosystem that works as a whole when providing services.</p>
 <p>Although this has its disadvantages, the first advantage that usually comes to mind is the ease of coordinating all these components.</p>
 <p>And if there is one area where coordination between the different components is key, it is in <strong>security</strong>.</p>
-<p>In this article I do not want to limit myself to mentioning more or less current news where it is &#8220;said&#8221; that it is a secure system. Instead, I want to list, based on the brand&#8217;s official documentation, the measures they use to ensure that your data and mine are safe.</p>
+<p>In this article I do not want to limit myself to mentioning more or less current news where it is “said” that it is a secure system. Instead, I want to list, based on the brand’s official documentation, the measures they use to ensure that your data and mine are safe.</p>
 <p>Those from Cupertino divide their security measures into several areas, both physical and logical, that cover all the actors involved in this matter.</p>
 <h2 id="hardware-and-biometrics">Hardware and biometrics <a class="heading-anchor" href="#hardware-and-biometrics" aria-label="Anchor">#</a></h2>
-<p>The basis of a device&#8217;s security is its <strong>hardware</strong>. Taking an extreme example, imagine a device that had no possibility of accessing the Internet because it did not have a modem or network card, or that did not allow the entry of volumes of data: memory cards, USBs, SSDs&#8230;</p>
+<p>The basis of a device’s security is its <strong>hardware</strong>. Taking an extreme example, imagine a device that had no possibility of accessing the Internet because it did not have a modem or network card, or that did not allow the entry of volumes of data: memory cards, USBs, SSDs…</p>
 <p>In this case, these devices would limit the possibility of malicious code injection, or the extraction of user data. Which could pose a lower security risk.</p>
 <p>Therefore, the security of Apple devices begins with their hardware, and more specifically in the functions of their processors.</p>
 <p>During recent years, Apple has invested great efforts in designing its own chips, and perfecting the systems housed in them, called <em>System on Chip</em> or <em>SoC</em></p>
@@ -126,7 +127,7 @@
 </ul>
 <p>To identify users, Apple uses biometrics.</p>
 <p>The best known method is <strong>FaceID</strong>, the system through which, through your eyes, you can perform operations such as: unlocking the device and confirming payments and purchases.</p>
-<p>FaceID uses neural networks to validate the match and learn about changes in the individual&#8217;s appearance.</p>
+<p>FaceID uses neural networks to validate the match and learn about changes in the individual’s appearance.</p>
 <p>And all this is achieved through the <em>TrueDepth</em> camera, which stands out for being able to make 3D scans of our face, which prevents, for example, a simple image of us from being used to impersonate our identity.</p>
 <p>On the other hand, older devices, as well as Magic Keyboard keyboards, have <strong>TouchID</strong>, which is used for the same cases as those mentioned above, but through our digital ones.</p>
 <p>But it is not only limited to using the fingerprint recorded in its first configuration, since the sensor will detect the new nodes that exist with each use.</p>
@@ -136,7 +137,7 @@
 <p>The security of the system, therefore, is responsible for managing these accesses, only to those who must do so.</p>
 <p>A very important element in this section would be a <strong>secure boot</strong>, enough to prevent any unwanted code from being inserted into it, and therefore, achieve a high privilege being able to access any part of the system.</p>
 <p>This is achieved by ensuring that each step is safe, and control is not passed to the next until it is completely validated.</p>
-<p>Once the system is running, another factor that determines security is <strong>updates</strong>. In this case, the system&#8217;s mission will be to ensure that it is not possible to install older and consequently possibly vulnerable versions.</p>
+<p>Once the system is running, another factor that determines security is <strong>updates</strong>. In this case, the system’s mission will be to ensure that it is not possible to install older and consequently possibly vulnerable versions.</p>
 <p>On the other hand, volumes (data storage devices), as input and output media, can also be violated and used to compromise security.</p>
 <p>To avoid this, Apple in this case, since macOS 11, uses added encryption measures to protect the system code, so that it cannot be modified.</p>
 <h2 id="data-encryption-and-protection">Data encryption and protection <a class="heading-anchor" href="#data-encryption-and-protection" aria-label="Anchor">#</a></h2>
@@ -156,7 +157,8 @@ They were secured with a volume encryption method they called <em>FileVault</em>
 <th>Delay</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>1-4</td>
 <td>None</td>
 </tr>
@@ -176,10 +178,11 @@ They were secured with a volume encryption method they called <em>FileVault</em>
 <td>9</td>
 <td>1 hour</td>
 </tr>
-</tbody></table>
-<p>Additionally, if after 10 attempts, &#8220;Wipe data&#8221; is enabled, the content and settings are deleted from storage</p>
+</tbody>
+</table>
+<p>Additionally, if after 10 attempts, “Wipe data” is enabled, the content and settings are deleted from storage</p>
 <p>And in the case of macOS, the delay times coincide, but if there are more than 10 attempts, it will be deactivated.</p>
-<p>Finally, Apple also protects data, using a technique called <strong>secure data storage</strong>, which prevents different applications from accessing our user data such as Calendar, Camera, Contacts, Reminders, Notes&#8230; .</p>
+<p>Finally, Apple also protects data, using a technique called <strong>secure data storage</strong>, which prevents different applications from accessing our user data such as Calendar, Camera, Contacts, Reminders, Notes… .</p>
 <h2 id="app-security">App security <a class="heading-anchor" href="#app-security" aria-label="Anchor">#</a></h2>
 <p>Apps pose a serious risk to the security of your data, in that it is the main means of code entry into your data.</p>
 <p>However, it is possible to do without them, since they are also the first source of functionality for the hardware.</p>
@@ -192,7 +195,7 @@ They were secured with a volume encryption method they called <em>FileVault</em>
 <p>But, all this refers only to the installation.</p>
 <p>Apple further improves security by adding an additional layer to the app execution environment through three elements.</p>
 <p>The first is <em>isolation</em>, and that is that all third-party apps run in an isolated environment, to prevent them from accessing files stored by other apps, or modifying the content of the system.</p>
-<p>So to access other people&#8217;s information, you must go through the methods that Apple establishes in the system.</p>
+<p>So to access other people’s information, you must go through the methods that Apple establishes in the system.</p>
 <p>The second are <strong>authorizations</strong> that, through key-value pairs, allow authentication outside the execution environment, such as a user ID in UNIX. These authorizations are secured by digital signature, so it is not possible to modify them.</p>
 <p>And the third and last element is the <strong>randomization of the address space</strong>, which helps protect the system against attacks that make use of corrupted memory faults.</p>
 <h2 id="services">Services <a class="heading-anchor" href="#services" aria-label="Anchor">#</a></h2>
@@ -205,7 +208,7 @@ They were secured with a volume encryption method they called <em>FileVault</em>
 </ul>
 <p>Additionally, by default, Apple has <strong>two-factor authentication</strong>, which prevents unwanted access in case someone gets your password.</p>
 <p>On the other hand, if you want to reset the password, it must be done from another trusted device.</p>
-<p>iCloud is probably the company&#8217;s most used service, which allows the storage of data in the categories photos, contacts, email, health&#8230; so every effort is little to keep Apple as an actor committed to security.</p>
+<p>iCloud is probably the company’s most used service, which allows the storage of data in the categories photos, contacts, email, health… so every effort is little to keep Apple as an actor committed to security.</p>
 <p>In this case, Apple offers two options to encrypt your content:</p>
 <ul>
 <li><strong>Standard Protection:</strong> User data is encrypted and its keys are stored in the data centers of Apple, who can only help recover data, but does not have it. 14 categories of data will use end-to-end encryption.</li>
@@ -250,7 +253,7 @@ CRYPTOCard, and machine authentication using shared secret and certificates
     </div>
   </section>
   <footer class="article-footer">
-    <div class="author-box">
+<div class="author-box">
   <img src="/img/memoji-2-no-bg.png" alt="Oscar Moreno" width="96" height="104" loading="lazy" decoding="async">
   <div>
     <div class="author-label">Author</div>
@@ -259,12 +262,12 @@ CRYPTOCard, and machine authentication using shared secret and certificates
     <div class="author-links"><a href="https://x.com/oscarmorenodev" target="_blank" aria-label="X" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></span></a><a href="https://linkedin.com/in/oscarmorenodev" target="_blank" aria-label="Linkedin" rel="me noopener noreferrer"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></div>
   </div>
 </div>
-    <nav class="article-pagination"><a class="prev" href="/blog/apple-ecosistem-compatibility/"><span class="title">← Ensure compatibility of apps for the Apple ecosystem</span><div class="article-meta"><time datetime="2024-04-25">25 April 2024</time></div></a><a class="next" href="/blog/access-levels-swift/"><span class="title">What the different access levels mean in Swift →</span><div class="article-meta"><time datetime="2024-09-03T08:00:00.000+02:00">3 September 2024</time></div></a></nav>
+<nav class="article-pagination"><a class="prev" href="/blog/apple-ecosistem-compatibility/"><span class="title">← Ensure compatibility of apps for the Apple ecosystem</span><div class="article-meta"><time datetime="2024-04-25">25 April 2024</time></div></a><a class="next" href="/blog/access-levels-swift/"><span class="title">What the different access levels mean in Swift →</span><div class="article-meta"><time datetime="2024-09-03T08:00:00.000+02:00">3 September 2024</time></div></a></nav>
   </footer>
 </article>
   </main>
   <a id="to-top" href="#the-top" aria-label="Scroll to top" title="Scroll to top" hidden>↑</a>
-  <footer class="site-footer">
+<footer class="site-footer">
   <p class="copyright">© 2026 Oscar Moreno</p>
   <button type="button" class="appearance-switcher" aria-label="appearance switcher">
     <span class="when-light" title="Switch to dark appearance"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg></span></span>
@@ -289,5 +292,6 @@ CRYPTOCard, and machine authentication using shared secret and certificates
     <ul id="search-results" data-empty="No results"></ul>
   </div>
 </div>
+
 </body>
 </html>
