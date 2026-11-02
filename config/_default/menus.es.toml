@@ -17,12 +17,6 @@
   weight = 9
 
 [[main]]
-  identifier = "newsletter"
-  name = "Newsletter"
-  pageRef = "newsletter"
-  weight = 8
-
-[[main]]
   name = "Blog"
   pageRef = "blog"
   weight = 10
