@@ -1,6 +1,6 @@
 {
-  "name": "Congo",
-  "short_name": "Congo",
+  "name": "Oscar Moreno | Software Engineer",
+  "short_name": "Oscar Moreno",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -16,6 +16,6 @@
     }
   ],
   "theme_color": "#ffffff",
-  "background_color": "#7c3aed",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
