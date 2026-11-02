@@ -11,12 +11,6 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  identifier = "apps"
-  name = "Apps"
-  pageRef = "apps"
-  weight = 9
-
-[[main]]
   name = "Blog"
   pageRef = "blog"
   weight = 10
@@ -25,13 +19,19 @@
   identifier = "about"
   name = "About"
   pageRef = "about"
-  weight = 97
+  weight = 60
 
 [[main]]
   identifier = "contact"
   name = "Contact"
   pageRef = "contact"
-  weight = 98
+  weight = 70
+
+[[main]]
+  identifier = "apps"
+  name = "Apps"
+  pageRef = "apps"
+  weight = 80
 
 [[main]]
   identifier = "search"

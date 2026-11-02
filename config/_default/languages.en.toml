@@ -3,26 +3,26 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "Oscar Moreno | iOS Developer "
+title = "Oscar Moreno | Software Engineer"
 copyright = "&copy; 2024 Oscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
 
   mainSections = ["blog"]
-  description = "Apple Developer"
+  description = "Software Engineer"
 
 [params.author]
 name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Coding and writing about Apple development, Swift & SwiftUI"
-bio = "Coding and writing about Apple development, Swift & SwiftUI"
+headline = "Coding and writing about Software Engineering"
+bio = "Coding and writing about Software Engineering"
 links = [
   { x-twitter = "https://twitter.com/oscarmorenodev" },
   { linkedin = "https://linkedin.com/in/oscarmorenodev" },
-  { threads = "https://www.threads.net/@oscarmorenodev" },
-  { bluesky = "https://bsky.app/profile/oscarmoreno.com" },  
-  { mastodon = "https://mastodon.social/@oscarmorenodev" },
+  #.  { threads = "https://www.threads.net/@oscarmorenodev" },
+  #.  { bluesky = "https://bsky.app/profile/oscarmoreno.com" },  
+  #.  { mastodon = "https://mastodon.social/@oscarmorenodev" },
   #   { github = "https://github.com/oscarmorenodev" },
   #   { reddit = "https://www.reddit.com/user/oscarmorenodev/" },
   #   { stack-overflow = "https://stackoverflow.com/users/5899460/Óscar-moreno" },

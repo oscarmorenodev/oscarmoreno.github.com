@@ -3,26 +3,26 @@ languageName = "Español"
 languageDirection = "ltr"
 weight = 2
 
-title = "Oscar Moreno | Desarrollador iOS "
-copyright = "&copy; 2024 Oscar Moreno"
+title = "Oscar Moreno | Ingeniero de software"
+copyright = "&copy; 2026 Oscar Moreno"
 
 [params]
   dateFormat = "2 January 2006"
 
     mainSections = ["blog", "podcast"]
-    description = "Apple Developer"
+    description = "Software Engineer"
 
 [params.author]
 name = "Oscar Moreno"
 image = "img/memoji-2-no-bg.png"
-headline = "Escribiendo código y hablando sobre programación en dispositivos Apple, Swift y SwiftUI"
-bio = "Escribiendo código y hablando sobre programación en dispositivos Apple, Swift y SwiftUI"
+headline = "Escribiendo código y hablando sobre ingeniería de software"
+bio = "Escribiendo código y hablando sobre sobre ingeniería de software"
 links = [
   { x-twitter = "https://twitter.com/oscarmorenodev" },
   { linkedin = "https://linkedin.com/in/oscarmorenodev" },
-  { threads = "https://www.threads.net/@oscarmorenodev" },
-  { bluesky = "https://bsky.app/profile/oscarmoreno.com" },  
-  { mastodon = "https://mastodon.social/@oscarmorenodev" },
+  #.  { threads = "https://www.threads.net/@oscarmorenodev" },
+  #.  { bluesky = "https://bsky.app/profile/oscarmoreno.com" },  
+  #.  { mastodon = "https://mastodon.social/@oscarmorenodev" },
   #   { github = "https://github.com/oscarmorenodev" },
   #   { reddit = "https://www.reddit.com/user/oscarmorenodev/" },
   #   { stack-overflow = "https://stackoverflow.com/users/5899460/Óscar-moreno" },
