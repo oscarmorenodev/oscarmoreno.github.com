@@ -28,7 +28,7 @@ export const languages = {
     prefix: "",
     title: "Oscar Moreno | Software Engineer",
     description: "Software Engineer",
-    copyright: "© 2024 Oscar Moreno",
+    copyright: `© ${new Date().getFullYear()} Oscar Moreno`,
     headline: "Coding and writing about Software Engineering",
     privacyPage: "/privacy/",
     menu: [
