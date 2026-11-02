@@ -66,11 +66,11 @@ Before creating generics, it's important to understand how to name them.
 
 Although you may not have noticed, you've already used generics before.
 
-For example, when you've used an [array](../colecciones-swift#arrays), which is defined as `Array<Element>`.
+For example, when you've used an [array](../swift-collection-types#arrays), which is defined as `Array<Element>`.
 
 `Element` is any type that makes up the array: `String`, `Int`, `Double`...
 
-The same goes for [dictionaries](../colecciones-swift#diccionarios), which in this case are defined as `Dictionary<Key, Value>`.
+The same goes for [dictionaries](../swift-collection-types#diccionarios), which in this case are defined as `Dictionary<Key, Value>`.
 
 That's why dictionaries work with two elements: a key and a value.
 

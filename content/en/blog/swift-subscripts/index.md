@@ -6,7 +6,7 @@ date = 2024-10-08T08:00:00+02:00
 translationKey = "subscripts"
 +++
 
-A few weeks ago, while writing about [key-paths](../key-path-expressions-swift), **subscripts** attracted my attention.
+A few weeks ago, while writing about [key-paths](../swift-keypath-expressions), **subscripts** attracted my attention.
 
 So, I continued investigating it, and now that I have seen the advantages it offers, I'll explain how to take advantage of it to have more customized and readable code.
 
